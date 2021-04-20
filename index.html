@@ -1,1 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ashley Zufelt">
+<title>Ashley Zufelt WDD230</title>
+    <style>
+    /* CSS HEX */
+--black-shadows: #d5c5c8ff;
+--quick-silver: #9da3a4ff;
+--dark-liver: #604d53ff;
+--copper-penny: #a8726aff;
+--jet: #2d2c27ff;
+--pale-pink: #e9c9c5ff;
+--silver-pink: #d6b4b4ff;
+
+/* CSS HSL */
+--black-shadows: hsla(349, 16%, 80%, 1);
+--quick-silver: hsla(189, 4%, 63%, 1);
+--dark-liver: hsla(341, 11%, 34%, 1);
+--copper-penny: hsla(8, 26%, 54%, 1);
+--jet: hsla(50, 7%, 16%, 1);
+--pale-pink: hsla(7, 45%, 84%, 1);
+--silver-pink: hsla(0, 29%, 77%, 1);
+
+/* SCSS HEX */
+$black-shadows: #d5c5c8ff;
+$quick-silver: #9da3a4ff;
+$dark-liver: #604d53ff;
+$copper-penny: #a8726aff;
+$jet: #2d2c27ff;
+$pale-pink: #e9c9c5ff;
+$silver-pink: #d6b4b4ff;
+
+/* SCSS HSL */
+$black-shadows: hsla(349, 16%, 80%, 1);
+$quick-silver: hsla(189, 4%, 63%, 1);
+$dark-liver: hsla(341, 11%, 34%, 1);
+$copper-penny: hsla(8, 26%, 54%, 1);
+$jet: hsla(50, 7%, 16%, 1);
+$pale-pink: hsla(7, 45%, 84%, 1);
+$silver-pink: hsla(0, 29%, 77%, 1);
+
+/* SCSS RGB */
+$black-shadows: rgba(213, 197, 200, 1);
+$quick-silver: rgba(157, 163, 164, 1);
+$dark-liver: rgba(96, 77, 83, 1);
+$copper-penny: rgba(168, 114, 106, 1);
+$jet: rgba(45, 44, 39, 1);
+$pale-pink: rgba(233, 201, 197, 1);
+$silver-pink: rgba(214, 180, 180, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-right: linear-gradient(90deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-bottom: linear-gradient(180deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-left: linear-gradient(270deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-top-right: linear-gradient(45deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-bottom-right: linear-gradient(135deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-top-left: linear-gradient(225deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-bottom-left: linear-gradient(315deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+$gradient-radial: radial-gradient(#d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
+    
+        images{
+            size= 100%;
+        }
+        .profilePic{
+            max-width: 200px;
+            border-radius: 200px; 
+            border: solid black;
+        }
+    
+    
+    </style>
+</head>
+<body>
+<header>
+    <h1> Ashley Zufelt </h1>
+    <img class="profilePic" src="Winter 2021/Intro Programming/Profile Pic.png" alt="Profile pic animate"> </header>
+<h3>CIT 230: Assignment Portal</h3>
+<ul>
+    <li>·Lesson 02:
+        <a href= "">Assignment Link</a>
+    </li>
+    <li>·Lesson 03:
+        <a href="">Assignment Link</a>
+    </li>
+    <li>·Lesson 04:
+        <a href="">Assignment Link</a>
+    </li>
+</ul>
+<footer>
+<div id="currentYear">
+<script>
+    var today = new Date();
+    var date = today.getFullYear();
+    document.getElementById("currentYear").innerHTML= "© " + date;
+    </script>
+| Ashley Zufelt | Georgia, USA | <a href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+Last Updated
+<div id="updated">
+    <script>
+        var today = new Date();
+        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "november", "December"];
+        var thisDay = months[today.getMonth()] + today.getDay() + ", " + today.getFullYear();
+        document.getElementById("updated").innerHTML= thisDay;</script>
+</div>
+</footer>
+</body>
+</html>
 
