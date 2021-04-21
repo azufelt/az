@@ -1,4 +1,125 @@
-/* CSS HEX */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2D2C27;
+  font-family: "Montserrat", arial, sans-serif;
+  padding: 5px 25px;
+  font-size: 22px;
+  margin: 0;
+}
+body h1 {
+  font-family: "Playfair Display", times-new-roman, serif;
+  color: #E9C9C5;
+}
+h1 {
+  font-family: "Playfair Display", times-new-roman, serif;
+  font-size: 250%;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", times-new-roman, serif;
+  color: #2D2C27;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+.profilePic {
+  max-width: 250px;
+  border-radius: 200px;
+  border: none;
+  float: right;
+  margin-top: -80px;
+  margin-right: 100px;
+  border-radius: 50%;
+  box-shadow: 0 5px 8px 0 rgba(96, 77, 83, 1);
+}
+p {
+  font-family: "Playfair Display", arial, sans-serif;
+  font-size: 22px;
+  color: #463F3A;
+  line-height: 1.8;
+}
+main {
+  max-width: 960px;
+  background-color: #E9C9C5;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 15px 15px 20px rgba(214, 180, 180, 0.2);
+}
+header {
+  max-width: 960px;
+  background-color: #A8726A;
+  padding-left: 15px;
+  font-size: 40px;
+  border-radius: 0 0 20px 20px;
+}
+.textlink {
+  color: #2D2C27;
+  padding: 2px;
+}
+li a:hover {
+  color: #E9C9C5;
+  background-color: #2D2C27;
+}
+.footerlink {
+  color: #2D2C27;
+  padding: 2px;
+}
+footer a:hover {
+  color: #E9C9C5;
+  background-color: #2D2C27;
+}
+.nameTitle {
+  text-align: left;
+  padding: 15px;
+}
+.assignmentlist {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+.assignmentheader {
+  border-bottom: 2px solid #2D2C27;
+}
+footer {
+  background-color: #A8726A;
+  border-radius: 20px 20px 0 0;
+  padding-left: 40px;
+  padding: 15px;
+  margin-bottom: -20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+  .profilePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    width: 75%;
+  }
+  header,
+  footer {
+    border-radius: 0px;
+  }
+  .nameTitle {
+    font-size: 100%;
+    padding: 30px;
+    bottom-margin: 50px;
+  }
+}
+
+/*/* CSS HEX 
 --black-shadows: #d5c5c8ff;
 --quick-silver: #9da3a4ff;
 --dark-liver: #604d53ff;
@@ -7,7 +128,7 @@
 --pale-pink: #e9c9c5ff;
 --silver-pink: #d6b4b4ff;
 
-/* CSS HSL */
+/* CSS HSL 
 --black-shadows: hsla(349, 16%, 80%, 1);
 --quick-silver: hsla(189, 4%, 63%, 1);
 --dark-liver: hsla(341, 11%, 34%, 1);
@@ -16,7 +137,7 @@
 --pale-pink: hsla(7, 45%, 84%, 1);
 --silver-pink: hsla(0, 29%, 77%, 1);
 
-/* SCSS HEX */
+/* SCSS HEX 
 $black-shadows: #d5c5c8ff;
 $quick-silver: #9da3a4ff;
 $dark-liver: #604d53ff;
@@ -25,7 +146,7 @@ $jet: #2d2c27ff;
 $pale-pink: #e9c9c5ff;
 $silver-pink: #d6b4b4ff;
 
-/* SCSS HSL */
+/* SCSS HSL 
 $black-shadows: hsla(349, 16%, 80%, 1);
 $quick-silver: hsla(189, 4%, 63%, 1);
 $dark-liver: hsla(341, 11%, 34%, 1);
@@ -34,7 +155,7 @@ $jet: hsla(50, 7%, 16%, 1);
 $pale-pink: hsla(7, 45%, 84%, 1);
 $silver-pink: hsla(0, 29%, 77%, 1);
 
-/* SCSS RGB */
+/* SCSS RGB 
 $black-shadows: rgba(213, 197, 200, 1);
 $quick-silver: rgba(157, 163, 164, 1);
 $dark-liver: rgba(96, 77, 83, 1);
@@ -43,23 +164,95 @@ $jet: rgba(45, 44, 39, 1);
 $pale-pink: rgba(233, 201, 197, 1);
 $silver-pink: rgba(214, 180, 180, 1);
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-right: linear-gradient(90deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-bottom: linear-gradient(180deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-left: linear-gradient(270deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-top-right: linear-gradient(45deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-bottom-right: linear-gradient(135deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-top-left: linear-gradient(225deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-bottom-left: linear-gradient(315deg, #d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-$gradient-radial: radial-gradient(#d5c5c8ff, #9da3a4ff, #604d53ff, #a8726aff, #2d2c27ff, #e9c9c5ff, #d6b4b4ff);
-    
-        images{
-            size= 100%;
-        }
-        .profilePic{
-            max-width: 200px;
-            border-radius: 200px; 
-            border: none;
-        }
-    
+/* SCSS Gradient 
+$gradient-top: linear-gradient(
+  0deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-right: linear-gradient(
+  90deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-bottom: linear-gradient(
+  180deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-left: linear-gradient(
+  270deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-top-right: linear-gradient(
+  45deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-bottom-right: linear-gradient(
+  135deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-top-left: linear-gradient(
+  225deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-bottom-left: linear-gradient(
+  315deg,
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+$gradient-radial: radial-gradient(
+  #d5c5c8ff,
+  #9da3a4ff,
+  #604d53ff,
+  #a8726aff,
+  #2d2c27ff,
+  #e9c9c5ff,
+  #d6b4b4ff
+);
+
+*/
