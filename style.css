@@ -88,7 +88,6 @@ footer a:hover {
   background-color: #2d2c27;
 }
 .nameTitle {
-  z-index: 1;
   text-align: left;
   margin-left: 30px;
   margin-bottom: -20px;
@@ -97,9 +96,8 @@ footer a:hover {
   font-size: 100px;
 }
 .todayDate {
-  z-index: 0;
   font-size: 15px;
-  font-color: #2d2c27;
+  font-color: #e9c9c5;
   margin: 40px;
 }
 .assignmentheader {
