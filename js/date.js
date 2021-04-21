@@ -1,8 +1,8 @@
 //tolocaleDateString
 
 const today = new Date();
-const date = today.getFullYear();
-document.getElementById("currentYear").innerHTML = "© " + date;
+const year = today.getFullYear();
+document.getElementById("currentYear").innerHTML = "© " + year;
 const months = [
   "January",
   "February",
@@ -17,7 +17,32 @@ const months = [
   "november",
   "December"
 ];
-const thisDay =
-  months[today.getMonth()] + " " + today.getDay() + ", " + today.getFullYear();
+/*const days = [
+  "Sunday",
+  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const thisDay = `${days[today.getDay()]},
+   ${months[today.getMonth()]} ${today.getDay(2)}, ${today.getFullYear()} `;
+/*const thisDay =
+  months[today.getMonth()] + " " + today.getDay() + ", " + today.getFullYear();*/
 
-document.getElementById("thisDay").innerHTML = thisDay;
+let string = document.lastModified;
+let oLastModif = new Date(document.lastModified);
+let nLastModif = Date.parse(document.lastModified);
+
+if (
+  Date.parse(document.lastModified) >
+  parseFloat(
+    document.cookie.replace(
+      /(?:(?:^|.*;)\s*last_modif\s*\=\s*([^;]*).*$)|^.*$/,
+      "$1"
+    ) || "0"
+  )
+) {
+  document.cookie =
+    "last_modif=" +
+    Date.now() +
+    "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=" +
+    location.pathname;
+}
+
+document.getElementById("thisUpdate").innerHTML = string;
