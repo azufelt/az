@@ -1,8 +1,12 @@
-//tolocaleDateString
-
-const today = new Date();
-const year = today.getFullYear();
-document.getElementById("currentYear").innerHTML = "© " + year;
+const daynames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
 const months = [
   "January",
   "February",
@@ -17,13 +21,19 @@ const months = [
   "november",
   "December"
 ];
-/*const days = [
-  "Sunday",
-  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const thisDay = `${days[today.getDay()]},
-   ${months[today.getMonth()]} ${today.getDay(2)}, ${today.getFullYear()} `;
+const today = new Date();
+const dayOfWeek = daynames[today.getDay()];
+const month = months[today.getMonth()];
+const year = today.getFullYear();
+
+const thisDay = `${daynames[today.getDay()]},
+   ${month} ${today.getDate()}, ${today.getFullYear()} `;
 /*const thisDay =
   months[today.getMonth()] + " " + today.getDay() + ", " + today.getFullYear();*/
+document.getElementById("currentYear").innerHTML = "© " + year;
+document.getElementById("currentDate").innerHTML = thisDay;
+
+
 
 let string = document.lastModified;
 let oLastModif = new Date(document.lastModified);
