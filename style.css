@@ -40,7 +40,7 @@ img {
   object-fit: cover;
   max-width: 100%;
 }
-.profilePic {
+.profilepic {
   max-width: 250px;
   border-radius: 200px;
   border: none;
@@ -86,7 +86,7 @@ footer a:hover {
   color: #e9c9c5;
   background-color: #2d2c27;
 }
-.nameTitle {
+.nametitle {
   text-align: left;
   margin-left: 30px;
   margin-bottom: -20px;
@@ -94,7 +94,7 @@ footer a:hover {
   padding-left: 15px;
   font-size: 100px;
 }
-.todayDate {
+.todaydate {
   font-size: 15px;
   font-color: #e9c9c5;
   margin: 40px;
@@ -119,7 +119,7 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-  .profilePic {
+  .profilepic {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -130,7 +130,7 @@ footer {
   footer {
     border-radius: 0px;
   }
-  .nameTitle {
+  .nametitle {
     font-size: 170%;
     padding-left: 30px;
     margin: 15px;
@@ -140,7 +140,7 @@ footer {
   header {
     padding-bottom: 20px;
   }
-  .todayDate {
+  .todaydate {
     display: none;
   }
   .assignmentheader {
