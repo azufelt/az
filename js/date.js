@@ -30,8 +30,8 @@ const thisDay = `${daynames[today.getDay()]},
    ${month} ${today.getDate()}, ${today.getFullYear()} `;
 /*const thisDay =
   months[today.getMonth()] + " " + today.getDay() + ", " + today.getFullYear();*/
-document.getElementById("currentYear").innerHTML = "© " + year;
-document.getElementById("currentDate").innerHTML = thisDay;
+document.getElementById("currentyear").innerHTML = "© " + year;
+document.getElementById("currentdate").innerHTML = thisDay;
 
 
 
@@ -55,4 +55,4 @@ if (
     location.pathname;
 }
 
-document.getElementById("thisUpdate").innerHTML = string;
+document.getElementById("thisupdate").innerHTML = string;
