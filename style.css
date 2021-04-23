@@ -34,6 +34,7 @@ h6 {
 p {
   font-family: "Playfair Display", arial, sans-serif;
   font-size: 22px;
+  font-family: "Montserrat", arial, sans-serif;
   color: #463f3a;
   line-height: 2rem;
 }
@@ -101,6 +102,16 @@ footer {
   margin-bottom: -1rem;
   font-size: 18px;
   text-align: center;
+}
+
+.wk2grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+}
+.subgrid1 {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 @media only screen and (max-width: 600px) {

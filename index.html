@@ -41,7 +41,7 @@
         </ul>
       </div>
       <footer>
-        <span id="currentyear"></span>
+        &copy;<span id="currentyear"></span>
         | Ashley Zufelt | Georgia, USA |
         <a class="footerlink" href="https://www.byui.edu/online" target="_blank"
           >BYUI Online Learning</a
@@ -50,6 +50,13 @@
         Last Updated
         <span id="thisupdate"></span>
       </footer>
+      <script>
+        //tolocaldatestring
+        const date = new Date();
+        document.querySelector("#currentdate").innerHTML = date.toDateString();
+        document.querySelector("#currentyear").innerHTML = date.getFullYear();
+        document.querySelector("#thisupdate").innerHTML = document.lastModified;
+      </script>
     </main>
   </body>
 </html>
