@@ -25,13 +25,6 @@ h6 {
   font-family: "Playfair Display", times-new-roman, serif;
   color: #2d2c27;
 }
-.profilepic {
-  max-width: 60%;
-  float: right;
-  margin: 6rem 4rem 0 auto;
-  border-radius: 50%;
-  box-shadow: 0 0.25rem 0.5rem 0 rgba(96, 77, 83, 1);
-}
 p {
   font-family: "Playfair Display", arial, sans-serif;
   font-size: 22px;
@@ -40,6 +33,9 @@ p {
   line-height: 2rem;
 }
 main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
   max-width: 950px;
   background-color: #e9c9c5;
   padding-bottom: 1rem;
@@ -52,19 +48,6 @@ header {
   background-color: #9da3a4ff;
   border-radius: 1rem;
   padding-bottom: 0.5rem;
-}
-li {
-  margin: 1rem;
-  font-size: 1.2rem;
-}
-.textlink {
-  color: #2d2c27;
-}
-li a:hover {
-  color: #e9c9c5;
-  background-color: #2d2c27;
-  border-radius: 0.5rem;
-  padding: 0.3rem;
 }
 .footerlink {
   color: #2d2c27;
@@ -87,15 +70,6 @@ footer a:hover {
   color: black;
   margin-left: 2.5rem;
 }
-.assignmentheader {
-  margin: 6rem 2rem 0 2rem;
-  border-bottom: 0.15rem solid #2d2c27;
-}
-.assignmentlist {
-  margin-top: 4.5rem;
-  margin-left: 2.5rem;
-  margin-bottom: 2rem;
-}
 footer {
   background-color: #9da3a4ff;
   border-radius: 1rem;
@@ -105,11 +79,6 @@ footer {
   text-align: center;
 }
 
-.wk2grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-}
 .subgrid1 {
   grid-column: 1;
   grid-row: 1;
