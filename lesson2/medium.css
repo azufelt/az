@@ -1,11 +1,9 @@
 @media only screen and (min-width: 40em) {
-  html {
-    font-size: 16px;
-  }
   html main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
+    grid-column-gap: 1rem;
     padding: 0.15rem;
     margin: 0 auto;
   }
@@ -13,26 +11,32 @@
     max-width: none;
   }
   header h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   h2 {
     font-size: 2rem;
     padding: 1rem;
     text-align: left;
   }
-  .shadow {
-    padding: 1.5rem;
-  }
-  .img {
-    width: 100%;
-    box-shadow: 0 0.5rem 0.5rem 0 rgb(93, 94, 95);
+  .bizpic {
+    object-fit: contain;
+    box-shadow: 0 0.5rem 0.5rem 0 rgb(164, 165, 165);
     border-radius: 0.75rem;
+    padding: 0.05rem;
   }
-  p.company {
-    font-size: 1.4rem;
+  .company {
+    font-size: 1.1rem;
     text-align: right;
+  }
+  .paragraph {
+    text-align: left;
   }
   footer {
     padding: 1.5rem;
+  }
+  .namedate {
+    text-align: right;
+    float: right;
+    margin-top: -2.2rem;
   }
 }
