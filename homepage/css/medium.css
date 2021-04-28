@@ -1,17 +1,22 @@
 @media only screen and (min-width: 28.9em) {
+  html {
+    font-size: 18px;
+  }
   .profilepic {
     float: right;
-    margin: 6rem 4rem 0 auto;
+    margin: 4rem 4rem auto;
   }
-  body (
+  body {
     text-align: left;
-  ) h1 {
-    font-size: 5rem;
+  }
+
+  h1 {
+    font-size: 6rem;
     text-align: left;
     padding: 1rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main {
     border-radius: 1rem;
