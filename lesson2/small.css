@@ -1,0 +1,70 @@
+/* CSS HEX */
+--gunmetal: #1b313bff;
+--cultured: #f4f5f5ff;
+--old-rose: #c78283ff;
+--lavender-blush: #f2e3e3ff;
+--jet: #333533ff;
+--davys-grey: #464746ff;
+--cultured: #f5f5f5ff;
+
+html {
+  font-size: 16px;
+  color: #333533ff;
+  line-height: 2rem;
+  min-width: 20rem;
+}
+body {
+  background-color: white;
+  font-family: "Raleway", arial, sans-serif;
+  padding: 0.227rem 1.136rem;
+  margin: 0 auto;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", times-new-roman, serif;
+  color: #2d2c27;
+}
+h2 {
+  color: #f5f5f5ff;
+  background-color: #464746ff;
+  padding: 0.8rem;
+}
+main {
+  background-color: white;
+}
+header h1,
+footer,
+footer a {
+  color: white;
+}
+header,
+footer {
+  max-width: 100%;
+  background-color: #1b313bff;
+  padding: 0.8rem;
+}
+div {
+  background-color: #f5f5f5ff;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+}
+.logo {
+  max-width: 8rem;
+  pading: 0.5rem;
+}
+.namedate {
+  color: #f5f5f5ff;
+  background-color: #1b313bff;
+  font-size: 0.8rem;
+}
+.textlink {
+  color: #333533ff;
+}
+p {
+  padding: 1rem;
+}

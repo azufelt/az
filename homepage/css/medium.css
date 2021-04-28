@@ -1,0 +1,21 @@
+@media only screen and (min-width: 28.9em) {
+  .profilepic {
+    float: right;
+    margin: 6rem 4rem 0 auto;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: left;
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  main {
+    border-radius: 1rem;
+  }
+  header,
+  footer {
+    border-radius: 1rem;
+  }
+}

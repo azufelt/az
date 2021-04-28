@@ -8,12 +8,23 @@
 --jet: #2d2c27ff;
 --pale-pink: #e9c9c5ff;
 --silver-pink: #d6b4b4ff;*/
-
+html {
+  font-size: 18px;
+}
 body {
-  background-color: white;
   font-family: "Montserrat", arial, sans-serif;
+  background-color: white;
   padding: 0.227rem 1.136rem;
   margin: 0;
+}
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+h2 {
+  font-size: 1rem;
+  margin: 6rem;
+  border-bottom: 0.15rem solid #2d2c27;
 }
 h1,
 h2,
@@ -26,30 +37,27 @@ h6 {
 }
 .profilepic {
   max-width: 60%;
-  float: right;
-  margin: 6rem 4rem 0 auto;
   border-radius: 50%;
   box-shadow: 0 0.25rem 0.5rem 0 rgba(96, 77, 83, 1);
 }
 p {
-  font-family: "Playfair Display", arial, sans-serif;
-  font-size: 22px;
-  font-family: "Montserrat", arial, sans-serif;
   color: #463f3a;
   line-height: 2rem;
 }
 main {
-  max-width: 950px;
   background-color: #e9c9c5;
   padding-bottom: 1rem;
-  margin: 0 auto;
-  border-radius: 1rem;
   box-shadow: 0.682rem 0.682rem 0.909rem rgba(214, 180, 180, 0.2);
+}
+header,
+nav,
+footer,
+main {
+  margin: 0 auto;
 }
 header {
   max-width: 100%;
   background-color: #9da3a4ff;
-  border-radius: 1rem;
   padding-bottom: 0.5rem;
 }
 li {
@@ -75,21 +83,12 @@ footer a:hover {
   border-radius: 0.5rem;
   padding: 0.3rem;
 }
-.nametitle {
-  text-align: left;
-  margin-left: 1.5rem;
-  padding: 1rem;
-  font-size: 5rem;
-}
 .todaydate {
   font-size: 1rem;
   color: black;
   margin-left: 2.5rem;
 }
-.assignmentheader {
-  margin: 6rem 2rem 0 2rem;
-  border-bottom: 0.15rem solid #2d2c27;
-}
+
 .assignmentlist {
   margin-top: 4.5rem;
   margin-left: 2.5rem;
@@ -97,15 +96,14 @@ footer a:hover {
 }
 footer {
   background-color: #9da3a4ff;
-  border-radius: 1rem;
   padding: 1rem;
   margin-bottom: -1rem;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
-  .profilepic {
+/*@media only screen and (max-width: 600px) {
+  /* .profilepic {
     display: inline-block;
     justify-self: center;
     margin: 1rem 4rem 0rem 1rem;
@@ -142,8 +140,7 @@ footer {
     font-size: smaller;
   }
 }
-
-/*/* CSS HEX 
+/* CSS HEX 
 --black-shadows: #d5c5c8ff;
 --quick-silver: #9da3a4ff;
 --dark-liver: #604d53ff;

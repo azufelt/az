@@ -1,0 +1,51 @@
+@media only screen and (min-width: 40em) {
+  html {
+    font-size: 16px;
+  }
+  html main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 0.15rem;
+    margin: 0 auto;
+  }
+  .logo {
+    max-width: none;
+    pading: 0.5rem;
+  }
+  header h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: left;
+  }
+  /*.subgrid1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .subgrid2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .subgrid3 {
+    grid-column: 1;
+    grid-row: 2;
+  }*/
+  .shadow {
+    padding: 1.5rem;
+  }
+  .img {
+    width: 100%;
+    box-shadow: 0 0.5rem 0.5rem 0 rgb(93, 94, 95);
+    border-radius: 0.75rem;
+  }
+  p.company {
+    font-size: 1.4rem;
+    text-align: right;
+  }
+  footer {
+    padding: 1.5rem;
+  }
+}
