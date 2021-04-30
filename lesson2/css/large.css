@@ -13,4 +13,10 @@
     max-width: 70rem;
     margin: 0 auto;
   }
+  .namedate {
+    float: right;
+    margin-top: -3rem;
+    line-height: 1rem;
+    text-align: right;
+  }
 }
