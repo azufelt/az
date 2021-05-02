@@ -58,12 +58,16 @@ div {
   background-color: #1b313bff; /*gunmetal*/
   font-size: 0.8rem;
 }
-.textlink:before {
+a {
   text-decoration: none;
-  color: #333533ff; /*jet*/
 }
-.textlink:visited {
+p a:before {
   text-decoration: none;
+  color: #1b313bff;
+}
+p a:visited {
+  text-decoration: none;
+  color: #1b313bff;
   color: #1b313bff;
 }
 p {

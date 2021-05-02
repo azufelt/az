@@ -1,0 +1,16 @@
+@media only screen and (min-width: 75rem) {
+  html main {
+    padding: 0.15rem;
+  }
+
+  .maingrid {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .namedate {
+    float: right;
+    margin-top: -3rem;
+    line-height: 1rem;
+    text-align: right;
+  }
+}

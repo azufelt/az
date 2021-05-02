@@ -1,0 +1,136 @@
+/* CSS HEX */
+--rich-black-fogra-29: #01161eff;
+--midnight-green-eagle-green: #124559ff;
+--teal-blue: #598392ff;
+--silver-chalice: #a6aeb0ff;
+--isabelline: #ededebff;
+--gamboge: #de9c21ff;
+--international-orange-engineering: #b52615ff;
+
+html {
+  font-size: 16px;
+  color: #01161eff; /*jet*/
+  line-height: 2rem;
+}
+body {
+  background-color: #ededebff;
+  margin: 0 auto;
+  text-align: center;
+}
+main {
+  background-color: #ededebff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", arial, sans-serif;
+  color: #ededebff); 
+}
+h2 {
+  color: #f5f5f5ff;
+  background-color: #124559ff; 
+  padding: 0.8rem;
+}
+header h1,
+footer,
+footer a {
+  color: white;
+}
+header,
+footer {
+  font-family: "Heebo", arial, sans-serif;
+  max-width: 100%;
+  background-color: #598392ff; 
+  padding: 0.8rem;
+}
+div {
+  background-color: #f5f5f5ff; 
+  margin-bottom: 4rem;
+}
+.pic {
+  max-width: 70%;
+}
+.logo {
+  max-width: 8rem;
+}
+.namedate {
+  color: #01161eff; /*cultured*/
+  background-color: #598392ff; /*gunmetal*/
+  font-size: 1.2rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+nav li {
+  display: inline;
+  grid-template-columns: auto;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+nav a:hover {
+  background-color: #de9c21ff;
+  border-radius: 2rem;
+}
+a {
+  font-family: "heebo", Arial, sans-serif;
+  text-decoration: none;
+}
+p a:before {
+  text-decoration: none;
+  color: #1b313bff;
+}
+p a:visited {
+  text-decoration: none;
+  color: #1b313bff;
+  color: #1b313bff;
+}
+p {
+  font-family: "Heebo", arial, sans-serif;
+  font-size: 1rem;
+  padding: 1.5rem;
+}
+.dropletter {
+  font-family: "Cormorant Garamond", times-new-roman, serif;
+  font-size: 3rem;
+}
+.paragraphstyle {
+  color: #01161eff;
+  background-color: #a6aeb0ff;
+  margin: 3rem;
+  padding: 1rem;
+}
+.siteplannav {
+  background-color: #598392ff;
+  margin: .5rem;
+  padding: 1rem;
+}
+.colortable {
+  background-color: #a6aeb0ff;
+  font-size: 1.5rem;
+}
+.primary {
+  background-color: #598392ff;
+  padding: .5rem;
+}
+.secondary {
+  background-color: #ededebff;
+  padding: .5rem;
+}
+.accent1 {
+  color: #ededebff;
+  background-color: #124559ff;
+  padding: .5rem;
+}
+.accent2 {
+  background-color: #de9c21ff;
+  padding: .5rem;
+}
+.textlink {
+  color: #124559ff;
+  font-size: 2rem;
+}
