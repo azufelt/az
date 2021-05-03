@@ -10,7 +10,6 @@
 html {
   font-size: 16px;
   color: #01161eff; /*jet*/
-  line-height: 2.5rem;
 }
 body {
   background-color: #ededebff;
@@ -51,7 +50,7 @@ div {
   background-color: #f5f5f5ff;
   margin-bottom: 4rem;
 }
-.pic {
+img {
   max-width: 70%;
 }
 .logo {
@@ -72,6 +71,11 @@ nav li {
   margin: 1rem;
   font-size: 1.5rem;
 }
+ul {
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0;
+}
 nav a:hover {
   background-color: #de9c21ff;
   border-radius: 2rem;
@@ -80,27 +84,20 @@ a {
   font-family: "Heebo", arial, sans-serif;
   text-decoration: none;
 }
-p a {
-  color: red;
+p a:visited {
+  color: #de9c21ff;
 }
 p a:before {
   color: #1b313bff;
 }
-p a:visited {
-  color: #de9c21ff;
-}
 p {
   font-family: "Heebo", arial, sans-serif;
   font-size: 1rem;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-top: 0.2rem;
+  line-height: 1.5rem;
 }
-.dropletter {
-  font-family: "Work Sans", arial, sans-serif;
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #598392ff;
-  padding: 0.2rem;
-}
+
 .paragraphstyle {
   color: #01161eff;
   background-color: #a6aeb0ff;
@@ -108,32 +105,7 @@ p {
   padding-right: 1rem;
 }
 .siteplannav {
-  background-color: #598392ff;
+  background-color: #598392;
   margin: 2rem;
-  padding: 1rem;
-}
-
-/*Elements for Color Table*/
-.colortable {
-  justify-self: center;
-  background-color: #a6aeb0ff;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
-.primary {
-  background-color: #598392ff;
-  padding: 0.5rem;
-}
-.secondary {
-  background-color: #ededebff;
-  padding: 0.5rem;
-}
-.accent1 {
-  color: #ededebff;
-  background-color: #124559ff;
-  padding: 0.5rem;
-}
-.accent2 {
-  background-color: #de9c21ff;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }

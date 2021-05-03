@@ -3,8 +3,18 @@
     padding: 0.15rem;
   }
 
-  .maingrid {
-    max-width: 60rem;
+  .threegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  .fourgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    max-width: 80rem;
     margin: 0 auto;
   }
   .namedate {
