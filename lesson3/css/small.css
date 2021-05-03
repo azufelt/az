@@ -10,16 +10,14 @@
 html {
   font-size: 16px;
   color: #01161eff; /*jet*/
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 body {
   background-color: #ededebff;
   margin: 0 auto;
   text-align: center;
 }
-main {
-  background-color: #ededebff;
-}
+
 h1,
 h2,
 h3,
@@ -27,13 +25,16 @@ h4,
 h5,
 h6 {
   font-family: "Work Sans", arial, sans-serif;
-  color: #ededebff); 
+  color: #124559ff;
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
 }
 h2 {
   color: #f5f5f5ff;
-  background-color: #124559ff; 
+  background-color: #124559ff;
   padding: 0.8rem;
 }
+
 header h1,
 footer,
 footer a {
@@ -43,11 +44,11 @@ header,
 footer {
   font-family: "Heebo", arial, sans-serif;
   max-width: 100%;
-  background-color: #598392ff; 
+  background-color: #598392ff;
   padding: 0.8rem;
 }
 div {
-  background-color: #f5f5f5ff; 
+  background-color: #f5f5f5ff;
   margin-bottom: 4rem;
 }
 .pic {
@@ -57,19 +58,18 @@ div {
   max-width: 8rem;
 }
 .namedate {
-  color: #01161eff; /*cultured*/
-  background-color: #598392ff; /*gunmetal*/
+  color: #01161eff;
   font-size: 1.2rem;
 }
 nav a {
-  color: white;
+  color: #f5f5f5ff;
   text-decoration: none;
-  padding: 0.8rem;
+
+  padding: 0 2rem 0 2rem;
 }
 nav li {
-  display: inline;
-  grid-template-columns: auto;
-  margin: 1.5rem;
+  display: block;
+  margin: 1rem;
   font-size: 1.5rem;
 }
 nav a:hover {
@@ -77,60 +77,63 @@ nav a:hover {
   border-radius: 2rem;
 }
 a {
-  font-family: "heebo", Arial, sans-serif;
+  font-family: "Heebo", arial, sans-serif;
   text-decoration: none;
 }
+p a {
+  color: red;
+}
 p a:before {
-  text-decoration: none;
   color: #1b313bff;
 }
 p a:visited {
-  text-decoration: none;
-  color: #1b313bff;
-  color: #1b313bff;
+  color: #de9c21ff;
 }
 p {
   font-family: "Heebo", arial, sans-serif;
   font-size: 1rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 .dropletter {
-  font-family: "Cormorant Garamond", times-new-roman, serif;
-  font-size: 3rem;
+  font-family: "Work Sans", arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #598392ff;
+  padding: 0.2rem;
 }
 .paragraphstyle {
   color: #01161eff;
   background-color: #a6aeb0ff;
-  margin: 3rem;
-  padding: 1rem;
+  margin: 1.5rem;
+  padding-right: 1rem;
 }
 .siteplannav {
   background-color: #598392ff;
-  margin: .5rem;
+  margin: 2rem;
   padding: 1rem;
 }
+
+/*Elements for Color Table*/
 .colortable {
+  justify-self: center;
   background-color: #a6aeb0ff;
   font-size: 1.5rem;
+  padding: 0.5rem;
 }
 .primary {
   background-color: #598392ff;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .secondary {
   background-color: #ededebff;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .accent1 {
   color: #ededebff;
   background-color: #124559ff;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .accent2 {
   background-color: #de9c21ff;
-  padding: .5rem;
-}
-.textlink {
-  color: #124559ff;
-  font-size: 2rem;
+  padding: 0.5rem;
 }
