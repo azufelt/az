@@ -43,8 +43,13 @@ header,
 footer {
   font-family: "Heebo", arial, sans-serif;
   max-width: 100%;
-  background-color: #598392ff;
   padding: 0.8rem;
+}
+header {
+  background-color: #598392ff;
+}
+footer {
+  background-color: #124559ff;
 }
 div {
   background-color: #f5f5f5ff;
@@ -53,11 +58,14 @@ div {
 img {
   max-width: 70%;
 }
+.profile {
+  border: 3px solid #01161eff;
+}
 .logo {
   max-width: 8rem;
 }
 .namedate {
-  color: #01161eff;
+  color: black;
   font-size: 1.2rem;
 }
 nav a {
