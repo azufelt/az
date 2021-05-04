@@ -64,6 +64,7 @@ img {
 .logo {
   max-width: 8rem;
 }
+
 .namedate {
   color: black;
   font-size: 0.8rem;
@@ -90,18 +91,17 @@ nav a:hover {
 }
 a {
   font-family: "Heebo", arial, sans-serif;
+  font-size: 1.2rem;
   text-decoration: none;
+  color: #1b313bff;
 }
 p a:visited {
   color: #de9c21ff;
 }
-p a:before {
-  color: #1b313bff;
-}
 p {
   font-family: "Heebo", arial, sans-serif;
   font-size: 1rem;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
   margin-top: 0.2rem;
   line-height: 1.5rem;
 }
