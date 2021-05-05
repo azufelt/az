@@ -4,22 +4,28 @@
   }
   nav {
     max-width: 55rem;
-    margin: 0 auto;
   }
-  .threegrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-  }
+  .threegrid,
   .fourgrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
   }
-  .fourgrid,
   .threegrid {
-    max-width: 80rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .fourgrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  nav,
+  .fourgrid,
+  .threegrid,
+  #target {
     margin: 0 auto;
+  }
+  .fourgrid,
+  .threegrid,
+  #target {
+    max-width: 80rem;
   }
   .namedate {
     float: right;
@@ -27,9 +33,5 @@
     margin-top: -3rem;
     line-height: 1.2rem;
     text-align: right;
-  }
-  #target {
-    max-width: 80rem;
-    margin: 0 auto;
   }
 }
