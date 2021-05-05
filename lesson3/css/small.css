@@ -48,8 +48,7 @@ div {
 img {
   max-width: 70%;
 }
-.profile,
-.white {
+.profile {
   border: 0.2rem solid #01161eff;
 }
 .logo {
@@ -110,6 +109,9 @@ header,
 .white,
 body {
   background-color: #ededebff;
+}
+.white {
+  border: 0.1rem solid #01161eff;
 }
 .darkblue,
 h2,
