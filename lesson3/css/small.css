@@ -1,11 +1,11 @@
-/* CSS HEX */
+/* CSS HEX 
 --rich-black-fogra-29: #01161eff;
 --midnight-green-eagle-green: #124559ff;
 --teal-blue: #598392ff;
 --silver-chalice: #a6aeb0ff;
 --isabelline: #ededebff;
 --gamboge: #de9c21ff;
---international-orange-engineering: #b52615ff;
+--international-orange-engineering: #b52615ff;*/
 
 html {
   font-size: 16px;
@@ -16,7 +16,6 @@ body {
   margin: 0 auto;
   text-align: center;
 }
-
 h1,
 h2,
 h3,
@@ -81,12 +80,6 @@ nav li a {
   text-decoration: none;
   padding: 0.75rem;
 }
-/*nav li {
-  display: block;
-  padding: 0.75rem;
-  font-size: 1.5rem;
-}*/
-
 nav a:hover {
   background-color: #de9c21ff;
   border-radius: 2rem;
@@ -107,7 +100,6 @@ p {
   margin-top: 0.2rem;
   line-height: 1.5rem;
 }
-
 .paragraphstyle {
   color: #01161eff;
   background-color: #a6aeb0ff;
