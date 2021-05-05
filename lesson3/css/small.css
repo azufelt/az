@@ -127,6 +127,9 @@ html {
 nav a:hover {
   background-color: #de9c21ff;
 }
+div a:hover {
+  background-color: #ededebff;
+}
 .black,
 h2,
 .darkblue,
