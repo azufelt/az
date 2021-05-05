@@ -1,6 +1,6 @@
 const date = new Date();
 const options = {
-      weekday: "long",
+      weekday: "long"
       month: "long",
       day: "numeric",
       year: "numeric",
