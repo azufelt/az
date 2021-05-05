@@ -83,7 +83,6 @@ nav ul {
 nav li a {
   display: block;
   color: #f5f5f5ff;
-  text-decoration: none;
   padding: 0.75rem;
 }
 nav a:hover {
