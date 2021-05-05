@@ -2,18 +2,22 @@
   html main {
     padding: 0.15rem;
   }
-
+  nav {
+    max-width: 55rem;
+    margin: 0 auto;
+  }
   .threegrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    max-width: 80rem;
-    margin: 0 auto;
   }
   .fourgrid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+  }
+  .fourgrid,
+  .threegrid {
     max-width: 80rem;
     margin: 0 auto;
   }
@@ -23,5 +27,9 @@
     margin-top: -3rem;
     line-height: 1.2rem;
     text-align: right;
+  }
+  #target {
+    max-width: 80rem;
+    margin: 0 auto;
   }
 }

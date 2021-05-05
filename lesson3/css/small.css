@@ -9,7 +9,7 @@
 
 html {
   font-size: 16px;
-  color: #01161eff; /*jet*/
+  color: #01161eff;
 }
 body {
   background-color: #ededebff;
@@ -40,9 +40,14 @@ footer a {
 }
 header,
 footer {
-  font-family: "Heebo", arial, sans-serif;
   max-width: 100%;
   padding: 0.8rem;
+}
+header,
+footer,
+a,
+p {
+  font-family: "Heebo", arial, sans-serif;
 }
 header {
   background-color: #598392ff;
@@ -58,7 +63,7 @@ img {
   max-width: 70%;
 }
 .profile {
-  border: 3px solid #01161eff;
+  border: 0.2rem solid #01161eff;
 }
 .logo {
   max-width: 8rem;
@@ -72,7 +77,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  over-flow: hidden;
+  overflow: hidden;
 }
 nav li a {
   display: block;
@@ -85,7 +90,6 @@ nav a:hover {
   border-radius: 2rem;
 }
 a {
-  font-family: "Heebo", arial, sans-serif;
   font-size: 1.2rem;
   text-decoration: none;
   color: #1b313bff;
@@ -94,7 +98,6 @@ p a:visited {
   color: #de9c21ff;
 }
 p {
-  font-family: "Heebo", arial, sans-serif;
   font-size: 1rem;
   padding: 0.1rem 1.5rem 0.1rem 1.5rem;
   margin-top: 0.2rem;
@@ -107,7 +110,6 @@ p {
   padding-right: 1rem;
 }
 .siteplannav {
-  background-color: #598392;
   margin: 2rem;
   padding: 0.2rem;
 }
@@ -117,29 +119,33 @@ ol {
 }
 .teal {
   border: #01161eff;
-  padding: 0.1rem;
 }
-.tealblock {
+.tealblock,
+.siteplannav {
   background-color: #598392;
-  padding: 0.1rem;
 }
 .white {
   background-color: #ededebff;
   border: 2px solid #01161eff;
-  padding: 0.1rem;
 }
 .darkblue {
   color: #ededebff;
   background-color: #124559ff;
-  padding: 0.1rem;
 }
 .yellow {
   color: #01161eff;
   background-color: #de9c21ff;
-  padding: 0.1rem;
 }
 .black {
   color: #ededebff;
   background-color: #01161eff;
+}
+
+.teal,
+.tealblock,
+.white,
+.darkblue,
+.yellow,
+.black {
   padding: 0.1rem;
 }
