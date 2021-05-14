@@ -14,3 +14,6 @@ const button = document.querySelector(".ham");
 const navlist = document.querySelector(".navmenu");
 
 button.addEventListener("click",() =>{navlist.classList.toggle("responsive")}, false);
+
+const headerchange = document.querySelector(".header");
+button.addEventListener("click", () =>{headerchange.classList.toggle("responsive")}, false);
