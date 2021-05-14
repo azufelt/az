@@ -39,7 +39,6 @@ header h2 {
 .header h1 {
   margin: 0;
 }
-
 .navmenu {
   list-style: none;
   padding: 0.5rem;
@@ -60,7 +59,6 @@ header h2 {
   letter-spacing: 0.2rem;
   text-align: right;
 }
-
 li a.ham {
   margin: 0 auto;
   border-radius: 4rem;
@@ -75,12 +73,9 @@ li a.ham {
 .ham:hover {
   cursor: pointer;
 }
-
 .responsive li {
   display: block;
 }
-/*below this is regular styling, not ham nav*/
-
 h1 {
   font-family: "Work Sans", arial, sans-serif;
   color: var(--white);
