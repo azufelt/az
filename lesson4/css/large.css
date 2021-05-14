@@ -1,0 +1,11 @@
+@media only screen and (min-width: 68.75rem) {
+  main,
+  footer {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .header img {
+    padding: 3rem;
+    justify-self: right;
+  }
+}

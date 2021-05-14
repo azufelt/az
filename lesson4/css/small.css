@@ -1,0 +1,111 @@
+/* CSS HSL */
+:root {
+  --black: hsla(197, 94%, 6%, 1);
+  --blue: hsla(197, 66%, 21%, 1);
+  --teal: hsla(196, 24%, 46%, 1);
+  --gray: hsla(192, 6%, 67%, 1);
+  --lightgray: hsla(192, 6%, 67%, 0.5);
+  --silver: hsla(60, 5%, 93%, 1);
+  --white: hsla(0, 0%, 96%, 1);
+  --yellow: hsla(39, 74%, 50%, 1);
+  --red: hsla(6, 79%, 40%, 1);
+}
+html {
+  font-size: 16px;
+  font-family: "Heebo", arial, sans-serif;
+  background-color: var(--silver);
+}
+
+header {
+  background-color: var(--teal);
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header img {
+  max-width: 9rem;
+  padding: 1rem;
+}
+.header .title {
+  justify-items: center;
+}
+header h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  background-color: var(--teal);
+  color: var(--black);
+}
+.header h1 {
+  margin: 0;
+}
+
+.navmenu {
+  list-style: none;
+  padding: 0.5rem;
+}
+.navmenu li:first-child {
+  display: block;
+}
+.navmenu li {
+  display: none;
+}
+.navmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  text-align: right;
+}
+
+li a.ham {
+  margin: 0 auto;
+  border-radius: 4rem;
+  border-style: double;
+  max-width: 2.3rem;
+  font-size: 2rem;
+}
+.navmenu a:hover {
+  border-radius: 4rem;
+  background-color: var(--yellow);
+}
+.ham:hover {
+  cursor: pointer;
+}
+
+.responsive li {
+  display: block;
+}
+/*below this is regular styling, not ham nav*/
+
+h1 {
+  font-family: "Work Sans", arial, sans-serif;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  background-color: var(--blue);
+  padding: 0.5rem;
+  color: var(--white);
+}
+main div {
+  border-style: dashed;
+  border-color: var(--lightgray);
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background-color: var(--white);
+}
+
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}

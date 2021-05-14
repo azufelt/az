@@ -1,0 +1,27 @@
+@media onlhy screen and (min-width: 35em) {
+  .menuicon {
+    display: hide;
+  }
+  nav button {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    flex: 1 1 100%;
+  }
+  nav ul {
+    display: flex;
+    margin-left: 2%;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    float: left;
+  }
+  nav ul li a {
+    border: none;
+    border-right: 1 px solid rgba (0, 0, 0, 0.3);
+    padding: 0.8rem, 1rem;
+  }
+}
