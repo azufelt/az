@@ -9,7 +9,7 @@
     display: block;
     flex: 1 1 100%;
   }
-.navmenu a{ 
+  .navmenu a {
     background-color: var(--teal);
     text-align: center;
   }
@@ -31,15 +31,15 @@
     font-size: 200%;
   }
   header nav {
-    border-top: .4rem solid var(--blue);
-    border-top-style:  double;
+    border-top: 0.4rem solid var(--blue);
+    border-top-style: double;
   }
-
   main,
   footer {
     max-width: 60rem;
     margin: 0 auto;
-}
-footer {
-  text-align: right;
+  }
+  footer {
+    text-align: right;
+  }
 }
