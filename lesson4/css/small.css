@@ -2,7 +2,7 @@
 :root {
   --black: hsla(197, 94%, 6%, 1);
   --blue: hsla(197, 66%, 21%, 1);
-  --teal: hsla(196, 24%, 46%, 1);
+  --teal: hsla(196, 24%, 46%);
   --gray: hsla(192, 6%, 67%, 1);
   --lightgray: hsla(192, 6%, 67%, 0.5);
   --silver: hsla(60, 5%, 93%, 1);

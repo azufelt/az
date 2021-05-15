@@ -12,6 +12,7 @@
   .navmenu a {
     background-color: var(--teal);
     text-align: center;
+    font-weight: bolder;
   }
   .header {
     display: grid;
