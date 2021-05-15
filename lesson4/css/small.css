@@ -30,12 +30,7 @@ header {
 .header .title {
   justify-items: center;
 }
-header h2 {
-  margin: 0;
-  padding: 0.5rem 0;
-  background-color: var(--teal);
-  color: var(--black);
-}
+
 .header h1 {
   margin: 0;
 }
@@ -81,7 +76,14 @@ h1 {
   color: var(--white);
   letter-spacing: 0.2rem;
 }
-h2,
+h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  background-color: var(--teal);
+  color: var(--black);
+  letter-spacing: 0.1rem;
+}
+
 h3,
 h4,
 h5,
@@ -90,7 +92,6 @@ h6 {
   padding: 0.5rem;
   color: var(--white);
   letter-spacing: 0.1rem;
-  font-weight: bold;
 }
 main div {
   border-style: dashed;
