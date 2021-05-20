@@ -54,7 +54,7 @@ header {
   letter-spacing: 0.2rem;
   text-align: right;
 }
-li a.ham {
+.navmenu a.ham {
   margin: 0 auto;
   border-radius: 4rem;
   border-style: double;
