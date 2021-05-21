@@ -1,51 +1,25 @@
-
-
   //get input from user
-  //add input to list
-  //display list to user
- 
+  //add input to list by creating a li item with delete X
+  //give delete X event listener function
+  //display list/delete X to user
 
- //const entry = document.querySelector("fav");
- //const line = document.createElement("button");
- 
+const input = document.querySelector('#fav');
+const button = document.querySelector('button');
+const output = document.querySelector('.listitem');
 
- //function chapter() {
- // newList = list.map();
-
-// }
- //function multiply(list, multiplier){
- // var newList = list.map(myFunction);
- // function myFunction(num) {
-  //    return num * multiplier;
- // }
-//return newList;  
-//}
- //X button, addEventListener, allow user to delete line item
- //when user clicks X, find list item in array
- //remove array list item
- //display new list to user
-
-const fav = document.querySelector("#fav");
-const button = document.createElement("button");
-const output = document.createElement(".list "); //wants child of whole list//
-
-button.addEventListener("click",() => {
-if (fav.value!= '') {
-  //create the elements in the list
-  let linewline = document.createElement("linewline");
-  let deletebutton = document.createElement("button");
-  //change some properties .... text content
-  linewline.textContent = fav.value;
-  deletebutton.textContent = "X";
-  //.... add the button to the li
-  linewline.append(deletebutton);
-  output.append(linewline);
-  deletebutton.addEventListener("click", function(){
-    output.removeChild(linewline);
-    fav.focus;
-  });
-  fav.value = '';
-  fav.focus;
-}
-
-});
+button.addEventListener('click', function() {
+  if (input.value != '') {
+    let li = document.createElement('li');
+    let deletebutton = document.createElement('button');
+    li.textContent = input.value;
+    deletebutton.textContent = '<span>✘</span>';
+    li.append(deletebutton);
+    output.append(li);
+    deletebutton.addEventListener('click', function() {
+      output.removeChild(li);
+      input.focus;
+    });
+    input.value = '';
+    input.focus;
+  }
+})
