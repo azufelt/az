@@ -12,7 +12,7 @@ button.addEventListener('click', function() {
     let li = document.createElement('li');
     let deletebutton = document.createElement('button');
     li.textContent = input.value;
-    deletebutton.textContent = '<span>✘</span>';
+    deletebutton.textContent = '✘';
     li.append(deletebutton);
     output.append(li);
     deletebutton.addEventListener('click', function() {

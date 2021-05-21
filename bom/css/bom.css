@@ -1,13 +1,11 @@
 /* CSS HSL */
 :root {
-  --cultured: hsla(210, 17%, 98%, 1);
+  --white: hsla(210, 17%, 98%, 1);
   --gainsboro: hsla(0, 2%, 88%, 1);
   --platinum: hsla(90, 4%, 90%, 1);
-  --silver: hsla(96, 5%, 81%, 1);
   --gray: hsla(0, 2%, 64%, 1);
-  --liver: hsla(353, 6%, 32%, 1);
+  --black: hsla(353, 6%, 32%, 1);
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +17,7 @@ body {
 }
 header {
   color: var(--liver);
-  text-shadow: 1px 1px 2px var(--cultured);
+  text-shadow: 1px 1px 2px var(--white);
   background-color: var(--gray);
   padding: 1.5rem;
   margin-top: 0;
@@ -33,12 +31,6 @@ p {
 .label {
   font-size: 1.2rem;
 }
-footer {
-  color: var(--white);
-  background-color: var(--liver);
-  margin-top: 0.5rem;
-  padding: 1rem;
-}
 main {
   display: flex;
   flex-direction: column;
@@ -47,25 +39,18 @@ main {
   font-size: 18px;
   background-color: var(--gainsboro);
 }
-
 .main {
   height: 50vh;
   margin: 0.5rem;
   border: 1px solid #999;
   padding: 1rem;
   display: grid;
-  background-color: var(--cultured);
+  background-color: var(--white);
 }
-
 input,
 button {
   padding: 0.5rem;
 }
-
-label {
-  font-size: 0.8rem;
-}
-
 .list {
   margin: 1rem;
   border: 1px solid #bbb;
@@ -73,26 +58,24 @@ label {
 ul,
 li {
   list-style: none;
-  padding: 0;
+  padding: 0.2rem 1.5rem;
   margin: 0;
+  line-height: 0.2rem;
 }
-
 li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
   border-bottom: 2px solid var(--gray);
 }
 li button {
   border: none;
-  background-color: var(--cultured);
-}
-li button span {
-  width: rem;
+  background-color: var(--white);
 }
 footer {
-  color: var(--cultured);
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1rem;
   margin: 1rem;
 }
 @media only screen and (min-width: 40em) {
