@@ -1,0 +1,46 @@
+@media only screen and (min-width: 40em) {
+  .navmenu li:first-child {
+    display: none;
+  }
+  .navmenu {
+    display: flex;
+  }
+  .navmenu li {
+    display: block;
+    flex: 1 1 100%;
+  }
+  .navmenu a {
+    background-color: var(--teal);
+    text-align: center;
+    font-weight: bolder;
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .header img {
+    grid-column: 1;
+    max-width: 14rem;
+  }
+  .header .title {
+    grid-column: 2;
+  }
+  header h1 {
+    font-size: 400%;
+  }
+  header h2 {
+    font-size: 200%;
+  }
+  header nav {
+    border-top: 0.4rem solid var(--blue);
+    border-top-style: double;
+  }
+  main,
+  footer {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  footer {
+    text-align: right;
+  }
+}

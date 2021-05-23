@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+    <meta
+      name="keywords"
+      content="preston idaho weather community forecast town news"
+    />
+    <meta
+      name="description"
+      content="weather and community news for town preston idaho"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;800;900&family=Work+Sans:wght@200;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+    <title>Preston Weather</title>
+  </head>
+  <body>
+    <aside class="banner">Farmer's Market this Saturday <br class="linebreak">Old Mill Park @ 8 a.m. </aside>
+    <header>
+      <div class="header">
+        <!-- Must span entire width of screen-->
+
+        <img
+          src="/lesson4/images/umbrella-drizzly-bear.png"
+          alt="stick drawing bear holding umbrella"
+        />
+        <div class="title">
+          <h1>The Drizzly Bear</h1>
+          <h2 class="slogan">Be Prepared. Weather or Not.</h2>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <!--Must span entire width of screen. Menu must be responsive and use Javascript to toggle between showing and not showing all menu items-->
+      <ul class="navmenu">
+        <li><a class="ham">&#9776;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class= "active">Preston </a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Limit width on medium & large view ports-->
+      <!-- Use placeholder for 4 content sections -hero image, weather summary, 5-day forecast, article-->
+      <!--Contains current weather story with image and info for ALL THREE towns-->
+      <div class="herocontainer">
+        <h2 class="townbanner">Preston, ID</h2>
+        <img
+          class="heroimg"
+          src="assets/idaho-rocky-mountains-lake-wide-hero.jpg"
+          alt="mountains reflected in lake blue sky"
+        />
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <p>
+            Currently: <span id="sun">Sunny</span><br />
+            High: <span id="hightemp">76F</span><br />
+            Wind Chill: <span id="windchill">F</span><br />
+            Humidity: <span id="humidity">69%</span><br />
+            Wind Speed: <span id="windspeed">5 mph</span><br />
+          </p>
+        </section>
+      </div>
+
+      <!-- May need to change all of these from the div mediacards to just symmantic tags OR, give classes. -->
+      <div class="forecastdiv">
+        <h2>5-day Forecast</h2>
+        <div class="forecast">
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head">Tuesday</span>
+            <img class="icon" src="assets/rain.png" alt="rain icon" />
+            <span class="data">Light Rain</span>
+          </div>
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head">Wednesday</span>
+            <img class="icon" src="assets/thunderstorm.png" alt="storm icon" />
+            <span class="data">Thunderstorms</span>
+          </div>
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head">Thursday</span>
+            <img class="icon" src="assets/windy.png" alt="windy icon" />
+            <span class="data">Windy</span>
+          </div>
+          <div class="forecast-box fiveday">
+            <span class="forecast-head">Friday</span>
+            <img class="icon" src="assets/partlysunny.png" alt="cloudy icon" />
+            <span class="data">Partly Sunny</span>
+          </div>
+          <div class="forecast-box fiveday">
+            <span class="forecast-head">Saturday</span>
+            <img class="icon" src="assets/sunny.png" alt="sun icon" />
+            <span class="data">Sunny</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mediadiv articlediv clearfix">
+        <h3>Best Star-Gazing Spots and Tips!</h3>
+        
+       
+        <img
+          class="articleimg"
+          src="assets/idaho-night-sky-stars.jpg"
+          alt="night sky stars tree silhouette"
+        />
+        <p>
+          <indent></indent>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
+          vero autem. Error rem corrupti ducimus facere accusamus, quidem
+          eligendi! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Recusandae saepe adipisci eaque non, rerum ullam illo odio quod
+          voluptatem atque vero autem. Error rem corrupti ducimus facere
+          accusamus, quidem eligendi!
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam quisquam necessitatibus error, maiores animi, fugiat eius dicta corporis blanditiis obcaecati reprehenderit illum. Inventore consequuntur amet expedita rerum natus debitis.
+        </p>
+        <button class="articlebutton" href="#">To continue reading⇢</button>
+      </div>
+    </div>
+    </main>
+  
+   
+    <footer >
+        <div class="contactdiv">
+          <img class="map" src="assets/preston-map.png" alt="map of preston"></img>
+          <section class="contact">
+            
+            <!--email icon-->
+            <p><span class= "contacticon">✉︎</span> info@thedrizzlybear.com<br>
+            
+            <!--phone icon-->
+            <span class= "contacticon">✆</span> (208)-867-5309</p>
+            <div class="socialnav">
+              <img class="socialicon" src="assets/socialbuttonfbyellow.png" href="www.facebook.com" alt="social link fb"/>
+              <img class="socialicon" src="assets/socialbuttonigsocialyellow.png" href="www.facebook.com" alt="social link ig" />
+              <img class="socialicon" src="assets/socialbuttonyoutubeyellow.png" href="www.facebook.com" alt="social link youtube"/>
+            </div>
+          </section>
+         
+  </div>
+      <div class="copyright">
+      <!-- Limit width on medium & large view ports-->
+      <!--Placeholder for contact info, display current date-->
+      <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
+      Ashley Zufelt
+    </div>
+    </footer>
+  </body>
+</html>
