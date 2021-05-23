@@ -34,7 +34,6 @@ header {
 .header .title {
   justify-items: center;
 }
-
 .header h1 {
   margin: 0;
 }
@@ -102,7 +101,6 @@ div > h2 {
   color: var(--white);
   letter-spacing: 0.1rem;
 }
-
 h3,
 h4,
 h5,
@@ -112,8 +110,6 @@ h6 {
   color: var(--white);
   letter-spacing: 0.1rem;
 }
-
-/*CSS added in week 5, make sure to delete any unused css from lst week*/
 img {
   width: 100%;
 }
@@ -140,8 +136,6 @@ main > h3 {
   padding-top: 0.5rem;
   text-align: left;
 }
-
-/*------- flexbox for forecast --------*/
 
 .forecast {
   display: flex;

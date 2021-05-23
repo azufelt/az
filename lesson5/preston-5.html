@@ -58,9 +58,6 @@
     </nav>
 
     <main>
-      <!-- Limit width on medium & large view ports-->
-      <!-- Use placeholder for 4 content sections -hero image, weather summary, 5-day forecast, article-->
-      <!--Contains current weather story with image and info for ALL THREE towns-->
       <div class="herocontainer">
         <h2 class="townbanner">Preston, ID</h2>
         <img
@@ -79,33 +76,31 @@
           </p>
         </section>
       </div>
-
-      <!-- May need to change all of these from the div mediacards to just symmantic tags OR, give classes. -->
       <div class="forecastdiv">
-        <h2>5-day Forecast</h2>
+        <h2>Weather Forecast</h2>
         <div class="forecast">
           <div class="threeday-box forecast-box">
-            <span class="forecast-head">Tuesday</span>
+            <span class="forecast-head forecastbox1"></span>
             <img class="icon" src="assets/rain.png" alt="rain icon" />
             <span class="data">Light Rain</span>
           </div>
           <div class="threeday-box forecast-box">
-            <span class="forecast-head">Wednesday</span>
+            <span class="forecast-head forecastbox2"></span>
             <img class="icon" src="assets/thunderstorm.png" alt="storm icon" />
             <span class="data">Thunderstorms</span>
           </div>
           <div class="threeday-box forecast-box">
-            <span class="forecast-head">Thursday</span>
+            <span class="forecast-head forecastbox3">Thursday</span>
             <img class="icon" src="assets/windy.png" alt="windy icon" />
             <span class="data">Windy</span>
           </div>
           <div class="forecast-box fiveday">
-            <span class="forecast-head">Friday</span>
+            <span class="forecast-head forecastbox4">Friday</span>
             <img class="icon" src="assets/partlysunny.png" alt="cloudy icon" />
             <span class="data">Partly Sunny</span>
           </div>
           <div class="forecast-box fiveday">
-            <span class="forecast-head">Saturday</span>
+            <span class="forecast-head forecastbox5">Saturday</span>
             <img class="icon" src="assets/sunny.png" alt="sun icon" />
             <span class="data">Sunny</span>
           </div>
@@ -149,16 +144,17 @@
             <!--phone icon-->
             <span class= "contacticon">✆</span> (208)-867-5309</p>
             <div class="socialnav">
-              <img class="socialicon" src="assets/socialbuttonfbyellow.png" href="www.facebook.com" alt="social link fb"/>
-              <img class="socialicon" src="assets/socialbuttonigsocialyellow.png" href="www.facebook.com" alt="social link ig" />
-              <img class="socialicon" src="assets/socialbuttonyoutubeyellow.png" href="www.facebook.com" alt="social link youtube"/>
+              <a href="#"><img class="socialicon" src="assets/socialbuttonfbyellow.png"  alt="social link fb"/></a>
+              <a href="#"><img class="socialicon" src="assets/socialbuttonigsocialyellow.png"  alt="social link ig"/></a>
+              <a href="#"> <img class="socialicon" src="assets/socialbuttonyoutubeyellow.png"  alt="social link youtube"/></a>
+              
+              
+             
             </div>
           </section>
          
   </div>
       <div class="copyright">
-      <!-- Limit width on medium & large view ports-->
-      <!--Placeholder for contact info, display current date-->
       <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
       Ashley Zufelt
     </div>
