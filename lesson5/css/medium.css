@@ -76,7 +76,6 @@
     justify-items: center;
     align-items: center;
   }
-
   .map {
     grid-column: 1;
   }
@@ -85,10 +84,6 @@
     justify-self: start;
     text-align: left;
   }
-
-  /*.socialnav {
-    max-width: 10%;
-  }*/
   .articleimg {
     float: right;
     margin: 1rem;
