@@ -26,9 +26,11 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <title>Preston Weather</title>
   </head>
   <body>
+    <aside class="banner">Farmer's Market this Saturday <br class="linebreak">Old Mill Park @ 8 a.m. </aside>
     <header>
       <div class="header">
         <!-- Must span entire width of screen-->
@@ -39,72 +41,137 @@
         />
         <div class="title">
           <h1>The Drizzly Bear</h1>
-          <h2>Be Prepared. Weather or Not.</h2>
+          <h2 class="slogan">Be Prepared. Weather or Not.</h2>
         </div>
       </div>
-      <nav>
-        <!--Must span entire width of screen. Menu must be responsive and use Javascript to toggle between showing and not showing all menu items-->
-        <ul class="navmenu">
-          <li><a class="ham">&#9776;</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Preston </a></li>
-          <li><a href="#">Soda Springs</a></li>
-          <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </nav>
     </header>
-    <img
-      class="heroimg"
-      src="assets/idaho-rocky-mountains-lake.jpg"
-      alt="mountains reflected in lake blue sky"
-    />
-    <h3>Hero Image</h3>
-    <p class="hero-text">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae saepe
-      adipisci eaque non, rerum ullam illo odio quod voluptatem atque vero
-      autem. Error rem corrupti ducimus facere accusamus, quidem eligendi!
-    </p>
-    <main>
-      <!-- Limit width on medium & large view ports-->
-      <!-- Use placeholder for 4 content sections -hero image, weather summary, 5-day forecast, article-->
-      <!--Contains current weather story with image and info for ALL THREE towns-->
+    <nav>
+      <ul class="navmenu">
+        <li><a class="ham">&#9776;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class= "active">Preston </a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
 
-      <div class="mediadiv"></div>
-      <div class="mediadiv">
-        <h3>Weather Summary</h3>
+    <main>
+      <div class="herocontainer">
+        <h2 class="townbanner">Preston, ID</h2>
+       
+        <picture  class="heroimg">
+          <source srcset="assets/wdd230_image_franklinOriginal-assets/heromed.png" media="(min-width: 500px) and (max-width:899px)">
+          <source srcset="assets/wdd230_image_franklinOriginal-assets/herolarge.png" media="(min-width:900px)">
+          <img
+          src="assets/wdd230_image_franklinOriginal-assets/herosmall.png"
+          alt="mountains reflected in lake blue sky"
+        />
+        </picture>
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <p>
+            Currently: <span id="sun">Sunny</span><br />
+            High: <span id="hightemp">76</span>°F<br />
+            Wind Chill: <span id="windchill"></span><br />
+            Humidity: <span id="humidity">69%</span><br />
+            Wind Speed: <span id="windspeed">5</span>mph<br />
+          </p>
+        </section>
+      </div>
+      <div class="forecastdiv">
+        <h2>Weather Forecast</h2>
+        <div class="forecast">
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head forecastbox1"></span>
+            <img class="icon" src="assets/rain.png" alt="rain icon" />
+            <span class="data">Light Rain</span>
+          </div>
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head forecastbox2"></span>
+            <img class="icon" src="assets/thunderstorm.png" alt="storm icon" />
+            <span class="data">Thunderstorms</span>
+          </div>
+          <div class="threeday-box forecast-box">
+            <span class="forecast-head forecastbox3">Thursday</span>
+            <img class="icon" src="assets/windy.png" alt="windy icon" />
+            <span class="data">Windy</span>
+          </div>
+          <div class="forecast-box fiveday">
+            <span class="forecast-head forecastbox4">Friday</span>
+            <img class="icon" src="assets/partlysunny.png" alt="cloudy icon" />
+            <span class="data">Partly Sunny</span>
+          </div>
+          <div class="forecast-box fiveday">
+            <span class="forecast-head forecastbox5">Saturday</span>
+            <img class="icon" src="assets/sunny.png" alt="sun icon" />
+            <span class="data">Sunny</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mediadiv articlediv clearfix">
+        <h3>Best Star-Gazing Spots and Tips!</h3>
+        
+       
+        <img
+          class="articleimg"
+          src="assets/idaho-night-sky-stars.jpg"
+          alt="night sky stars tree silhouette"
+        />
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          <indent></indent>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
           saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
           vero autem. Error rem corrupti ducimus facere accusamus, quidem
           eligendi!
         </p>
-      </div>
-      <div class="mediadiv">
-        <h3>5-day Forecast</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
-          vero autem. Error rem corrupti ducimus facere accusamus, quidem
-          eligendi!
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Recusandae saepe adipisci eaque non, rerum ullam illo odio quod
+          voluptatem atque vero autem. Error rem corrupti ducimus facere
+          accusamus, quidem eligendi!
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam quisquam necessitatibus error, maiores animi, fugiat eius dicta corporis blanditiis obcaecati reprehenderit illum. Inventore consequuntur amet expedita rerum natus debitis.
         </p>
+        <button class="articlebutton" href="#">To continue reading⇢</button>
       </div>
-      <div class="mediadiv">
-        <h3>Article for each town w/ image</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
-          vero autem. Error rem corrupti ducimus facere accusamus, quidem
-          eligendi!
-        </p>
-      </div>
+    </div>
     </main>
-    <footer>
-      <!-- Limit width on medium & large view ports-->
-      <!--Placeholder for contact info, display current date-->
+  
+   
+    <footer >
+        <div class="contactdiv">
+          <img class="map" src="assets/preston-map.png" alt="map of preston"></img>
+          <section class="contact">
+            
+            <!--email icon-->
+            <p><span class= "contacticon">✉︎</span> info@thedrizzlybear.com<br>
+            
+            <!--phone icon-->
+            <span class= "contacticon">✆</span> (208)-867-5309</p>
+            <div class="socialnav">
+              <a href="#"><img class="socialicon" src="assets/socialbuttonfbyellow.png"  alt="social link fb"/></a>
+              <a href="#"><img class="socialicon" src="assets/socialbuttonigsocialyellow.png"  alt="social link ig"/></a>
+              <a href="#"> <img class="socialicon" src="assets/socialbuttonyoutubeyellow.png"  alt="social link youtube"/></a>
+              
+              
+             
+            </div>
+          </section>
+         
+  </div>
+      <div class="copyright">
       <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
       Ashley Zufelt
+    </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Heebo", "Work Sans"],
+        },
+      });
+    </script>
   </body>
 </html>
