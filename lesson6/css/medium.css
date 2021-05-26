@@ -27,7 +27,7 @@
   .header .title {
     grid-column: 2;
   }
-  header h1 {
+  .sitename {
     font-size: 400%;
   }
   header h2 {
