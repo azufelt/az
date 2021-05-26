@@ -34,7 +34,7 @@ header {
 .header .title {
   justify-items: center;
 }
-.header h1 {
+.sitename {
   margin: 0;
 }
 nav {
@@ -65,7 +65,7 @@ nav {
   max-width: 2.3rem;
   font-size: 2rem;
 }
-.active {
+.navmenu a:active {
   color: var(--yellow);
   border: 2px solid var(--yellow);
   border-radius: 4rem;
@@ -84,8 +84,9 @@ h1 {
   font-family: "Work Sans", arial, sans-serif;
   color: var(--white);
   letter-spacing: 0.2rem;
+  padding-left: 1rem;
 }
-h1,
+
 h2 {
   padding-left: 1rem;
 }
@@ -195,7 +196,7 @@ img + p {
 }
 .contactdiv {
   color: var(--white);
-  background-color: hsla(196, 24%, 46%, 1.5);
+  background-color: hsla(196, 24%, 46%, 1);
   text-align: center;
   font-size: 150%;
 }
