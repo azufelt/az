@@ -7,11 +7,11 @@
     <meta name="author" content="Ashley Zufelt" />
     <meta
       name="keywords"
-      content="preston idaho weather community forecast town news"
+      content="drizzly bear preston idaho weather community forecast town news"
     />
     <meta
       name="description"
-      content="weather and community news for town preston idaho"
+      content="the drizzly bear weather and community news for town preston idaho"
     />
     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="css/small.css" />
@@ -26,26 +26,27 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
-    <title>Preston Weather</title>
+    <title>The Drizzly Bear-Preston Weather</title>
   </head>
   <body>
     <aside class="banner">Farmer's Market this Saturday <br class="linebreak">Old Mill Park @ 8 a.m. </aside>
     <header>
       <div class="header">
-        <!-- Must span entire width of screen-->
-
-        <img
-          src="/lesson4/images/umbrella-drizzly-bear.png"
-          alt="stick drawing bear holding umbrella"
-        />
+     
+     <picture class="logoimg"> 
+      <source srcset="images/drizzly-bear-logo.svg" media="(min-width: 521px)">
+      <img
+         src="images/umbrella-drizzly-bear-small.png"
+            alt="stick drawing bear holding umbrella"/>
+     </picture>
+       
         <div class="title">
           <h1>The Drizzly Bear</h1>
-          <h2 class="slogan">Be Prepared. Weather or Not.</h2>
+          <p>Be Prepared. Weather or Not.</p>
         </div>
       </div>
     </header>
     <nav>
-      <!--Must span entire width of screen. Menu must be responsive and use Javascript to toggle between showing and not showing all menu items-->
       <ul class="navmenu">
         <li><a class="ham">&#9776;</a></li>
         <li><a href="#">Home</a></li>
@@ -62,7 +63,7 @@
         <h2 class="townbanner">Preston, ID</h2>
         <img
           class="heroimg"
-          src="assets/idaho-rocky-mountains-lake-wide-hero.jpg"
+          src="images/idaho-rocky-mountains-lake-wide-hero.jpg"
           alt="mountains reflected in lake blue sky"
         />
         <section class="summary">
@@ -81,43 +82,43 @@
         <div class="forecast">
           <div class="threeday-box forecast-box">
             <span class="forecast-head forecastbox1"></span>
-            <img class="icon" src="assets/rain.png" alt="rain icon" />
+            <img class="icon" src="images/rain.png" alt="rain icon" />
             <span class="data">Light Rain</span>
           </div>
           <div class="threeday-box forecast-box">
             <span class="forecast-head forecastbox2"></span>
-            <img class="icon" src="assets/thunderstorm.png" alt="storm icon" />
+            <img class="icon" src="images/thunderstorm.png" alt="storm icon" />
             <span class="data">Thunderstorms</span>
           </div>
           <div class="threeday-box forecast-box">
             <span class="forecast-head forecastbox3">Thursday</span>
-            <img class="icon" src="assets/windy.png" alt="windy icon" />
+            <img class="icon" src="images/windy.png" alt="windy icon" />
             <span class="data">Windy</span>
           </div>
           <div class="forecast-box fiveday">
             <span class="forecast-head forecastbox4">Friday</span>
-            <img class="icon" src="assets/partlysunny.png" alt="cloudy icon" />
+            <img class="icon" src="images/partlysunny.png" alt="cloudy icon" />
             <span class="data">Partly Sunny</span>
           </div>
           <div class="forecast-box fiveday">
             <span class="forecast-head forecastbox5">Saturday</span>
-            <img class="icon" src="assets/sunny.png" alt="sun icon" />
+            <img class="icon" src="images/sunny.png" alt="sun icon" />
             <span class="data">Sunny</span>
           </div>
         </div>
       </div>
 
-      <div class="mediadiv articlediv clearfix">
+      <div class="articlediv clearfix">
         <h3>Best Star-Gazing Spots and Tips!</h3>
         
        
         <img
           class="articleimg"
-          src="assets/idaho-night-sky-stars.jpg"
+          src="images/idaho-night-sky-stars.jpg"
           alt="night sky stars tree silhouette"
         />
         <p>
-          <indent></indent>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
           saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
           vero autem. Error rem corrupti ducimus facere accusamus, quidem
           eligendi!
@@ -129,7 +130,7 @@
           <br>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam quisquam necessitatibus error, maiores animi, fugiat eius dicta corporis blanditiis obcaecati reprehenderit illum. Inventore consequuntur amet expedita rerum natus debitis.
         </p>
-        <button class="articlebutton" href="#">To continue reading⇢</button>
+        <a href="#"> <button class="articlebutton">To continue reading⇢</button></a>
       </div>
     </div>
     </main>
@@ -137,7 +138,7 @@
    
     <footer >
         <div class="contactdiv">
-          <img class="map" src="assets/preston-map.png" alt="map of preston"></img>
+          <img class="map" src="images/preston-map.png" alt="map of preston"></img>
           <section class="contact">
             
             <!--email icon-->
@@ -146,9 +147,9 @@
             <!--phone icon-->
             <span class= "contacticon">✆</span> (208)-867-5309</p>
             <div class="socialnav">
-              <a href="#"><img class="socialicon" src="assets/socialbuttonfbyellow.png"  alt="social link fb"/></a>
-              <a href="#"><img class="socialicon" src="assets/socialbuttonigsocialyellow.png"  alt="social link ig"/></a>
-              <a href="#"> <img class="socialicon" src="assets/socialbuttonyoutubeyellow.png"  alt="social link youtube"/></a>
+              <a href="#"><img class="socialicon" src="images/socialbuttonfbyellow.png"  alt="social link fb"/></a>
+              <a href="#"><img class="socialicon" src="images/socialbuttonigsocialyellow.png"  alt="social link ig"/></a>
+              <a href="#"> <img class="socialicon" src="images/socialbuttonyoutubeyellow.png"  alt="social link youtube"/></a>
               
               
              
