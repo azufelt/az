@@ -182,11 +182,15 @@ main > h3 {
 p {
   padding: 0.5rem;
 }
-.contactdiv {
+.contact {
   color: var(--white);
   background-color: hsla(196, 24%, 46%, 1);
   text-align: center;
   font-size: 125%;
+}
+.contacticon {
+  /*adjust size of picture emoji*/
+  font-size: 180%;
 }
 ul {
   list-style: none;
@@ -200,10 +204,7 @@ ul {
 .socialicon {
   width: 3.5rem;
 }
-.contacticon {
-  /*adjust size of picture emoji*/
-  font-size: 180%;
-}
+
 .map {
   width: 60%;
   margin: 1rem;
