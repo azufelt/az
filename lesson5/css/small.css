@@ -208,7 +208,7 @@ footer {
 }
 .banner {
   background-color: var(--yellow);
-  color: var(--white);
+  color: var(--black);
   padding: 0.5rem;
   font-size: 110%;
   text-align: center;
