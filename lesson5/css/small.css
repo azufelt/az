@@ -20,16 +20,14 @@ html {
 }
 
 header {
-  background-color: var(--teal);
-}
-.header {
   display: flex;
   align-items: center;
+  background-color: var(--teal);
 }
 .logoimg {
   padding: 1rem;
+  max-width: 25%;
 }
-
 .sitename {
   margin: 0;
 }
@@ -37,15 +35,14 @@ nav {
   background-color: hsla(196, 24%, 46%, 0.8);
   padding: 0.5rem 0;
 }
-.navmenu {
-  list-style: none;
-}
+
 .navmenu li:first-child {
   display: block;
 }
 .navmenu li {
   display: none;
 }
+
 .navmenu a {
   display: block;
   text-decoration: none;
@@ -61,13 +58,12 @@ nav {
   max-width: 2.3rem;
   font-size: 2rem;
 }
-.active {
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
-  border-radius: 4rem;
+li.active,
+a.active {
+  color: var(--blue);
+  background-color: var(--yellow);
 }
 .navmenu a:hover {
-  border-radius: 4rem;
   background-color: var(--yellow);
 }
 .ham:hover {
@@ -186,12 +182,14 @@ main > h3 {
 p {
   padding: 0.5rem;
 }
-
 .contactdiv {
   color: var(--white);
   background-color: hsla(196, 24%, 46%, 1);
   text-align: center;
   font-size: 125%;
+}
+ul {
+  list-style: none;
 }
 .copyright {
   background-color: var(--blue);
@@ -203,6 +201,7 @@ p {
   width: 3.5rem;
 }
 .contacticon {
+  /*adjust size of picture emoji*/
   font-size: 180%;
 }
 .map {

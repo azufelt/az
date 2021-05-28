@@ -2,8 +2,14 @@
   .navmenu li:first-child {
     display: none;
   }
+  nav {
+    border-top: 0.4rem solid var(--blue);
+    border-top-style: double;
+  }
   .navmenu {
     display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
   }
   .navmenu li {
     display: block;
@@ -13,29 +19,33 @@
     text-align: center;
     font-weight: bolder;
   }
-  .navmenu a:hover {
+  .navmenu li a:hover {
     transition-duration: 1s;
   }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  li.active,
+  a.active {
+    color: var(--white);
+    border: 2px solid var(--yellow);
+    background-color: var(--teal);
   }
-  .header img {
-    grid-column: 1;
-    max-width: 14rem;
+  a.active {
+    border: 2px solid hsla(196, 24%, 46%, 0.8);
+    background-color: hsla(196, 24%, 46%, 0.8);
   }
-  .header .title {
-    grid-column: 2;
+
+  .logoimg {
+    max-width: 15%;
+    margin-left: 2rem;
   }
-  .sitename {
+  .title {
+    margin-left: 3rem;
+  }
+  .title h1 {
     font-size: 400%;
+    margin: 0;
   }
-  header h2 {
-    font-size: 200%;
-  }
-  header nav {
-    border-top: 0.4rem solid var(--blue);
-    border-top-style: double;
+  .title p {
+    font-size: 150%;
   }
   main,
   footer {
@@ -72,7 +82,7 @@
   }
   .contactdiv {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 65% 35%;
     justify-items: center;
     align-items: center;
   }
@@ -80,9 +90,11 @@
     grid-column: 1;
   }
   .contact {
-    grid-column: 2;
     justify-self: start;
     text-align: left;
+  }
+  .socialnav {
+    grid-column: 1/3;
   }
   .articleimg {
     float: right;
