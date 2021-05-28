@@ -84,10 +84,12 @@ header p {
   letter-spacing: 0.08rem;
 }
 h2 {
-  background-color: var(--blue);
+  color: var(--blue);
+  background-color: var(--white);
+  font-size: 200%;
   padding: 0.8rem;
-  color: var(--white);
   letter-spacing: 0.1rem;
+  font-family: "Work Sans", arial, sans-serif;
 }
 h3,
 h4,
@@ -204,10 +206,12 @@ ul {
 .socialicon {
   width: 3.5rem;
 }
-
-.map {
-  width: 60%;
-  margin: 1rem;
+footer {
+  background-color: var(--teal);
+  text-align: center;
+}
+.box1 {
+  padding: 0.5rem;
 }
 .banner {
   background-color: var(--yellow);

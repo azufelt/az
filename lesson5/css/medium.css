@@ -52,9 +52,6 @@
     max-width: 60rem;
     margin: 0 auto;
   }
-  /* footer {
-    text-align: right;
-  } */
   .herocontainer {
     position: relative;
     margin: 0.8rem auto;
@@ -102,19 +99,12 @@
   }
   .box3 {
     margin: auto 0;
+    margin-right: 5%;
   }
   .contact {
     justify-self: start;
     text-align: left;
   }
-  .mapimg {
-  }
-  /* .contactdiv,
-  .socialnav {
-    display: inline-flex;
-    margin-top: 10%;
-  }
-   */
 
   .articleimg {
     float: right;

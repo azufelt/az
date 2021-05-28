@@ -5,18 +5,18 @@
   }
   .box1 {
     padding-right: 2rem;
-    margin-left: 5%;
+    margin: auto 0 auto 2%;
+    max-width: 300px;
   }
   .box2 {
     border-left: 2px solid var(--white);
     border-right: 2px solid var(--white);
     padding: 2rem;
-    margin-bottom: 5%;
+    margin: auto 0;
   }
   .box3 {
     display: inline-flex;
-    margin-top: 10%;
-    margin-right: 5%;
+    margin: 5% 7% 5% auto;
     padding: 2rem;
   }
 }
