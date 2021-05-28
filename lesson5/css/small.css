@@ -35,14 +35,12 @@ nav {
   background-color: hsla(196, 24%, 46%, 0.8);
   padding: 0.5rem 0;
 }
-
 .navmenu li:first-child {
   display: block;
 }
 .navmenu li {
   display: none;
 }
-
 .navmenu a {
   display: block;
   text-decoration: none;
@@ -78,7 +76,6 @@ h1 {
   letter-spacing: 0.2rem;
   font-size: 1.8rem;
 }
-
 header p {
   padding: 0;
   letter-spacing: 0.08rem;
@@ -107,7 +104,6 @@ main > h3 {
   padding: 1.5rem;
   font-size: 150%;
 }
-
 .summary {
   margin: 1rem auto;
   border: 4px solid var(--yellow);
@@ -126,13 +122,11 @@ main > h3 {
   padding-top: 0.5rem;
   text-align: left;
 }
-
 .forecast {
   display: flex;
   flex-flow: row;
   padding: 0.8rem;
 }
-
 .forecast-box {
   flex: 1 1 auto;
 }
@@ -144,7 +138,6 @@ main > h3 {
   text-align: center;
   column-gap: 3rem;
 }
-
 .forecast-box {
   border: 2px solid var(--blue);
   background-color: var(--white);

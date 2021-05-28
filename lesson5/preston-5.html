@@ -26,6 +26,7 @@
       rel="stylesheet"
     />
     <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <title>The Drizzly Bear-Preston Weather</title>
   </head>
   <body>
@@ -78,10 +79,10 @@
           <h3>Weather Summary</h3>
           <p>
             Currently: <span id="sun">Sunny</span><br />
-            High: <span id="hightemp">76F</span><br />
-            Wind Chill: <span id="windchill">F</span><br />
+            Temperature: <span id="hightemp">48</span>°F<br />
+            Wind Chill: <span id="windchill"></span><br />
             Humidity: <span id="humidity">69%</span><br />
-            Wind Speed: <span id="windspeed">5 mph</span><br />
+            Wind Speed: <span id="windspeed">5</span>mph<br />
           </p>
         </section>
       </div>
@@ -186,5 +187,13 @@
         Ashley Zufelt
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Heebo", "Work Sans"],
+        },
+      });
+    </script>
   </body>
 </html>

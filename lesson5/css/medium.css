@@ -62,7 +62,7 @@
     background-color: hsla(192, 6%, 67%, 0.5);
     padding: 2rem 1rem;
     text-align: left;
-    top: 5rem;
+    top: 4rem;
     left: 2rem;
     box-shadow: 0.5rem 1rem 0.5rem var(--black);
   }
@@ -78,9 +78,6 @@
     display: inline-flex;
   }
   .footer-container {
-    /* display: flex;
-    justify-items: center;
-    align-items: center; */
     display: flex;
     flex-flow: row;
     background-color: var(--teal);
