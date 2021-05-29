@@ -19,20 +19,18 @@
     text-align: center;
     font-weight: bolder;
   }
-  .navmenu li a:hover {
+  .navmenu li:hover,
+  .navmenu a:hover {
     transition-duration: 1s;
   }
-  li.active,
-  a.active {
+  .active,
+  a:active {
     color: var(--white);
-    border: 2px solid var(--yellow);
     background-color: var(--teal);
   }
   a.active {
-    border: 2px solid hsla(196, 24%, 46%, 0.8);
     background-color: hsla(196, 24%, 46%, 0.8);
   }
-
   .logoimg {
     max-width: 15%;
     margin-left: 2rem;
