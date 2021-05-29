@@ -2,6 +2,9 @@
   html {
     font-size: 18px;
   }
+  main {
+    max-width: 960px;
+  }
   .profilepic {
     float: right;
     margin: 4rem 4rem auto;
