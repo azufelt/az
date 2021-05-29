@@ -1,0 +1,216 @@
+/* CSS HSL */
+:root {
+  --black: hsla(197, 94%, 6%, 1);
+  --blue: hsla(197, 66%, 21%, 1);
+  --teal: hsla(196, 24%, 46%, 1);
+  --gray: hsla(192, 6%, 67%, 1);
+  --lightgray: hsla(192, 6%, 67%, 0.5);
+  --silver: hsla(60, 5%, 93%, 1);
+  --white: hsla(0, 0%, 96%, 1);
+  --yellow: hsla(39, 74%, 50%, 1);
+  --red: hsla(6, 79%, 40%, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Heebo", arial, sans-serif;
+  background-color: var(--white);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--teal);
+}
+.logoimg {
+  padding: 1rem;
+  max-width: 25%;
+}
+.sitename {
+  margin: 0;
+}
+nav {
+  background-color: hsla(196, 24%, 46%, 0.8);
+  padding: 0.5rem 0;
+}
+.navmenu li:first-child {
+  display: block;
+}
+.navmenu li {
+  display: none;
+}
+.navmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  text-align: right;
+}
+.navmenu a.ham {
+  margin: 0 auto;
+  border-radius: 4rem;
+  border-style: double;
+  max-width: 2.3rem;
+  font-size: 2rem;
+}
+.active,
+a.active {
+  color: var(--blue);
+  background-color: var(--yellow);
+}
+.navmenu a:hover {
+  border-radius: 4rem;
+  background-color: var(--yellow);
+}
+.ham:hover {
+  cursor: pointer;
+}
+.responsive li {
+  display: block;
+}
+h1 {
+  font-family: "Work Sans", arial, sans-serif;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  font-size: 1.8rem;
+}
+header p {
+  padding: 0;
+  letter-spacing: 0.08rem;
+}
+h2 {
+  color: var(--blue);
+  background-color: var(--white);
+  font-size: 200%;
+  padding: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-family: "Work Sans", arial, sans-serif;
+}
+h3,
+h4,
+h5,
+h6 {
+  background-color: var(--blue);
+  padding: 0.8rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+}
+img {
+  width: 100%;
+}
+main > h3 {
+  padding: 1.5rem;
+  font-size: 150%;
+}
+.summary {
+  margin: 1rem auto;
+  border: 4px solid var(--yellow);
+  padding: 0.5rem;
+  max-width: 75%;
+}
+.summary h3 {
+  color: var(--blue);
+  background-color: var(--white);
+  text-align: center;
+  border-bottom: 0.2rem double var(--blue);
+  line-height: 0%;
+}
+.summary p {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  text-align: left;
+}
+.forecast {
+  display: flex;
+  flex-flow: row;
+  padding: 0.8rem;
+}
+.forecast-box {
+  flex: 1 1 auto;
+}
+.forecast-box,
+.column-col,
+.grid-col {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  column-gap: 3rem;
+}
+.forecast-box {
+  border: 2px solid var(--blue);
+  background-color: var(--white);
+}
+.icon {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.forecast-head {
+  color: var(--black);
+  background-color: var(--gray);
+  padding: 0.5rem;
+}
+.forecastdiv {
+  background-color: var(--lightgray);
+}
+.data {
+  padding: 0.5rem;
+}
+.fiveday {
+  display: none;
+}
+.articlediv {
+  padding: 0.8rem;
+  background-color: var(--silver);
+}
+.articlebutton {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  background-color: var(--white);
+  line-height: 1.5rem;
+  padding: 0.2rem;
+}
+p {
+  padding: 0.5rem;
+}
+.contact {
+  color: var(--white);
+  background-color: hsla(196, 24%, 46%, 1);
+  text-align: center;
+  font-size: 125%;
+}
+.contacticon {
+  /*adjust size of picture emoji*/
+  font-size: 180%;
+}
+ul {
+  list-style: none;
+}
+.copyright {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+.socialicon {
+  width: 3.5rem;
+}
+footer {
+  background-color: var(--teal);
+  text-align: center;
+}
+.box1 {
+  padding: 0.5rem;
+}
+.banner {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 0.5rem;
+  font-size: 110%;
+  text-align: center;
+}
