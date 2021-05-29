@@ -21,6 +21,7 @@
   }
   .navmenu li:hover,
   .navmenu a:hover {
+    background-color: var(--yellow);
     transition-duration: 1s;
   }
   .active,

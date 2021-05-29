@@ -57,14 +57,11 @@ nav {
   font-size: 2rem;
 }
 .active,
-a:active {
+a.active {
   color: var(--blue);
   background-color: var(--yellow);
 }
-.navmenu li:hover,
-.navmenu a:hover {
-  background-color: var(--yellow);
-}
+
 .ham:hover {
   cursor: pointer;
 }
