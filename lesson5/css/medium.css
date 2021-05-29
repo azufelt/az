@@ -76,6 +76,10 @@
   .fiveday {
     display: inline-flex;
   }
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
+  }
   .footer-container {
     display: flex;
     flex-flow: row;
