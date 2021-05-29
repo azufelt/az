@@ -2,8 +2,14 @@
   .navmenu li:first-child {
     display: none;
   }
+  nav {
+    border-top: 0.4rem solid var(--blue);
+    border-top-style: double;
+  }
   .navmenu {
     display: flex;
+    max-width: 60rem;
+    margin: 0 auto;
   }
   .navmenu li {
     display: block;
@@ -13,37 +19,37 @@
     text-align: center;
     font-weight: bolder;
   }
+  .navmenu li:hover,
   .navmenu a:hover {
+    background-color: var(--yellow);
     transition-duration: 1s;
   }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+  .active,
+  a:active {
+    color: var(--white);
+    background-color: var(--teal);
   }
-  .header img {
-    grid-column: 1;
-    max-width: 14rem;
+  a.active {
+    background-color: hsla(196, 24%, 46%, 0.8);
   }
-  .header .title {
-    grid-column: 2;
+  .logoimg {
+    max-width: 15%;
+    margin-left: 2rem;
   }
-  .sitename {
-    font-size: 400%;
+  .title {
+    margin-left: 3rem;
   }
-  header h2 {
+  .title h1 {
     font-size: 200%;
+    margin: 0;
+    padding: 0.2rem;
   }
-  header nav {
-    border-top: 0.4rem solid var(--blue);
-    border-top-style: double;
+  .title {
+    font-size: 150%;
   }
-  main,
-  footer {
+  main {
     max-width: 60rem;
     margin: 0 auto;
-  }
-  footer {
-    text-align: right;
   }
   .herocontainer {
     position: relative;
@@ -55,7 +61,7 @@
     background-color: hsla(192, 6%, 67%, 0.5);
     padding: 2rem 1rem;
     text-align: left;
-    top: 5rem;
+    top: 4rem;
     left: 2rem;
     box-shadow: 0.5rem 1rem 0.5rem var(--black);
   }
@@ -70,20 +76,36 @@
   .fiveday {
     display: inline-flex;
   }
-  .contactdiv {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    justify-items: center;
-    align-items: center;
+  footer {
+    max-width: 960px;
+    margin: 0 auto;
   }
-  .map {
-    grid-column: 1;
+  .footer-container {
+    display: flex;
+    flex-flow: row;
+    background-color: var(--teal);
+  }
+  .footer-box {
+    flex: 1 1 100%;
+  }
+  .box1 {
+    max-width: 50%;
+    margin: 0 0 0 2%;
+    padding: 1rem;
+  }
+  .box2 {
+    display: inline-flex;
+    margin-top: 10%;
+  }
+  .box3 {
+    margin: auto 0;
+    margin-right: 5%;
   }
   .contact {
-    grid-column: 2;
     justify-self: start;
     text-align: left;
   }
+
   .articleimg {
     float: right;
     margin: 1rem;

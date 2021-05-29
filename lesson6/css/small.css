@@ -20,29 +20,20 @@ html {
 }
 
 header {
-  background-color: var(--teal);
-  padding: 0.3rem;
-}
-.header {
   display: flex;
   align-items: center;
+  background-color: var(--teal);
 }
-.header img {
-  max-width: 9rem;
+.logoimg {
   padding: 1rem;
+  max-width: 25%;
 }
-.header .title {
-  justify-items: center;
-}
-.header h1 {
+.sitename {
   margin: 0;
 }
 nav {
   background-color: hsla(196, 24%, 46%, 0.8);
-  padding: 0.5rem 0 1rem 0;
-}
-.navmenu {
-  list-style: none;
+  padding: 0.5rem 0;
 }
 .navmenu li:first-child {
   display: block;
@@ -65,10 +56,10 @@ nav {
   max-width: 2.3rem;
   font-size: 2rem;
 }
-.active {
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
-  border-radius: 4rem;
+.active,
+a.active {
+  color: var(--blue);
+  background-color: var(--yellow);
 }
 .navmenu a:hover {
   border-radius: 4rem;
@@ -84,22 +75,19 @@ h1 {
   font-family: "Work Sans", arial, sans-serif;
   color: var(--white);
   letter-spacing: 0.2rem;
+  font-size: 1.8rem;
 }
-h1,
+header p {
+  padding: 0;
+  letter-spacing: 0.08rem;
+}
 h2 {
-  padding-left: 1rem;
-}
-.slogan {
-  margin: 0;
-  background-color: var(--teal);
-  color: var(--black);
-  letter-spacing: 0.1rem;
-}
-div > h2 {
-  background-color: var(--blue);
+  color: var(--blue);
+  background-color: var(--white);
+  font-size: 200%;
   padding: 0.8rem;
-  color: var(--white);
   letter-spacing: 0.1rem;
+  font-family: "Work Sans", arial, sans-serif;
 }
 h3,
 h4,
@@ -117,7 +105,6 @@ main > h3 {
   padding: 1.5rem;
   font-size: 150%;
 }
-
 .summary {
   margin: 1rem auto;
   border: 4px solid var(--yellow);
@@ -136,13 +123,11 @@ main > h3 {
   padding-top: 0.5rem;
   text-align: left;
 }
-
 .forecast {
   display: flex;
   flex-flow: row;
-  padding: 1rem;
+  padding: 0.8rem;
 }
-
 .forecast-box {
   flex: 1 1 auto;
 }
@@ -154,7 +139,6 @@ main > h3 {
   text-align: center;
   column-gap: 3rem;
 }
-
 .forecast-box {
   border: 2px solid var(--blue);
   background-color: var(--white);
@@ -179,25 +163,33 @@ main > h3 {
   display: none;
 }
 .articlediv {
-  margin: 2rem;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: var(--silver);
 }
 .articlebutton {
-  margin: 0.5rem;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  background-color: var(--white);
+  line-height: 1.5rem;
   padding: 0.2rem;
 }
 p {
   padding: 0.5rem;
 }
-img + p {
-  text-indent: 2rem;
-}
-.contactdiv {
+.contact {
   color: var(--white);
   background-color: hsla(196, 24%, 46%, 1);
   text-align: center;
-  font-size: 150%;
+  font-size: 125%;
+}
+.contacticon {
+  /*adjust size of picture emoji*/
+  font-size: 180%;
+}
+ul {
+  list-style: none;
 }
 .copyright {
   background-color: var(--blue);
@@ -207,19 +199,17 @@ img + p {
 }
 .socialicon {
   width: 3.5rem;
+}
+footer {
+  background-color: var(--teal);
+  text-align: center;
+}
+.box1 {
   padding: 0.5rem;
-}
-.contacticon {
-  font-size: 180%;
-}
-.map {
-  width: 60%;
-
-  padding: 1rem;
 }
 .banner {
   background-color: var(--yellow);
-  color: var(--white);
+  color: var(--black);
   padding: 0.5rem;
   font-size: 110%;
   text-align: center;

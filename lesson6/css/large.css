@@ -1,6 +1,25 @@
 @media only screen and (min-width: 68.75rem) {
-  .header img {
-    padding: 3rem;
-    justify-self: right;
+  .logoimg {
+    max-width: 10%;
+    margin-left: 20%;
+  }
+  .box1 {
+    padding-right: 2rem;
+    margin: auto 0 auto 2%;
+    max-width: 300px;
+  }
+  .box2 {
+    border-left: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    padding: 2rem;
+    margin: auto 0;
+  }
+  .box3 {
+    display: inline-flex;
+    margin: 5% 7% 5% auto;
+    padding: 2rem;
+  }
+  .summary {
+    top: 6rem;
   }
 }
