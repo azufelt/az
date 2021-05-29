@@ -61,7 +61,10 @@ a.active {
   color: var(--blue);
   background-color: var(--yellow);
 }
-
+.navmenu a:hover {
+  border-radius: 4rem;
+  background-color: var(--yellow);
+}
 .ham:hover {
   cursor: pointer;
 }
