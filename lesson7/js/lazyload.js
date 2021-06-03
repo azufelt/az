@@ -12,7 +12,7 @@ function preloadImage(img) {
 const imgOptions = {
     //root: null, would be whatever the viewport is
   threshold: .4, //This is how much of the image is within the page-view range. if at 1, then 100% of image has to be on page
-  rootMargin: "0px 0px -100px 0px"
+  rootMargin: "0px 0px -50px 0px" 
 
 };
 // this creates the new intersection observer, so we can feed it some options
@@ -34,5 +34,6 @@ entries.forEach(entry => {//for every entry do this thing:
 //this says look at the variable images which is data-src in the DOM, and for each image observe our observe fucntion
 images.forEach(src => {
   imgObserver.observe(src);
-
 });
+
+/////////////
