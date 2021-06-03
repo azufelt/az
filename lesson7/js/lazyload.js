@@ -1,4 +1,4 @@
-const images = document.querySelectorAll("data-src");
+const images = document.querySelectorAll("img[data-src]"); //This is the selector that we are going to affect
 
 function preloadImage(img) {
   const src= img.getAttribute("data-src");
@@ -8,98 +8,31 @@ function preloadImage(img) {
     img.src = src;
   }
 }
-
+//this is where we create the options of what we want it to do
 const imgOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px 100px 0px"
-};
+    //root: null, would be whatever the viewport is
+  threshold: .4, //This is how much of the image is within the page-view range. if at 1, then 100% of image has to be on page
+  rootMargin: "0px 0px -100px 0px"
 
+};
+// this creates the new intersection observer, so we can feed it some options
+//new IntersectionObserver((callback, options) --"callback" is where we write a function, either traditional function() or an arrow =>, arrow function says 'do all this stuff' 
+//function is going to call to entries, and the observer itself.
+//
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-entries.forEach(entry => {
-  if (!entry.isIntersecting) {
+entries.forEach(entry => {//for every entry do this thing: 
+  if (!entry.isIntersecting) { //if nothing is intersecting, do nothing
     return;
-  } else {
+  } else { //
     preloadImage(entry.target);
     imgObserver.unobserve(entry.target);
+      entry.target.classList.toggle("loaded")//adds a class name when it sees it, which adds CSS style
   }
+
 });
 }, imgOptions);
+//this says look at the variable images which is data-src in the DOM, and for each image observe our observe fucntion
+images.forEach(src => {
+  imgObserver.observe(src);
 
-images.forEach(image => {
-  imgObserver.observe(images);
 });
-document.addEventListener('',() =>(img[data-src]).classList.toggle("img[data-src].loaded"), false);
-// //////////
-// document.addEventListener("DOMContentLoaded", function() {
-//   var lazyloadImages;
-
-//   if("IntersectionObserver" in window) {
-//     lazyloadImages =
-//     document.querySelectorAll(".lazy");
-//     var imageObserver = new IntersectionObserver(function(entries, observer) {
-//       entries.forEach(function(entry) {
-//         if (entry.isIntersecting) {
-//           var image = entry.target;
-//           image.src = image.CDATA_SECTION_NODE.src;
-//           image.classList.remove("lazy");
-//           imageObserver.unobserve(image);
-//         }
-//       });
-//     });
-
-//     lazyloadImages.forEach(function(image) {
-//       imageObserver.observe(image);
-//     }); 
-//   } else {
-//     var lazyloadThrottleTimeout;
-//     lazyloadImages = document.querySelectorAll(".lazy");
-
-//     function lazyload () {
-//       if(lazyloadThrottleTimeout) {
-//       clearTimeout(lazyloadThrottleTimeout);
-//     }
-//     lazyloadThrottleTimeout = setTimeout(function() {
-//       var scrollTop = window.pageYOffset;
-//       lazyloadImages.forEach(function(img) {
-//         if(img.offsetTop < (window.innerHeight + scrollTop)) {
-//           img.src = img.dataset.src;
-//           img.classList.remove("lazy");
-//         }
-//       });
-//       if(lazyloadImages.length == 0) {
-//         document.removeEventListener("scroll",lazyload);
-//         window.removeEventListener("resize",lazyload);
-//         window.removeEventListener("orientationChange", lazyload);
-//       }
-//     }, 20);
-//   }
-//   document.addEventListener("scroll",lazyload);
-//         window.addEventListener("resize",lazyload);
-//         window.addEventListener("orientationChange", lazyload);
-// }
-// })
-/////////////
-// let imagesToLoad = document.querySelectorAll("img[data-src]");
-// const loadImages = (image) => {
-//   image.setAttribute("src",
-//   image.getAtrribute("data-src"));
-//   image.onload =() => {
-//     image.removeAttribute("data-src");
-//     // image.removeAttribute("lazy");
-//   };
-// };
-// if("IntersectionObserver" in window) {
-//   const observer = new IntersectionObserver((items, observer) => {
-//     items.forEach((item) => {
-//       if(item.isIntersecting) {
-//         loadImages(item.target);
-
-//         observer.unobserve(item.target);
-//       }
-//     });
-//   });
-// } else {
-//   imagesToLoad.forEach((img) => {
-//     loadImages(img);
-//   });
-// }

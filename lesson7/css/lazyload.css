@@ -10,25 +10,9 @@ h2 {
 .gallery {
   display: grid;
   grid-auto-rows: 600px;
-  margin: 0 auto;
-  gap: 2rem;
+  margin: 40rem 0 auto 0;
+  gap: 10rem;
   justify-items: center;
-}
-img.lazy {
-  -o-transition-property: blur(2em);
-  /* filter: blur(0em); */
-  /* transition: filter 10s; */
-}
-/* img.image {
-  background-color: red;
-} */
-img {
-  box-shadow: 1rem 1rem 1rem 0 rgba(164, 165, 165, 0.5);
-  min-width: 300px;
-  min-height: 400px;
-  filter: blur(0em);
-  transition: filter 10s;
-  /* transition: filter 2s; */
 }
 .picturebox {
   border: 0.2rem solid gray;
@@ -40,23 +24,19 @@ p {
   padding: 1rem;
   margin: 0.5rem;
 }
-.boxtext {
-  position: relative;
+
+img {
+  box-shadow: 1rem 1rem 1rem 0 rgba(164, 165, 165, 0.5);
+  min-width: 300px;
+  min-height: 400px;
 }
 
-.card-image {
-  display: block;
-  background-size: cover;
-  filter: blur(3px); /* blur the lowres image */
+img[data-src] {
+  opacity: 50%;
+  filter: blur(3em);
 }
-
-.card-image > img {
-  display: block;
-  width: 100%;
-  opacity: 0; /* visually hide the img element */
-}
-
-.card-image.is-loaded {
-  filter: none; /* remove the blur on fullres image */
-  transition: filter 1s;
+img[data-src].loaded {
+  opacity: 100%;
+  filter: blur(0em);
+  transition-duration: 2s;
 }
