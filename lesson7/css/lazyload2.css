@@ -1,0 +1,16 @@
+body {
+  max-width: 960px;
+  text-align: center;
+}
+
+img {
+  box-shadow: 1rem 1rem 1rem 0 rgba(164, 165, 165, 0.5);
+  min-width: 300px;
+  min-height: 400px;
+}
+img {
+  border: 3px solid yellow;
+}
+img[data-src] {
+  border: 5px solid blue;
+}
