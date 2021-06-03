@@ -1,0 +1,54 @@
+/* CSS HSL */
+#region :root {
+  --black: hsla(197, 94%, 6%, 1);
+  --blue: hsla(197, 66%, 21%, 1);
+  --teal: hsla(196, 24%, 46%, 1);
+  --gray: hsla(192, 6%, 67%, 1);
+  --lightgray: hsla(192, 6%, 67%, 0.5);
+  --silver: hsla(60, 5%, 93%, 1);
+  --white: hsla(0, 0%, 96%, 1);
+  --yellow: hsla(39, 74%, 50%, 1);
+  --red: hsla(6, 79%, 40%, 1);
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: hsla(var(--blue), 50%);
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-auto-rows: 600px;
+  margin: 0 auto;
+  gap: 2rem;
+  justify-items: center;
+}
+img[data-src] {
+  filter: blur(0em);
+  transition: filter 2s;
+}
+img {
+  box-shadow: 1rem 1rem 1rem 0 rgba(164, 165, 165, 0.5);
+  min-width: 300px;
+  min-height: 400px;
+  margin-left: 0;
+  filter: blur(2em);
+}
+.picturebox {
+  border: 0.2rem solid gray;
+  text-align: center;
+}
+
+p {
+  max-width: 30rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.boxtext {
+  position: relative;
+}

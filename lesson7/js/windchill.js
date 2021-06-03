@@ -13,3 +13,5 @@
       message = "N/A"
     }
     document.querySelector("#windchill").innerHTML = message;
+
+    

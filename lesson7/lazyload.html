@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/lazyload.css" />
+    <script src="js/lazyload.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>LazyLoad Image Gallery</h1>
+    <!-- 
+      Place picture elements in 1 column
+      Crop images to 300x400px
+      can use own or placeholder images
+      ***
+      give all 6 images the same placeholder image with a background color and text that says "placeholder image"
+      Then, replace each image with actual image using javascript when user scrolls: LazyLoad using IntersectionObserver() JavaScript object
+      Use a transition to replace the image
+
+    -->
+    <section class="gallery">
+      <div class="picturebox boxtext">
+        <picture>
+          <h2>Image #1</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400/"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+      <div class="picturebox boxtext">
+        <picture>
+          <h2>Image #2</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+      <div class="picturebox">
+        <picture>
+          <h2>Image #3</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+      <div class="picturebox">
+        <picture>
+          <h2>Image #4</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+      <div class="picturebox">
+        <picture>
+          <h2>Image #5</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+      <div class="picturebox">
+        <picture>
+          <h2>Image #6</h2>
+          <img
+            src="images/placeholder300x400.jpg"
+            class="image"
+            data-src="https://source.unsplash.com/random/300x400"
+            alt=""
+          />
+        </picture>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, vel
+          doloremque porro deleniti quod quae debitis accusamus vitae magni ut
+          illum, hic ad voluptas quam explicabo voluptatibus adipisci eos
+          repellendus.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
