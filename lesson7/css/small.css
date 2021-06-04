@@ -1,8 +1,10 @@
 /* CSS HSL */
 :root {
   --black: hsla(197, 94%, 6%, 1);
-  --blue: hsla(197, 66%, 21%, 1);
-  --teal: hsla(196, 24%, 46%, 1);
+  --blue: hsla(197, 71%, 14%, 1);
+  --teal: hsla(197, 66%, 21%, 1);
+  --sparkle: hsla(189, 24%, 32%, 1);
+  /* --teal: hsla(196, 24%, 46%, 1); */
   --gray: hsla(192, 6%, 67%, 1);
   --lightgray: hsla(192, 6%, 67%, 0.5);
   --silver: hsla(60, 5%, 93%, 1);
@@ -31,8 +33,11 @@ header {
 .sitename {
   margin: 0;
 }
+.slogan {
+  color: var(--white);
+}
 nav {
-  background-color: hsla(196, 24%, 46%, 0.8);
+  background-color: var(--blue);
   padding: 0.5rem 0;
 }
 .navmenu li:first-child {
@@ -179,7 +184,7 @@ p {
 }
 .contact {
   color: var(--white);
-  background-color: hsla(196, 24%, 46%, 1);
+  background-color: var(--teal);
   text-align: center;
   font-size: 125%;
 }
@@ -212,4 +217,44 @@ footer {
   padding: 0.5rem;
   font-size: 110%;
   text-align: center;
+}
+/*--- CSS for Gallery lesson 7 ---------*/
+
+.gallery {
+  display: grid;
+  /* grid-auto-rows: 600px; */
+  margin: 5% auto;
+  gap: 2rem;
+  justify-items: center;
+}
+figure {
+  text-align: center;
+  padding: 1rem;
+}
+figure:nth-child(odd) {
+  color: var(--black);
+  background-color: var(--silver);
+}
+figure:nth-child(even) {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+figcaption {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.galleryimg {
+  min-width: 300px;
+  min-height: 400px;
+}
+
+img[data-src] {
+  opacity: 50%;
+  filter: blur(3em);
+}
+img[data-src].loaded {
+  opacity: 100%;
+  filter: blur(0em);
+  transition-duration: 1.5s;
 }

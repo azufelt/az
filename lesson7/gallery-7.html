@@ -22,7 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
+    <script src="js/lazyload.js" defer></script>
+    <!-- <script src="js/imgresize.js" defer></script> -->
+
     <title>The Drizzly Bear-Preston Weather</title>
   </head>
   <body>
@@ -48,14 +50,14 @@
 
       <div class="title">
         <h1>The Drizzly Bear</h1>
-        Be Prepared. Weather or Not.
+        <span class="slogan">Be Prepared. Weather or Not.</span>
       </div>
     </header>
     <nav>
       <ul class="navmenu">
         <li><a class="ham">&#9776;</a></li>
         <li><a href="#">Home</a></li>
-        <li><a href="#" class="active">Preston </a></li>
+        <li><a href="preston-7.html">Preston </a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -63,8 +65,7 @@
       </ul>
     </nav>
 
-    <main>
-      <!--
+    <!--
   display at least 9 weather related iamges
   1 image column for small
   2 image columnb for medium
@@ -76,24 +77,138 @@
   use box-shadow on hover for images, apply shadow to img & text ONLY in large view
   
 -->
+    <section class="gallery">
       <figure>
         <img
-          src="images/placeholder300x400.jpg"
-          class="image"
-          data-src="https://source.unsplash.com/random/300x400/"
-          alt=""
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg1.jpg"
+          alt="placeholder image"
         />
-        <figcaption>caption goes here</figcaption>
+        <!-- -Img Modal
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div> -->
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          corporis exercitationem quasi possimus facere velit fuga vel tempore
+          explicabo voluptas!
+        </figcaption>
       </figure>
-    </main>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg2.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure
+          inventore ullam voluptates temporibus dolores illum cum ipsam, dolore
+          quae!
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg3.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          repellat esse, soluta doloremque beatae quia! Dolor sapiente
+          accusantium esse harum.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg4.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+          perferendis maiores commodi eos tempore vitae doloribus beatae velit
+          ad eligendi.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg5.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ad
+          voluptatem magnam sequi sint sit optio placeat dolores impedit minus?
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg6.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+          eligendi recusandae odio illum, totam provident obcaecati ratione
+          minus quam nam!
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg7.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+          delectus iure minus suscipit odio mollitia aperiam nam totam commodi?
+          Explicabo.
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg8.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum
+          laudantium dolores quae laborum. Unde cum amet necessitatibus iusto
+          corporis?
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          class="galleryimg"
+          src="images/placeholder400x400.jpg"
+          data-src="images/squareimg9.jpg"
+          alt="placeholder image"
+        />
+        <figcaption>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ipsa.
+          Rerum natus aperiam consequuntur fugiat, provident magnam unde
+          repellendus expedita?
+        </figcaption>
+      </figure>
+    </section>
 
     <footer>
       <div class="footer-container">
         <div class="footer-box box1">
           <img
             class="mapimg"
-            src="images/preston-map.png"
-            alt="map of preston"
+            src="images/tri-town-map.jpg"
+            alt="map of cities in southern idaho"
           />
         </div>
         <div class="contactdiv footer-box box2">
