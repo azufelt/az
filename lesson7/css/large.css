@@ -28,8 +28,6 @@
   .galleryimg {
     box-shadow: 1rem 1rem 1rem 0 var(--gray);
   }
-  .galleryimg:hover {
-  }
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
