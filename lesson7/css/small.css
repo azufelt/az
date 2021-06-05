@@ -261,7 +261,7 @@ img[data-src].loaded {
   transition-duration: 1.5s;
 }
 .visitbanner {
-  background-color: hsla(var(--lightblue), 0.5);
+  background-color: hsla(var(--lightblue), 0.5);/*this method does not validate
   color: var(--white);
   text-align: center;
   padding: 1rem;

@@ -5,9 +5,6 @@
 //get previous date entry from local storage
 // subtract two dates, then round to days ( milliseconds x seconds x minutes x hours)
 //display answer in DOM
-// if (visitMessage == 0) {
-//   document.querySelector(".visitbanner").style.display= "none";
-// }
 
 const logVisit = date;
 localStorage.setItem("visitDateLog", logVisit);
