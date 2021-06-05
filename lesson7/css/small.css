@@ -64,15 +64,16 @@ nav {
 }
 .active,
 a.active {
-  color: var(--blue);
   background-color: var(--yellow);
 }
 .navmenu a:hover {
   background-color: var(--yellow);
+  color: var(--blue);
 }
 .ham:hover {
   cursor: pointer;
 }
+
 .responsive li {
   display: block;
 }
