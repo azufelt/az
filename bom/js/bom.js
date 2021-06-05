@@ -25,11 +25,11 @@
   const list = new outputList[value];
     }
   
-      const item = output;
-      localStorage.setItem("listentry", item);
+      // const item = output;
+      // localStorage.setItem("listentry", item);
     
-      const List = localStorage.getItem("item");
-      document.querySelector(".listitem").appendChild(list);
+      // const List = localStorage.getItem("item");
+      // document.querySelector(".listitem").appendChild(list);
     
     
   })
