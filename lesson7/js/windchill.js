@@ -1,5 +1,3 @@
-
-
     const temp = document.querySelector("#hightemp").innerText;
     const speed = document.querySelector("#windspeed").innerText;
 
