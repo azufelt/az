@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --gray: #e7f0ed;
+  --mint: #e7ffed;
+  --blue: #628ca6;
+  --teal: #7fb9c2;
+}
+
+table {
+  width: 350px;
+  left: 40%;
+  top: 4rem;
+  border-collapse: collapse;
+  font-family: Ubuntu, arial, sans-serif;
+  box-shadow: 7px 7px 17px var(--blue);
+}
+table,
+th,
+td {
+  border: 2px solid lightgray;
+}
+td,
+th {
+  text-align: center;
+  padding: 0.5rem;
+  letter-spacing: 0.09rem;
+}
+tr > th {
+  font-size: 1.2rem;
+}
+table tr:nth-child(even) {
+  background-color: var(--gray);
+}
+table tr:nth-child(odd) {
+  background-color: var(--mint);
+}
+tbody tr:first-child,
+table tr:nth-child(5) > td:nth-child(3) {
+  background-color: var(--blue);
+  color: white;
+}
+tbody tr:first-child {
+  font-weight: bold;
+}
+thead tr td {
+  background-color: var(--teal);
+  font-weight: bold;
+  font-size: 2rem;
+}
+tfoot td {
+  background-color: var(--teal);
+  color: black;
+  font-size: 0.8rem;
+}
+table tr:nth-child(6) > td:first-child {
+  font-style: italic;
+}
+
+.tableanimation {
+  animation-name: slide;
+  animation-duration: 3s;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    left: 0px;
+    top: 4rem;
+  }
+  100% {
+    left: 40%;
+    top: 4rem;
+  }
+}
