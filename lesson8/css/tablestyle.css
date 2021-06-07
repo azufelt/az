@@ -9,8 +9,7 @@
 
 table {
   width: 350px;
-  left: 40%;
-  top: 4rem;
+  margin: 4rem auto;
   border-collapse: collapse;
   font-family: Ubuntu, arial, sans-serif;
   box-shadow: 7px 7px 17px var(--blue);
@@ -55,21 +54,4 @@ tfoot td {
 }
 table tr:nth-child(6) > td:first-child {
   font-style: italic;
-}
-
-.tableanimation {
-  animation-name: slide;
-  animation-duration: 3s;
-  position: relative;
-}
-
-@keyframes slide {
-  0% {
-    left: 0px;
-    top: 4rem;
-  }
-  100% {
-    left: 40%;
-    top: 4rem;
-  }
 }
