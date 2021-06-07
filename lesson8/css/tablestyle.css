@@ -8,7 +8,7 @@
 }
 
 table {
-  width: 350px;
+  max-width: 350px;
   margin: 4rem auto;
   border-collapse: collapse;
   font-family: Ubuntu, arial, sans-serif;
