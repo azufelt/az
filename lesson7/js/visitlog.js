@@ -20,3 +20,13 @@ if (daySince <= 1){ //Check to make sure that it was at least one day ago.
 }
 document.querySelector("#dateLog").innerHTML = visitMessage;
 
+//
+//const lastVisit = localStorage.getItem("lastVisit") || Date.now(); //Check local storage OR give today's date
+//let daysDetween = lastVist - Date.now()/864000;
+//id (daysBetween <1) {
+//  message = "Welcome, this is your first visit."
+//} else {
+//  message = "You visited this page ${daysBetween} days ago."
+//}
+//document.querySelector('#lastVisit').innerHTML = message;
+//localStorage.setItem(lastVisit, Datenow()); //<-- resets local storage for next time I visit

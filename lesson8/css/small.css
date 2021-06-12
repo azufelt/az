@@ -265,3 +265,12 @@ img[data-src].loaded {
   font-family: "Work Sans", arial, sans-serif;
   font-size: 2rem;
 }
+
+/*--- Style for Form Page-----*/
+
+input {
+  padding: 0.2rem;
+}
+form {
+  padding: 1rem;
+}
