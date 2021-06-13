@@ -15,5 +15,6 @@
 
 
 function stormReport() {
-  var thanks = window.open("/thanks.html", "_self");
+  var thanks = window.open("https://azufelt.github.io/lesson8/thanks.html", "_self");
 }
+
