@@ -127,3 +127,11 @@
     color: var(--black);
     background-color: var(--silver);
   }
+  /*----- Storm Center Page ----*/
+  form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .submitbutton {
+    grid-column: 1/3;
+  }
+}

@@ -267,10 +267,59 @@ img[data-src].loaded {
 }
 
 /*--- Style for Form Page-----*/
-
-input {
-  padding: 0.2rem;
+.stormcenter {
+  background-color: var(--blue);
 }
 form {
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-tracks: center;
+  padding: 2%;
+  font-size: 115%;
+  background-color: var(--silver);
+}
+input {
+  padding: 0.8rem;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid var(--yellow);
+}
+form div {
+  text-align: left;
+  margin-top: 2rem;
+}
+form label {
+  font-weight: bold;
+}
+.stormrangelabel {
+  opacity: 0.8;
+  padding-bottom: 0;
+  font-size: 0.7rem;
+}
+/* region */
+form :nth-child(8) select {
+  padding: 0.8rem;
+  margin: 0.5rem;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid var(--yellow);
+}
+/* danger */
+form :nth-child(9) input {
+  width: 30%;
+  margin: 0;
+}
+/*additional comments*/
+form :nth-child(10) textarea {
+  width: 90%;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid var(--yellow);
+}
+.submitbutton {
+  text-align: center;
+}
+form .button {
+  background-color: var(--yellow);
+  border: none;
 }

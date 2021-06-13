@@ -58,39 +58,38 @@
         <li class="active"><a href="#" class="active">Preston </a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
-
+    <div class="herocontainer">
+      <h2 class="townbanner">Preston, ID</h2>
+      <picture class="heroimg">
+        <source
+          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          media="(min-width: 512px) and (max-width:899px)"
+        />
+        <source
+          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          media="(min-width:900px)"
+        />
+        <img
+          src="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          alt="mountains reflected in lake blue sky"
+        />
+      </picture>
+      <section class="summary">
+        <h3>Weather Summary</h3>
+        <p>
+          Currently: <span id="sun">Sunny</span><br />
+          Temperature: <span id="hightemp">48</span>°F<br />
+          Wind Chill: <span id="windchill"></span><br />
+          Humidity: <span id="humidity">69%</span><br />
+          Wind Speed: <span id="windspeed">5</span>mph<br />
+        </p>
+      </section>
+    </div>
     <main>
-      <div class="herocontainer">
-        <h2 class="townbanner">Preston, ID</h2>
-        <picture class="heroimg">
-          <source
-            srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
-            media="(min-width: 512px) and (max-width:899px)"
-          />
-          <source
-            srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
-            media="(min-width:900px)"
-          />
-          <img
-            src="images/idaho-rocky-mountains-lake-small-hero.jpg"
-            alt="mountains reflected in lake blue sky"
-          />
-        </picture>
-        <section class="summary">
-          <h3>Weather Summary</h3>
-          <p>
-            Currently: <span id="sun">Sunny</span><br />
-            Temperature: <span id="hightemp">48</span>°F<br />
-            Wind Chill: <span id="windchill"></span><br />
-            Humidity: <span id="humidity">69%</span><br />
-            Wind Speed: <span id="windspeed">5</span>mph<br />
-          </p>
-        </section>
-      </div>
       <div class="forecastdiv">
         <h3>Weather Forecast</h3>
         <div class="forecast">

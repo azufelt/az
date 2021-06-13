@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+    <meta
+      name="keywords"
+      content="drizzly bear preston idaho weather community forecast town news"
+    />
+    <meta
+      name="description"
+      content="the drizzly bear weather and community news for town preston idaho"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="js/script.js" defer></script>
+    <script src="js/formsubmit.js" defer></script>
+
+    <!-- <script src="js/imgresize.js" defer></script> -->
+
+    <title>The Drizzly Bear-Preston Weather</title>
+  </head>
+  <body class="stormcenter">
+    <aside class="banner">
+      Preston Pancakes 🥞 this Saturday! <br class="linebreak" />Old Mill Park @
+      8 a.m.
+    </aside>
+    <header>
+      <picture class="logoimg">
+        <source
+          srcset="images/umbrella-drizzly-bear.png"
+          media="(min-width: 776px)"
+        />
+        <source
+          srcset="images/umbrella-drizzly-bear-medium.png"
+          media="(min-width: 521px) and (max-width: 775px)"
+        />
+        <img
+          src="images/umbrella-drizzly-bear-small.png"
+          alt="stick drawing bear holding umbrella"
+        />
+      </picture>
+
+      <div class="title">
+        <h1>The Drizzly Bear</h1>
+        <span class="slogan">Be Prepared. Weather or Not.</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="navmenu">
+        <li><a class="ham">&#9776;</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston </a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <section>
+      <h2>Storm Center</h2>
+
+      <img src="images/tornado-small-hero.jpg" alt="tornado crossing road" />
+    </section>
+    <main>
+      <!-- Must contain:
+        a form that includes:
+        - full name (input type is text and required, only excepts letters, miniumum of 5 letters.
+        - email, input type is email, uses a placeholder for demo email
+        - phone number, input type is tel, required
+        - zip code, input type is number, required
+        - storm date, input type is date
+        - storm type, input type is list, using a  data list includes "flash flood, hail, hurricane, thunderstorm, tornado"
+        - storm severeity, using type rand 1-10, with corresponing label indicating 1-10 range
+        - storm region, using select with drop-down options of "preston, soda springs, fish have"
+            add a first option with text "Select Region" is shown by default, but that is not selectable
+            the rest should have relevant value attributes
+        - user in-danger level, using radio input, with options of "yes, maybe, no"
+        - textarea for additional info or comments
+        - Form submission button, using input type submit
+      
+      -All fields sh0ould have a name attribute
+      -every field element including text area should be encase in a <label> tag to support accessibility
+      -create new page labeled "thanks.html" load when user submits form
+    
+      -consider design and flow of dead space
+      -deviate from table build activity... which means... build this in a table... hmmm
+    -->
+
+      <h3>
+        Thank you for submitting a Storm Report for your area. A weather
+        specialist will contact you as soon as possible.
+      </h3>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box box1">
+          <img
+            class="mapimg"
+            src="images/tri-town-map.jpg"
+            alt="map of cities in southern idaho"
+          />
+        </div>
+        <div class="contactdiv footer-box box2">
+          <ul class="contact">
+            <li>Find us in-person or online!</li>
+            <li><span class="contacticon">✉︎</span> info@thedrizzlybear.com</li>
+            <li><span class="contacticon">✆</span> (208)-867-5309</li>
+          </ul>
+        </div>
+        <div class="socialnav box3">
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonfbyellow.png"
+              alt="social link fb"
+          /></a>
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonigsocialyellow.png"
+              alt="social link ig"
+          /></a>
+          <a href="#">
+            <img
+              class="socialicon"
+              src="images/socialbuttonyoutubeyellow.png"
+              alt="social link youtube"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
+        Ashley Zufelt
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Heebo", "Work Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
+<!-- Use figure and fig caption. use a simply grid system-->
+<!-- Write Script for how many days from when a client visited the site last-->

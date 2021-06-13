@@ -22,12 +22,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script src="js/script.js" defer></script>
+    <script src="js/formsubmit.js" defer></script>
 
     <!-- <script src="js/imgresize.js" defer></script> -->
 
     <title>The Drizzly Bear-Preston Weather</title>
   </head>
-  <body>
+  <body class="stormcenter">
     <aside class="banner">
       Preston Pancakes 🥞 this Saturday! <br class="linebreak" />Old Mill Park @
       8 a.m.
@@ -60,11 +61,32 @@
         <li><a href="preston-7.html">Preston </a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li class="active"><a href="#">Gallery</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
+    <!-- <section>
+      <h2>Storm Center</h2>
 
+      <img src="images/tornado-small-hero.jpg" alt="tornado crossing road" />
+    </section> -->
+    <div class="herocontainer">
+      <h2 class="townbanner">Storm Center</h2>
+      <picture class="heroimg">
+        <!-- <source
+          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          media="(min-width: 512px) and (max-width:899px)"
+        /> -->
+        <source
+          srcset="images/tornado-small-hero.jpg"
+          media="(min-width:900px)"
+        />
+        <img
+          src="images/tornado-small-hero.jpg"
+          alt="orange sky tornado on road"
+        />
+      </picture>
+    </div>
     <main>
       <!-- Must contain:
         a form that includes:
@@ -89,84 +111,132 @@
       -consider design and flow of dead space
       -deviate from table build activity... which means... build this in a table... hmmm
     -->
+
+      <h3>Report a storm event in your area:</h3>
       <form>
         <div>
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          attern="[a-z].{5,}" title="Five or more characters"
-          required="required"
-        />
-      </div>
-      <div>
-        <label for="email">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="name@email.com"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          required="required"
-        />
-      </div>
-      <div>
-        <label for="tel">Phone:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          required="required"
-        />
-      </div>
-      <div>
-        <label for="zip">Zip Code:</label>
-        <input
-          type="number"
-          id="zip"
-          name="zip"
-          required="required"
-        />
-      </div>
-      <div>
-        <label for="storm">Storm Date:</label>
-        <input type="date" id="stormdate" name="stormdate" /><br /><br />
-        <label for="stormtype"> Storm Type</label>
-        <input list="stormtypes" name="stormype" id="stormtype" />
-        <datalist id="stormtypes">
-          <option value="Flash Flood"></option>
-          <option value="Hail"></option>
-          <option value="Hurricane"></option>
-          <option value="Thunderstorm"></option>
-          <option value="Tornado"></option></datalist
-        >
-      </div>
-      <div>
-        <label for="stormrange"
-          >Storm Severity(1 to 10, 10 being most severe):</label
-        >
-        <input type="range" id="stormrange" name="stormrange" /><br /><br />
-        <label for="region">Choose a Region:</label>
-        <select name="region" id="region">
-          <option value="" selected="true" disabled>Select Region</option>
-          <option value="preston">Preston</option>
-          <option value="sodasprings">Soda Springs</option>
-          <option value="fishhaven">Fish Haven</option>
-        </select>
-      </div>
-      <div>
-        <p>Are you in danger?:</p>
-        <input type="radio" id="yes" name="danger" value="yes" />
-        <label for="yes">Yes</label><br />
-        <input type="radio" id="Maybe" name="danger" value="Maybe" />
-        <label for="Maybe">Maybe</label><br />
-        <input type="radio" id="No" name="danger" value="No" />
-        <label for="No">No</label>
-      </div>
-      <div>
-        <label for="comments">Additional Comments:</label><br />
-        <textarea id="comments" name="comments" rows="5"> </textarea>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First & Last Name (Required)"
+            attern="[a-z].{5,}"
+            title="Five or more characters"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="email">Email Address:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@email.com"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="tel">Phone:</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone (Required)"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="zip">Zip Code:</label><br />
+          <input
+            type="number"
+            id="zip"
+            name="zip"
+            placeholder="Zip Code (Required)"
+            required="required"
+          />
+        </div>
+        <div>
+          <label for="storm">Storm Date:</label><br />
+          <input type="date" id="stormdate" name="stormdate" />
+        </div>
+        <div>
+          <label for="stormtype"> Storm Type:</label><br />
+          <input
+            list="stormtypes"
+            name="stormype"
+            id="stormtype"
+            placeholder="Storm Type (Ex. Tornado)"
+          />
+          <datalist id="stormtypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="rating"
+            >Storm Severity:<br />
+            <span class="stormrangelabel">(1 to 10, 10 being most severe)</span>
+            <input
+              type="range"
+              id="rating"
+              name="stormrange"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+            /><span id="ratingvalue">5</span></label
+          >
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="region">Choose a Region:</label><br />
+          <select name="region" id="region">
+            <option value="" selected="true" disabled>Select Region</option>
+            <option value="preston">Preston</option>
+            <option value="sodasprings">Soda Springs</option>
+            <option value="fishhaven">Fish Haven</option>
+          </select>
+        </div>
+        <div>
+          <p>Are you in danger?</p>
+          <input type="radio" id="yes" name="danger" value="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="Maybe" name="danger" value="Maybe" />
+          <label for="Maybe">Maybe</label><br />
+          <input type="radio" id="No" name="danger" value="No" />
+          <label for="No">No</label>
+        </div>
+        <div>
+          <label for="comments">Additional Comments:</label><br />
+          <textarea id="comments" name="comments" rows="5"> </textarea>
+        </div>
+        <div class="submitbutton">
+          <input
+            class="button"
+            type="submit"
+            id="stormbutton"
+            name="submitbutton"
+            value="Submit Storm Report"
+          />
+        </div>
       </form>
     </main>
     <footer>
