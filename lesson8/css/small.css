@@ -273,7 +273,6 @@ img[data-src].loaded {
 form {
   display: grid;
   grid-template-columns: 1fr;
-  align-tracks: center;
   padding: 2%;
   font-size: 115%;
   background-color: var(--silver);
