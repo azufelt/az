@@ -318,7 +318,9 @@ form :nth-child(10) textarea {
 .submitbutton {
   text-align: center;
 }
-form .button {
+button {
   background-color: var(--yellow);
   border: none;
+  padding: 1rem;
+  border-radius: 5px;
 }
