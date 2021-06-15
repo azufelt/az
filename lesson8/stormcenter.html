@@ -113,8 +113,169 @@
     -->
 
       <h3>Report a storm event in your area:</h3>
-      <form>
-        <div>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="formentry1">
+            <label for="name">Name*</label><br />
+            <input
+              class="inputfield"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First & Last Name"
+              pattern="/abc/"
+              size="5"
+              title="Five or more characters"
+              required="required"
+            />
+          </div>
+          <div class="formentry2">
+            <label for="email">Email Address:</label><br />
+            <input
+              class="inputfield"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@email.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div class="formentry3">
+            <label for="phone">Phone*</label><br />
+            <input
+              class="inputfield"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="1235551234"
+              required="required"
+            />
+          </div>
+          <div class="formentry4">
+            <label for="zip">Zip Code*</label><br />
+            <input
+              class="inputfield"
+              id="zip"
+              name="zip"
+              placeholder="12345"
+              required="required"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Storm Report</legend>
+
+          <div class="formentry1">
+            <label for="stormdate">Storm Date:</label>
+            <br />
+            <input
+              class="inputfield"
+              type="date"
+              id="stormdate"
+              name="stormdate"
+            />
+          </div>
+          <div class="formentry2">
+            <label for="stormtype"> Storm Type:</label><br />
+            <input
+              class="inputfield"
+              list="stormtypes"
+              name="stormype"
+              id="stormtype"
+              placeholder="Storm Type (Ex. Tornado)"
+            />
+            <datalist id="stormtypes">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </div>
+          <div class="formentry3">
+            <label for="stormrange"
+              >Storm Severity:<br />
+              <span class="stormrangelabel"
+                >(1 to 10, 10 being most severe)</span
+              >
+              <input
+                class="inputfield"
+                type="range"
+                id="rating"
+                name="stormrange"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                list="tickmarks" /><span id="ratingvalue"></span
+            ></label>
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+          </div>
+          <div class="formentry4">
+            <label for="region">Choose a Region:</label><br />
+            <select class="inputfield" name="region" id="region">
+              <option value="" selected="true" disabled>Select Region</option>
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Danger Zone</legend>
+          <div class="formentry1">
+            <label>Are you in danger?</label><br />
+            <input
+              class="sbs"
+              type="radio"
+              id="yes"
+              name="danger"
+              value="yes"
+            />
+            <label for="yes">Yes</label><br />
+            <input
+              class="sbs"
+              type="radio"
+              id="Maybe"
+              name="danger"
+              value="Maybe"
+            />
+            <label for="Maybe">Maybe</label><br />
+            <input class="sbs" type="radio" id="No" name="danger" value="No" />
+            <label for="No">No</label>
+          </div>
+          <div class="formentry2">
+            <label for="comments">Additional Comments:</label><br />
+            <textarea class="inputfield" id="comments" name="comments" rows="5">
+            </textarea>
+          </div>
+        </fieldset>
+        <div class="submitbutton">
+          <button
+            type="submit"
+            id="stormbutton"
+            name="submitbutton"
+            value="Send Request"
+            accesskey="s"
+            onclick="stormReport()"
+          >
+            Submit Storm Report
+          </button>
+        </div>
+        <!-- <div>
           <label for="name">Name:</label><br />
           <input
             type="text"
@@ -138,12 +299,12 @@
           />
         </div>
         <div>
-          <label for="phone">Phone:</label><br />
+          <label for="phone">Phone*</label><br />
           <input
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Phone (Required)"
+            placeholder="1235551234"
             required="required"
           />
         </div>
@@ -156,7 +317,8 @@
             placeholder="Zip Code (Required)"
             required="required"
           />
-        </div>
+        </div> -->
+        <!--       
         <div>
           <label for="stormdate">Storm Date:</label><br />
           <input type="date" id="stormdate" name="stormdate" />
@@ -213,8 +375,8 @@
             <option value="sodasprings">Soda Springs</option>
             <option value="fishhaven">Fish Haven</option>
           </select>
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
           <p>Are you in danger?</p>
           <input type="radio" id="yes" name="danger" value="yes" />
           <label for="yes">Yes</label><br />
@@ -226,8 +388,8 @@
         <div>
           <label for="comments">Additional Comments:</label><br />
           <textarea id="comments" name="comments" rows="5"> </textarea>
-        </div>
-        <div class="submitbutton">
+        </div> -->
+        <!-- <div class="submitbutton">
           <button
             type="submit"
             id="stormbutton"
@@ -238,7 +400,7 @@
           >
             Submit Storm Report
           </button>
-        </div>
+        </div> -->
       </form>
     </main>
     <footer>

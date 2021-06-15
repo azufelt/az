@@ -31,4 +31,10 @@
   .gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  form {
+    padding: 2rem;
+  }
+  fieldset {
+    margin: 4rem auto;
+  }
 }

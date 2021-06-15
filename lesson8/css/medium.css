@@ -122,16 +122,35 @@
     grid-template-columns: 1fr 1fr;
     margin: 5%;
   }
+  /*-----Form Center -----*/
+  fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .formentry1 {
+    display: grid;
+    grid-column: 1;
+  }
+  .formentry2 {
+    display: grid;
+    grid-column: 2;
+  }
+  .formentry3 {
+    display: grid;
+    grid-column: 1;
+  }
+  .formentry4 {
+    display: grid;
+    grid-column: 2;
+  }
 
   figure:nth-child(even) {
     color: var(--black);
     background-color: var(--silver);
   }
-  /*----- Storm Center Page ----*/
-  form {
-    grid-template-columns: 1fr 1fr;
-  }
-  .submitbutton {
-    grid-column: 1/3;
+  /*---- radio button field ------*/
+  .sbs {
+    display: inline;
+    padding-top: 1rem;
   }
 }

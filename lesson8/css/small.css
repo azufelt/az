@@ -271,14 +271,23 @@ img[data-src].loaded {
   background-color: var(--blue);
 }
 form {
-  display: grid;
-  grid-template-columns: 1fr;
   padding: 2%;
-  font-size: 115%;
   background-color: var(--silver);
+  padding-bottom: 2rem;
 }
-input {
+form fieldset {
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  border: 1px solid var(--gray);
+  padding: 1rem;
+}
+form legend {
+  margin: 0 1rem;
+  color: var(--teal);
+}
+.inputfield {
   padding: 0.8rem;
+  margin: 0.5rem;
   width: 80%;
   border-radius: 5px;
   border: 1px solid var(--yellow);
@@ -286,6 +295,7 @@ input {
 form div {
   text-align: left;
   margin-top: 2rem;
+  font-size: 0.8rem;
 }
 form label {
   font-weight: bold;
@@ -299,15 +309,22 @@ form label {
 form :nth-child(8) select {
   padding: 0.8rem;
   margin: 0.5rem;
-  width: 90%;
+  /* width: 90%; */
   border-radius: 5px;
   border: 1px solid var(--yellow);
 }
 /* danger */
-form :nth-child(9) input {
-  width: 30%;
-  margin: 0;
+
+.sbs {
+  margin-top: 1rem;
 }
+
+.sbs[type="radio"] {
+  border: 0px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 /*additional comments*/
 form :nth-child(10) textarea {
   width: 90%;
@@ -323,4 +340,11 @@ button {
   border: none;
   padding: 1rem;
   border-radius: 5px;
+  font-size: 125%;
+}
+.inputfield input:required {
+  border-left: red solid 6px;
+}
+.inputfield input:required:valid {
+  border-left: green solid 6px;
 }
