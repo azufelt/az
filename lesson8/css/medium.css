@@ -129,24 +129,20 @@
     margin: 3rem;
   }
   legend {
-    text-align: center;
+    font-size: 150%;
   }
   .formentry1 {
-    display: grid;
     grid-column: 1;
     margin-top: 0.5rem;
   }
   .formentry2 {
-    display: grid;
     grid-column: 2;
     margin-top: 0.5rem;
   }
   .formentry3 {
-    display: grid;
     grid-column: 1;
   }
   .formentry4 {
-    display: grid;
     grid-column: 2;
   }
 

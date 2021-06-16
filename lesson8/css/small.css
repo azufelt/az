@@ -277,13 +277,13 @@ form {
   background-color: var(--silver);
   padding-bottom: 2rem;
 }
-form fieldset {
+fieldset {
   margin: 1.5rem auto;
   border-radius: 0.3rem;
   border: 1px solid var(--gray);
   padding: 1rem;
 }
-form legend {
+legend {
   margin: 0 1rem;
   color: var(--teal);
 }
