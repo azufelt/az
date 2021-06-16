@@ -126,14 +126,20 @@
   fieldset {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+  }
+  legend {
+    text-align: center;
   }
   .formentry1 {
     display: grid;
     grid-column: 1;
+    margin-top: 0.5rem;
   }
   .formentry2 {
     display: grid;
     grid-column: 2;
+    margin-top: 0.5rem;
   }
   .formentry3 {
     display: grid;
@@ -148,9 +154,7 @@
     color: var(--black);
     background-color: var(--silver);
   }
-  /*---- radio button field ------*/
-  .sbs label {
-    display: inline;
-    width: 50%;
+  input[type="range"] {
+    width: 70%;
   }
 }
