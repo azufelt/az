@@ -24,8 +24,6 @@
     <script src="js/script.js" defer></script>
     <script src="js/formsubmit.js" defer></script>
 
-    <!-- <script src="js/imgresize.js" defer></script> -->
-
     <title>The Drizzly Bear-Preston Weather</title>
   </head>
   <body class="stormcenter">
@@ -65,54 +63,11 @@
         <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
-    <!-- <section>
-      <h2>Storm Center</h2>
-
-      <img src="images/tornado-small-hero.jpg" alt="tornado crossing road" />
-    </section> -->
     <div class="herocontainer">
       <h2 class="townbanner">Storm Center</h2>
-      <picture class="heroimg">
-        <!-- <source
-          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
-          media="(min-width: 512px) and (max-width:899px)"
-        /> -->
-        <source
-          srcset="images/tornado-small-hero.jpg"
-          media="(min-width:900px)"
-        />
-        <img
-          src="images/tornado-small-hero.jpg"
-          alt="orange sky tornado on road"
-        />
-      </picture>
     </div>
     <main>
-      <!-- Must contain:
-        a form that includes:
-        - full name (input type is text and required, only excepts letters, miniumum of 5 letters.
-        - email, input type is email, uses a placeholder for demo email
-        - phone number, input type is tel, required
-        - zip code, input type is number, required
-        - storm date, input type is date
-        - storm type, input type is list, using a  data list includes "flash flood, hail, hurricane, thunderstorm, tornado"
-        - storm severeity, using type rand 1-10, with corresponing label indicating 1-10 range
-        - storm region, using select with drop-down options of "preston, soda springs, fish have"
-            add a first option with text "Select Region" is shown by default, but that is not selectable
-            the rest should have relevant value attributes
-        - user in-danger level, using radio input, with options of "yes, maybe, no"
-        - textarea for additional info or comments
-        - Form submission button, using input type submit
-      
-      -All fields sh0ould have a name attribute
-      -every field element including text area should be encase in a <label> tag to support accessibility
-      -create new page labeled "thanks.html" load when user submits form
-    
-      -consider design and flow of dead space
-      -deviate from table build activity... which means... build this in a table... hmmm
-    -->
-
-      <h3>Report a storm event in your area:</h3>
+      <h3>Report a storm-event in your area:</h3>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>Contact Information</legend>
@@ -124,10 +79,9 @@
               id="name"
               name="name"
               placeholder="First & Last Name"
-              pattern="/abc/"
-              size="5"
-              title="Five or more characters"
-              required="required"
+              pattern="[a-zA-Z ]{5,}"
+              title="Enter five or more characters"
+              required
             />
           </div>
           <div class="formentry2">
@@ -138,7 +92,6 @@
               id="email"
               name="email"
               placeholder="name@email.com"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
           </div>
           <div class="formentry3">
@@ -148,8 +101,10 @@
               type="tel"
               id="phone"
               name="phone"
-              placeholder="1235551234"
-              required="required"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              title="10 digit phone number, no () or -"
+              placeholder="10-digit phone number"
+              required
             />
           </div>
           <div class="formentry4">
@@ -158,8 +113,9 @@
               class="inputfield"
               id="zip"
               name="zip"
+              title="Use 5-digit zip code"
               placeholder="12345"
-              required="required"
+              required
             />
           </div>
         </fieldset>
@@ -194,22 +150,24 @@
             </datalist>
           </div>
           <div class="formentry3">
-            <label for="stormrange"
+            <label for="stormRange"
               >Storm Severity:<br />
               <span class="stormrangelabel"
-                >(1 to 10, 10 being most severe)</span
-              >
-              <input
-                class="inputfield"
-                type="range"
-                id="rating"
-                name="stormrange"
-                value="5"
-                min="1"
-                max="10"
-                step="1"
-                list="tickmarks" /><span id="ratingvalue"></span
-            ></label>
+                >(1 to 10, 10 being most severe) </span
+              ><span id="ratingvalue" class="rangenum">5</span></label
+            ><br />
+            <input
+              type="range"
+              id="stormRange"
+              name="stormrange"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
             <datalist id="tickmarks">
               <option value="0"></option>
               <option value="1"></option>
@@ -227,35 +185,33 @@
           <div class="formentry4">
             <label for="region">Choose a Region:</label><br />
             <select class="inputfield" name="region" id="region">
-              <option value="" selected="true" disabled>Select Region</option>
+              <option value="" disabled>Select Region</option>
               <option value="preston">Preston</option>
               <option value="sodasprings">Soda Springs</option>
               <option value="fishhaven">Fish Haven</option>
             </select>
           </div>
         </fieldset>
+
         <fieldset>
           <legend>Danger Zone</legend>
           <div class="formentry1">
-            <label>Are you in danger?</label><br />
-            <input
-              class="sbs"
-              type="radio"
-              id="yes"
-              name="danger"
-              value="yes"
-            />
-            <label for="yes">Yes</label><br />
-            <input
-              class="sbs"
-              type="radio"
-              id="Maybe"
-              name="danger"
-              value="Maybe"
-            />
-            <label for="Maybe">Maybe</label><br />
-            <input class="sbs" type="radio" id="No" name="danger" value="No" />
-            <label for="No">No</label>
+            <p>Are you in danger?</p>
+
+            <div class="radiodiv">
+              <div class="dangerzone">
+                <input type="radio" id="yes" name="danger" value="yes" />
+                <label for="yes">Yes</label><br />
+              </div>
+              <div class="dangerzone">
+                <input type="radio" id="Maybe" name="danger" value="Maybe" />
+                <label for="Maybe">Maybe</label><br />
+              </div>
+              <div class="dangerzone">
+                <input type="radio" id="No" name="danger" value="No" checked />
+                <label for="No">No</label>
+              </div>
+            </div>
           </div>
           <div class="formentry2">
             <label for="comments">Additional Comments:</label><br />
@@ -264,143 +220,8 @@
           </div>
         </fieldset>
         <div class="submitbutton">
-          <button
-            type="submit"
-            id="stormbutton"
-            name="submitbutton"
-            value="Send Request"
-            accesskey="s"
-            onclick="stormReport()"
-          >
-            Submit Storm Report
-          </button>
+          <input type="submit" class="button" value="Send Request" /><br />
         </div>
-        <!-- <div>
-          <label for="name">Name:</label><br />
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="First & Last Name (Required)"
-            pattern="/abc/"
-            size="5"
-            title="Five or more characters"
-            required="required"
-          />
-        </div>
-        <div>
-          <label for="email">Email Address:</label><br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="name@email.com"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-        </div>
-        <div>
-          <label for="phone">Phone*</label><br />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="1235551234"
-            required="required"
-          />
-        </div>
-        <div>
-          <label for="zip">Zip Code:</label><br />
-          <input
-            type="number"
-            id="zip"
-            name="zip"
-            placeholder="Zip Code (Required)"
-            required="required"
-          />
-        </div> -->
-        <!--       
-        <div>
-          <label for="stormdate">Storm Date:</label><br />
-          <input type="date" id="stormdate" name="stormdate" />
-        </div>
-        <div>
-          <label for="stormtype"> Storm Type:</label><br />
-          <input
-            list="stormtypes"
-            name="stormype"
-            id="stormtype"
-            placeholder="Storm Type (Ex. Tornado)"
-          />
-          <datalist id="stormtypes">
-            <option value="Flash Flood"></option>
-            <option value="Hail"></option>
-            <option value="Hurricane"></option>
-            <option value="Thunderstorm"></option>
-            <option value="Tornado"></option>
-          </datalist>
-        </div>
-        <div>
-          <label for="stormrange"
-            >Storm Severity:<br />
-            <span class="stormrangelabel">(1 to 10, 10 being most severe)</span>
-            <input
-              type="range"
-              id="rating"
-              name="stormrange"
-              value="5"
-              min="1"
-              max="10"
-              step="1"
-              list="tickmarks" /><span id="ratingvalue"></span
-          ></label>
-          <datalist id="tickmarks">
-            <option value="0"></option>
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-            <option value="6"></option>
-            <option value="7"></option>
-            <option value="8"></option>
-            <option value="9"></option>
-            <option value="10"></option>
-          </datalist>
-        </div>
-        <div>
-          <label for="region">Choose a Region:</label><br />
-          <select name="region" id="region">
-            <option value="" selected="true" disabled>Select Region</option>
-            <option value="preston">Preston</option>
-            <option value="sodasprings">Soda Springs</option>
-            <option value="fishhaven">Fish Haven</option>
-          </select>
-        </div> -->
-        <!-- <div>
-          <p>Are you in danger?</p>
-          <input type="radio" id="yes" name="danger" value="yes" />
-          <label for="yes">Yes</label><br />
-          <input type="radio" id="Maybe" name="danger" value="Maybe" />
-          <label for="Maybe">Maybe</label><br />
-          <input type="radio" id="No" name="danger" value="No" />
-          <label for="No">No</label>
-        </div>
-        <div>
-          <label for="comments">Additional Comments:</label><br />
-          <textarea id="comments" name="comments" rows="5"> </textarea>
-        </div> -->
-        <!-- <div class="submitbutton">
-          <button
-            type="submit"
-            id="stormbutton"
-            name="submitbutton"
-            value="Send Request"
-            accesskey="s"
-            onclick="stormReport()"
-          >
-            Submit Storm Report
-          </button>
-        </div> -->
       </form>
     </main>
     <footer>
@@ -455,5 +276,3 @@
     </script>
   </body>
 </html>
-<!-- Use figure and fig caption. use a simply grid system-->
-<!-- Write Script for how many days from when a client visited the site last-->

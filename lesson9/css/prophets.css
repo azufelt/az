@@ -1,0 +1,19 @@
+header,
+footer,
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 200%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+img {
+  width: ;
+}

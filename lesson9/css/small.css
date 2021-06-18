@@ -10,6 +10,8 @@
   --silver: hsla(60, 5%, 93%, 1);
   --white: hsla(0, 0%, 96%, 1);
   --yellow: hsla(39, 74%, 50%, 1);
+  --red: hsla(6, 79%, 40%, 1);
+  --green: hsla(96, 61%, 16%, 1);
 }
 * {
   margin: 0;
@@ -275,13 +277,13 @@ form {
   background-color: var(--silver);
   padding-bottom: 2rem;
 }
-form fieldset {
+fieldset {
   margin: 1.5rem auto;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: 1px solid var(--gray);
   padding: 1rem;
 }
-form legend {
+legend {
   margin: 0 1rem;
   color: var(--teal);
 }
@@ -289,7 +291,7 @@ form legend {
   padding: 0.8rem;
   margin: 0.5rem;
   width: 80%;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: 1px solid var(--yellow);
 }
 form div {
@@ -300,51 +302,74 @@ form div {
 form label {
   font-weight: bold;
 }
+
 .stormrangelabel {
   opacity: 0.8;
   padding-bottom: 0;
   font-size: 0.7rem;
 }
+
 /* region */
 form :nth-child(8) select {
-  padding: 0.8rem;
+  padding: 1rem;
   margin: 0.5rem;
-  /* width: 90%; */
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: 1px solid var(--yellow);
 }
-/* danger */
-
-/* .sbs {
-  margin-top: 1rem;
-}
-
-.sbs[type="radio"] {
-  border: 0px;
-  width: 1.5rem;
-  height: 1.5rem;
-} */
-
 /*additional comments*/
 form :nth-child(10) textarea {
   width: 90%;
   margin: 0.5rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   border: 1px solid var(--yellow);
 }
 .submitbutton {
   text-align: center;
 }
-button {
+.button {
   background-color: var(--yellow);
   border: none;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   font-size: 125%;
 }
-.inputfield input:required {
-  border-left: red solid 6px;
+input:required {
+  border-left: var(--red) solid 6px;
 }
-.inputfield input:required:valid {
-  border-left: green solid 6px;
+input:required:valid {
+  border-left: var(--green) solid 6px;
+}
+.dangerzone {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: 0.5rem;
+  align-items: center;
+}
+.dangerzone label {
+  margin-left: 0.5rem;
+}
+.dangerzone input {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.radiodiv {
+  margin: 0;
+}
+.formentry1 p {
+  padding: 0;
+}
+input[type="range"] {
+  height: 2rem;
+  width: 90%;
+}
+.rangenum {
+  font-size: 1.5rem;
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 0 0.3rem;
+  margin: 0.2rem;
+  border: 1px solid var(--blue);
+  border-radius: 0.2rem;
 }
