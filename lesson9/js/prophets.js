@@ -12,8 +12,8 @@ fetch(requestURL)
       let birthdate = document.createElement('div');
       let birthplace = document.createElement('div');
       title.innerHTML = prophets[i].name + " " + prophets[i].lastname;
-      birthdate.innerHTML = prophets[i].birthdate;
-      birthplace.innerHTML = prophets[i].birthplace;
+      birthdate.innerHTML = "Date of birth: " + prophets[i].birthdate;
+      birthplace.innerHTML = "Place of birth: " + prophets[i].birthplace;
       card.append(title);
       card.append(birthdate);
       card.append(birthplace);
@@ -23,7 +23,6 @@ fetch(requestURL)
       birthdate.setAttribute('class', 'birthdiv');
       birthplace.setAttribute('class', 'birthplacediv');
       document.querySelector('div.cards').append(card);
-      // image.style.width = "100%";
   }
 });
 
