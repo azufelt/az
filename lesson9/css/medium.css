@@ -167,7 +167,7 @@
   .cards section:nth-child(even) .datainfo {
     grid-column: 1/3;
     grid-row: 3/5;
-    align-self: csenter;
+    align-self: center;
     text-align: right;
     padding: 1rem;
     line-height: 2rem;
