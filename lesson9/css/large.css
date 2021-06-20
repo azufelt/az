@@ -37,4 +37,24 @@
   fieldset {
     margin: 4rem auto;
   }
+
+  /*---- Home page JSON ----*/
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+  .cards section:nth-child(even) .datainfo,
+  .cards section:nth-child(odd) .datainfo {
+    grid-row: 3/4;
+    grid-column: 1/6;
+    text-align: left;
+  }
+  .cards section:nth-child(even) .datapic,
+  .cards section:nth-child(odd) .datapic {
+    grid-row: 4/5;
+    grid-column: 1/6;
+    max-width: 85%;
+  }
 }

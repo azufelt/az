@@ -373,3 +373,17 @@ input[type="range"] {
   border: 1px solid var(--blue);
   border-radius: 0.2rem;
 }
+.cards section {
+  background-color: var(--silver);
+  text-align: center;
+  margin: 3rem auto;
+}
+.cards section h4 {
+  background-color: var(--silver);
+  color: var(--blue);
+  font-style: italic;
+}
+.cards section p {
+  padding: 0.2rem;
+  margin-bottom: 0.5rem;
+}

@@ -7,11 +7,11 @@
     <meta name="author" content="Ashley Zufelt" />
     <meta
       name="keywords"
-      content="drizzly bear preston idaho weather community forecast town news"
+      content="drizzly bear idaho weather community forecast town news"
     />
     <meta
       name="description"
-      content="the drizzly bear weather and community news for town preston idaho"
+      content="the drizzly bear weather and community news idaho"
     />
     <link type="text/css" rel="stylesheet" href="css/normalize.css" />
     <link type="text/css" rel="stylesheet" href="css/small.css" />
@@ -22,14 +22,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script src="js/script.js" defer></script>
-    <script src="js/windchill.js" defer></script>
-    <title>The Drizzly Bear-Preston Weather</title>
+    <script src="js/towndata.js" defer></script>
+
+    <title>The Drizzly Bear Weather</title>
   </head>
   <body>
-    <aside class="banner">
-      Preston Pancakes 🥞 this Saturday! <br class="linebreak" />Old Mill Park @
-      8 a.m.
-    </aside>
     <header>
       <picture class="logoimg">
         <source
@@ -54,8 +51,8 @@
     <nav>
       <ul class="navmenu">
         <li><a class="ham">&#9776;</a></li>
-        <li><a href="#">Home</a></li>
-        <li class="active"><a href="#" class="active">Preston </a></li>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="preston-7.html">Preston </a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
@@ -63,34 +60,73 @@
       </ul>
     </nav>
     <div class="herocontainer">
-      <h2 class="townbanner">Preston, ID</h2>
+      <h2 class="townbanner">Southeast Idaho</h2>
       <picture class="heroimg">
         <source
-          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          srcset="images/southeast_idaho_valley_med.jpg"
           media="(min-width: 512px) and (max-width:899px)"
         />
         <source
-          srcset="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          class="heroimg"
+          srcset="images/southeast_idaho_valley_large.jpg"
           media="(min-width:900px)"
         />
         <img
-          src="images/idaho-rocky-mountains-lake-small-hero.jpg"
+          src="images/southeast_idaho_valley_small.jpg"
           alt="mountains reflected in lake blue sky"
         />
       </picture>
-      <section class="summary">
-        <h3>Weather Summary</h3>
-        <p>
-          Currently: <span id="sun">Sunny</span><br />
-          Temperature: <span id="hightemp">48</span>°F<br />
-          Wind Chill: <span id="windchill"></span><br />
-          Humidity: <span id="humidity">69%</span><br />
-          Wind Speed: <span id="windspeed">5</span>mph<br />
-        </p>
-      </section>
     </div>
-    <main>
+    <main class="homegrid">
       <div class="cards"></div>
+      <div class="articlediv clearfix">
+        <h3>Annual Valley Chalk Art Festival</h3>
+        <img
+          class="articleimg"
+          src="images/rainbow-sidewalk.jpg"
+          alt="rainbow sidewalk chalk art"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
+          vero autem. Error rem corrupti ducimus facere accusamus, quidem
+          eligendi!
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam
+          quidem at magni ex beatae, dignissimos obcaecati perspiciatis, porro
+          ut quisquam mollitia commodi debitis. Fugiat temporibus consectetur
+          sint quae, delectus minus dolores blanditiis perferendis unde,
+          distinctio numquam expedita dolor molestias vitae enim labore,
+          voluptatum consequatur sit. Nobis, harum earum voluptatem minima
+          reprehenderit ipsam ratione architecto illum nulla ea inventore aut et
+          commodi sequi rerum facilis expedita officia facere velit officiis
+          provident possimus dolorem. Dignissimos error mollitia iste, commodi
+          atque sit similique consequuntur deserunt delectus facere quae tempore
+          at nesciunt magni?
+          <br />
+          <br />Adipisci quos sit aperiam neque omnis animi obcaecati nemo saepe
+          doloribus nostrum ad eius ratione quibusdam accusantium aut qui
+          numquam ipsum sed, delectus molestias dolorum laudantium cupiditate
+          repudiandae. Eius aliquam laboriosam, et modi dignissimos hic minima.
+          Tempore odio aspernatur cum nobis eum fugiat praesentium, numquam
+          distinctio corrupti amet accusantium? Numquam laborum nam ut iure sed
+          incidunt neque animi. Cum temporibus quam ut obcaecati atque eum.
+          Temporibus quae corrupti qui reprehenderit nobis aut sed maiores
+          aspernatur impedit ea non eos sit similique sint asperiores, quia
+          alias laboriosam harum excepturi consectetur accusamus! Provident
+          mollitia et debitis dignissimos illo totam, voluptatum, corporis
+          quisquam distinctio consequatur non! Odio quas dolores expedita velit.
+          Quasi, numquam!
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          quibusdam quisquam necessitatibus error, maiores animi, fugiat eius
+          dicta corporis blanditiis obcaecati reprehenderit illum. Inventore
+          consequuntur amet expedita rerum natus debitis.
+        </p>
+        <a href="#" class="articlebutton">To continue reading⇢</a>
+      </div>
     </main>
 
     <footer>
