@@ -1,0 +1,60 @@
+@media only screen and (min-width: 68.75rem) {
+  .logoimg {
+    max-width: 10%;
+    margin-left: 20%;
+  }
+  .box1 {
+    padding-right: 2rem;
+    margin: auto 0 auto 2%;
+    max-width: 300px;
+  }
+  .box2 {
+    border-left: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    padding: 2rem;
+    margin: auto 0;
+  }
+  .box3 {
+    display: inline-flex;
+    margin: 5% 7% 5% auto;
+    padding: 2rem;
+  }
+  .summary {
+    top: 6rem;
+  }
+  figure {
+    padding: 2rem;
+  }
+  .galleryimg {
+    box-shadow: 1rem 1rem 1rem 0 var(--gray);
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  form {
+    padding: 2rem;
+  }
+  fieldset {
+    margin: 4rem auto;
+  }
+
+  /*---- Home page JSON ----*/
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+  .cards section:nth-child(even) .datainfo,
+  .cards section:nth-child(odd) .datainfo {
+    grid-row: 3/4;
+    grid-column: 1/6;
+    text-align: left;
+  }
+  .cards section:nth-child(even) .datapic,
+  .cards section:nth-child(odd) .datapic {
+    grid-row: 4/5;
+    grid-column: 1/6;
+    max-width: 85%;
+  }
+}
