@@ -19,7 +19,7 @@ const today = date.getDay();
 const tomorrow = today + 1;
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 if (today == 3) {
-  document.querySelector(".forecastbox1").innerHTML = days[today];
+document.querySelector(".forecastbox1").innerHTML = days[today];
 document.querySelector(".forecastbox2").innerHTML = days[today + 1];
 document.querySelector(".forecastbox3").innerHTML = days[today + 2];
 document.querySelector(".forecastbox4").innerHTML = days[today + 3];
