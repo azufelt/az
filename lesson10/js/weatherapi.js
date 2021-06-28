@@ -41,8 +41,8 @@ fetch(apiURL)
     document.querySelector("#icon").setAttribute("src", imagesrc);
     document.querySelector("#icon").setAttribute("alt", description);
 
-    // const forecastData = document.querySelector("#data");
-    // forecastData.innerHTML = jsObject.main.temp.toFixed(0) + "°F<p> & <p>" + jsObject.weather[0].description;
+    const forecastData = document.querySelector("#data");
+    forecastData.innerHTML = jsObject.main.temp.toFixed(0) + "°F<p> & <p>" + jsObject.weather[0].description;
   });
 
 
