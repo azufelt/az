@@ -19,6 +19,7 @@ fetch(requestURL)
       card.append(birthdate);
       card.append(birthplace);
       card.append(image);
+      
       image.setAttribute('src', prophet.imageurl);
       image.setAttribute('alt', prophet.name + " " + prophet.lastname);
       birthdate.setAttribute('class', 'birthdiv');

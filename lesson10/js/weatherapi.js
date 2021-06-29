@@ -6,10 +6,9 @@ const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + 
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     const currentConditions = document.querySelector("#conditions");
-    currentConditions.textContent = jsObject.weather[0].description;
+    currentConditions.textContent = jsObject.weather[0].main;
 
     const currentTemp = document.querySelector("#currentTemp");
     currentTemp.textContent = jsObject.main.temp.toFixed(0);
@@ -30,19 +29,6 @@ fetch(apiURL)
     }
     document.querySelector("#windchill").innerHTML = message;
 
-    // const temperature = document.querySelector("#temperature");
-    // temperature.textContent = jsObject.main.temp;
-    // const currently = document.querySelector("currently");
-    // currently.innerHTML= `<strong>${jsObject.weather[0].description.toUpperCase()}</strong>`;
-    // document.querySelector("#hightemp").textContent = jsObject.main.temp;
-
-    const imagesrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
-    const description = jsObject.weather[0].icon;
-    document.querySelector("#icon").setAttribute("src", imagesrc);
-    document.querySelector("#icon").setAttribute("alt", description);
-
-    const forecastData = document.querySelector("#data");
-    forecastData.innerHTML = jsObject.main.temp.toFixed(0) + "°F<p> & <p>" + jsObject.weather[0].description;
   });
 
 
@@ -51,21 +37,37 @@ fetch(apiURL)
   fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-      // console.log(jsObject);
-      let day = 0;
-      const dayofweek = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
+     
+      const dayofWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
       const fiveDay = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'));
-      console.log(fiveDay);
+  
+      fiveDay.forEach( dayCard => {
+        console.log(fiveDay);
 
-      fiveDay.forEach( x => {
-        let d = new Date(x.dt_txt);
-        document.querySelector(".forecastbox1") .textContent = dayofweek[0];
-        document.querySelector(".forecastbox2") .textContent = dayofweek[1];
-        document.querySelector(".forecastbox3") .textContent = dayofweek[2];
-        document.querySelector(".forecastbox4") .textContent = dayofweek[3];
-        document.querySelector(".forecastbox5") .textContent = dayofweek[4];
+        let d = new Date(dayCard.dt_txt);
+        let card = document.createElement("div");
+
+        let title = document.createElement("h4");
+        title.innerHTML = dayofWeek[d.getDay()]
+        title.setAttribute("class", "forecast-head");
+        
+        let fiveDayConditions = document.createElement("p");
+        fiveDayConditions.innerHTML = dayCard.main.temp.toFixed(0) + " °F <br> " + dayCard.weather[0].main;
+      
+        let image = document.createElement("img");
+        const imageURL = `https://openweathermap.org/img/w/${dayCard.weather[0].icon}.png`;
+        image.setAttribute("src", imageURL);
+        image.setAttribute("alt", dayCard.weather[0].description);
+        image.setAttribute("class", "icon");
+
+        card.append(title);
+        card.append(image);
+        card.append(fiveDayConditions);
+
+        card.setAttribute("class", "forecast-box");
+        document.querySelector("div.forecast").append(card);
+
     })
-      // document.querySelector("forecastbox1").textContent = forecastData[0].dt;
     });
- 
+  

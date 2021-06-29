@@ -57,4 +57,19 @@
     grid-column: 1/6;
     max-width: 85%;
   }
+  .summary {
+    position: absolute;
+    border: 4px solid var(--yellow);
+    background-color: hsla(192, 6%, 67%, 0.5);
+    padding: 2rem 1rem;
+    text-align: left;
+    top: 5.3rem;
+    left: 2rem;
+    box-shadow: 0.5rem 1rem 0.5rem var(--black);
+  }
+  .summary h3 {
+    font-size: 150%;
+    color: var(--white);
+    background-color: hsla(192, 6%, 67%, 0);
+  }
 }
