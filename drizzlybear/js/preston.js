@@ -1,3 +1,11 @@
+//------display banner if day is friday--------//
+if (new Date().getDay() == 5) {
+  document.querySelector(".banner").style.display= "block";
+} else {
+  document.querySelector(".banner").style.display= "none";
+}
+
+
 const cityid = "5604473";
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + "&appid=" + APPID + "&units=imperial";
@@ -43,6 +51,8 @@ fetch(apiURL)
       const fiveDay = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'));
   
       fiveDay.forEach( dayCard => {
+        console.log(fiveDay);
+
         let d = new Date(dayCard.dt_txt);
         let card = document.createElement("div");
 

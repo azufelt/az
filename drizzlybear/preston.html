@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+    <meta
+      name="keywords"
+      content="drizzly bear preston idaho weather community forecast town news"
+    />
+    <meta
+      name="description"
+      content="the drizzly bear weather and community news for town preston idaho"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="js/script.js" defer></script>
+    <script src="js/banner.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
+    <title>The Drizzly Bear-Preston Weather</title>
+  </head>
+  <body>
+    <aside class="banner">
+      Preston Pancakes 🥞 this Saturday! <br class="linebreak" />Old Mill Park @
+      8 a.m.
+    </aside>
+    <header>
+      <picture class="logoimg">
+        <source
+          srcset="images/umbrella-drizzly-bear.png"
+          media="(min-width: 776px)"
+        />
+        <source
+          srcset="images/umbrella-drizzly-bear-medium.png"
+          media="(min-width: 521px) and (max-width: 775px)"
+        />
+        <img
+          src="images/umbrella-drizzly-bear-small.png"
+          alt="stick drawing bear holding umbrella"
+        />
+      </picture>
+
+      <div class="title">
+        <h1>The Drizzly Bear</h1>
+        <span class="slogan">Be Prepared. Weather or Not.</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="navmenu">
+        <li><a class="ham">&#9776;</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Preston </a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="herocontainer">
+      <h2 class="townbanner">Preston, ID</h2>
+      <picture class="heroimg">
+        <source
+          srcset="images/idaho-rocky-mountains-lake-med.jpg"
+          media="(min-width: 512px) and (max-width:899px)"
+        />
+        <source
+          srcset="images/idaho-rocky-mountains-lake-large.jpg"
+          media="(min-width:900px)"
+        />
+        <img
+          src="images/idaho-rocky-mountains-lake-small.jpg"
+          alt="mountains reflected in lake blue sky"
+        />
+      </picture>
+      <section class="summary">
+        <h3>Weather Summary</h3>
+        <p>
+          Currently: <span id="conditions"></span><br />
+          Temperature: <span id="currentTemp"></span>°F<br />
+          Wind Chill: <span id="windchill"></span><br />
+          Humidity: <span id="humidity"></span><br />
+          Wind Speed: <span id="windspeed"></span>mph<br />
+        </p>
+      </section>
+    </div>
+    <main>
+      <div class="forecastdiv">
+        <h3>Weather Forecast</h3>
+        <div class="forecast"></div>
+      </div>
+
+      <div class="articlediv clearfix">
+        <h3>Best Star-Gazing Spots and Tips!</h3>
+        <img
+          class="articleimg"
+          src="images/idaho-night-sky-stars.jpg"
+          alt="night sky stars tree silhouette"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
+          vero autem. Error rem corrupti ducimus facere accusamus, quidem
+          eligendi!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          saepe adipisci eaque non, rerum ullam illo odio quod voluptatem atque
+          vero autem. Error rem corrupti ducimus facere accusamus, quidem
+          eligendi!
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+          quibusdam quisquam necessitatibus error, maiores animi, fugiat eius
+          dicta corporis blanditiis obcaecati reprehenderit illum. Inventore
+          consequuntur amet expedita rerum natus debitis.
+        </p>
+        <a href="#" class="articlebutton">To continue reading⇢</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box box1">
+          <img
+            class="mapimg"
+            src="images/preston-map.png"
+            alt="map of preston"
+          />
+        </div>
+        <div class="contactdiv footer-box box2">
+          <ul class="contact">
+            <li>Find us in-person or online!</li>
+            <li><span class="contacticon">✉︎</span> info@thedrizzlybear.com</li>
+            <li><span class="contacticon">✆</span> (208)-867-5309</li>
+          </ul>
+        </div>
+        <div class="socialnav box3">
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonfbyellow.png"
+              alt="social link fb"
+          /></a>
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonigsocialyellow.png"
+              alt="social link ig"
+          /></a>
+          <a href="#">
+            <img
+              class="socialicon"
+              src="images/socialbuttonyoutubeyellow.png"
+              alt="social link youtube"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
+        Ashley Zufelt
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Heebo", "Work Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
