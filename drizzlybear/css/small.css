@@ -198,9 +198,6 @@ p {
   padding: 0.5rem;
   line-height: 1.5rem;
 }
-.byline {
-  text-decoration: underline;
-}
 .contact {
   color: var(--white);
   background-color: var(--teal);
