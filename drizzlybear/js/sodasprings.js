@@ -52,8 +52,6 @@ fetch(apiURL)
       const fiveDay = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'));
   
       fiveDay.forEach( dayCard => {
-        console.log(fiveDay);
-
         let d = new Date(dayCard.dt_txt);
         let card = document.createElement("div");
 
