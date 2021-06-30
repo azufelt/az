@@ -401,3 +401,15 @@ input[type="range"] {
   padding: 0.2rem;
   margin-bottom: 0.5rem;
 }
+.quotes {
+  font-size: 300%;
+  color: var(--teal);
+  text-shadow: 2px 2px 2px var(--silver);
+  text-transform: capitalize;
+}
+.pullquote {
+  line-height: 3.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--lightgray);
+}

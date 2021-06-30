@@ -189,4 +189,8 @@
     color: black;
     background-color: var(--white);
   }
+
+  .pullquote {
+    max-width: 40%;
+  }
 }

@@ -1,5 +1,5 @@
-//------display banner if day is Thursday--------//
-if (new Date().getDay() == 4) {
+//------display banner if day is Monday--------//
+if (new Date().getDay() == 1) {
   document.querySelector(".banner").style.display= "block";
 } else {
   document.querySelector(".banner").style.display= "none";
