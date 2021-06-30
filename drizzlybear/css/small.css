@@ -401,7 +401,7 @@ input[type="range"] {
   padding: 0.2rem;
   margin-bottom: 0.5rem;
 }
-.quotes {
+q {
   font-size: 300%;
   color: var(--teal);
   text-shadow: 2px 2px 2px var(--silver);
@@ -412,4 +412,5 @@ input[type="range"] {
   margin: 1rem;
   padding: 1rem;
   background-color: var(--lightgray);
+  text-align: center;
 }
