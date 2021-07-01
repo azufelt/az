@@ -84,8 +84,19 @@ fetch(apiURL)
           } else if (iconDesc == "shower rain") {
             let imagesrc = "images/wrain.png";
             image.setAttribute("src", imagesrc);
-          } else if (iconDesc == "thunderstorm") {
-            let imagesrc = "images/wthunderstorm.png";
+          } else if (
+          iconDesc == "thunderstorm" || 
+          iconDesc == "thunderstorm with light rain" || 
+          iconDesc == "	thunderstorm with rain" ||
+          iconDesc == "thunderstorm with heavy rain" ||
+          iconDesc == "light thunderstorm	" ||
+          iconDesc == "thunderstorm" ||
+          iconDesc == "heavy thunderstorm" ||
+          iconDesc == "ragged thunderstorm"	  ||
+          iconDesc == "thunderstorm with light drizzle"	 ||
+          iconDesc == "thunderstorm with drizzle"	 || 
+          iconDesc ==	"thunderstorm with heavy drizzle") {
+          let imagesrc = "images/wthunderstorm.png";
             image.setAttribute("src", imagesrc);
           } else if (iconDesc == "snow") {
             let imagesrc = "images/wsnow.png";

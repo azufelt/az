@@ -11,8 +11,8 @@ function preloadImage(img) {
 //this is where we create the options of what we want it to do
 const imgOptions = {
     //root: null, would be whatever the viewport is
-  threshold: .4, //This is how much of the image is within the page-view range. if at 1, then 100% of image has to be on page
-  rootMargin: "0px 0px -50px 0px" 
+  threshold: .05, //This is how much of the image is within the page-view range. if at 1, then 100% of image has to be on page
+  rootMargin: "0px 0px -500px 0px" 
 
 };
 // this creates the new intersection observer, so we can feed it some options

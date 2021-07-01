@@ -271,7 +271,7 @@ img[data-src] {
 img[data-src].loaded {
   opacity: 100%;
   filter: blur(0em);
-  transition-duration: 1.5s;
+  transition-duration: 0.05s;
 }
 .visitbanner {
   background-color: var(--lightblue);
