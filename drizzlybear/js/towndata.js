@@ -41,7 +41,7 @@ fetch(requestURL)
 
 
 
-      photo.setAttribute('src', "images/" + towns.photo);
+      photo.setAttribute('src', "images/" + towns.photo + ".jpf");
       photo.setAttribute('alt', towns.name);
       photo.setAttribute('class', 'datapic');
       events.setAttribute('class', 'datadiv');
