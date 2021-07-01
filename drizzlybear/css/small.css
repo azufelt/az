@@ -157,7 +157,7 @@ main > h3 {
   background-color: var(--white);
 }
 .icon {
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   padding: 0.5rem;
 }
@@ -235,7 +235,6 @@ footer {
   text-align: center;
 }
 /*--- CSS for Gallery lesson 7 ---------*/
-
 .gallery {
   display: grid;
   margin: 5% auto;
@@ -281,7 +280,6 @@ img[data-src].loaded {
   font-family: "Work Sans", arial, sans-serif;
   font-size: 2rem;
 }
-
 /*--- Style for Form Page-----*/
 .stormcenter {
   background-color: var(--blue);
@@ -316,13 +314,11 @@ form div {
 form label {
   font-weight: bold;
 }
-
 .stormrangelabel {
   opacity: 0.8;
   padding-bottom: 0;
   font-size: 0.7rem;
 }
-
 /* region */
 form :nth-child(8) select {
   padding: 1rem;
@@ -367,7 +363,6 @@ input:required:valid {
   width: 1.2rem;
   height: 1.2rem;
 }
-
 .radiodiv {
   margin: 0;
 }
