@@ -1,16 +1,14 @@
-
-//------display banner if day is Wednesday--------//
-if (new Date().getDay() == 2) {
+//------display banner if day is friday--------//
+if (new Date().getDay() == 5) {
   document.querySelector(".banner").style.display= "block";
 } else {
   document.querySelector(".banner").style.display= "none";
-};
+}
 
-// -----------weather summary---------//
-const cityid = "5678757";
+
+const cityid = "5604473";
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + "&appid=" + APPID + "&units=imperial";
-
 
 
 fetch(apiURL)
@@ -64,44 +62,24 @@ fetch(apiURL)
         fiveDayConditions.innerHTML = dayCard.main.temp.toFixed(0) + " °F <br> " + dayCard.weather[0].main;
       
         let image = document.createElement("img");
-        
+        // const imageURL = `https://openweathermap.org/img/w/${dayCard.weather[0].icon}.png`;
         let iconDesc= dayCard.weather[0].description;
         if(iconDesc == "few clouds") {
-          let imagesrc = "images/wfewclouds.png";
+          let imagesrc = "images/partlysunny.png";
           image.setAttribute("src", imagesrc);
           } else if(iconDesc == "clear sky") {
-          let imagesrc = "images/wclearsky.png";
+          let imagesrc = "images/sunny.png";
           image.setAttribute("src", imagesrc);
           } else if(iconDesc == "scattered clouds") {
-            let imagesrc = "images/wscatteredclouds.png";
-            image.setAttribute("src", imagesrc);
-          } else if(iconDesc == "broken clouds") {
-            let imagesrc = "images/wbrokenclouds.png";
+            let imagesrc = "images/windy.png";
             image.setAttribute("src", imagesrc);
           } else if (iconDesc == "overcast clouds") {
-            let imagesrc = "images/wbrokenclouds.png";
+            let imagesrc = "images/thunderstorm.png";
             image.setAttribute("src", imagesrc);
           } else if (iconDesc == "light rain") {
-            let imagesrc = "images/wrain.png";
-            image.setAttribute("src", imagesrc);
-          } else if (iconDesc == "shower rain") {
-            let imagesrc = "images/wrain.png";
-            image.setAttribute("src", imagesrc);
-          } else if (iconDesc == "thunderstorm") {
-            let imagesrc = "images/wthunderstorm.png";
-            image.setAttribute("src", imagesrc);
-          } else if (iconDesc == "snow") {
-            let imagesrc = "images/wsnow.png";
-            image.setAttribute("src", imagesrc);
-          } else if (iconDesc == "mist") {
-            let imagesrc = "images/wmist.png";
-            image.setAttribute("src", imagesrc);
-          } else {
-            let imagesrc = "images/wrainbow.png";
+            let imagesrc = "images/rain.png";
             image.setAttribute("src", imagesrc);
           }
-
-         
         
         
         // image.setAttribute("src", imageURL);

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+    <meta
+      name="keywords"
+      content="drizzly bear preston idaho weather community forecast town news"
+    />
+    <meta
+      name="description"
+      content="the drizzly bear weather and community news for town preston idaho"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="js/script.js" defer></script>
+    <!-- <script src="js/preston.js" defer></script> -->
+    <script src="js/weathertest.js" defer></script>
+    <title>TEST PAGE</title>
+  </head>
+  <body>
+    <aside class="banner">
+      Preston Pancakes 🥞 this Saturday! <br class="linebreak" />Old Mill Park @
+      8 a.m.
+    </aside>
+    <header>
+      <picture class="logoimg">
+        <source
+          srcset="images/umbrella-drizzly-bear.png"
+          media="(min-width: 776px)"
+        />
+        <source
+          srcset="images/umbrella-drizzly-bear-medium.png"
+          media="(min-width: 521px) and (max-width: 775px)"
+        />
+        <a href="index.html">
+          <img
+            src="images/umbrella-drizzly-bear-small.png"
+            alt="stick drawing bear holding umbrella"
+        /></a>
+      </picture>
+
+      <div class="title">
+        <h1>The Drizzly Bear</h1>
+        <span class="slogan">Be Prepared. Weather or Not.</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="navmenu">
+        <li><a class="ham">&#9776;</a></li>
+        <li><a href="./">Home</a></li>
+        <li class="active"><a href="#">Preston </a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <div class="herocontainer">
+      <h2 class="townbanner">Preston, ID</h2>
+      <picture class="heroimg">
+        <source
+          srcset="images/idaho-rocky-mountains-lake-med.jpg"
+          media="(min-width: 512px) and (max-width:899px)"
+        />
+        <source
+          srcset="images/idaho-rocky-mountains-lake-large.jpg"
+          media="(min-width:900px)"
+        />
+        <img
+          src="images/idaho-rocky-mountains-lake-small.jpg"
+          alt="mountains reflected in lake blue sky"
+        />
+      </picture>
+      <section class="summary">
+        <h3>Weather Summary</h3>
+        <p>
+          Currently: <span id="conditions"></span><br />
+          Temperature: <span id="currentTemp"></span>°F<br />
+          Wind Chill: <span id="windchill"></span><br />
+          Humidity: <span id="humidity"></span><br />
+          Wind Speed: <span id="windspeed"></span>mph<br />
+        </p>
+      </section>
+    </div>
+    <main>
+      <div class="forecastdiv">
+        <h3>Weather Forecast</h3>
+        <div class="forecast"></div>
+      </div>
+
+      <div class="articlediv clearfix">
+        <h3>Best Star-Gazing Spots and Tips!</h3>
+        <img
+          class="articleimg"
+          src="images/idaho-night-sky-stars.jpg"
+          alt="night sky stars tree silhouette"
+        />
+        <p>
+          <span class="byline"> by: The Dealio </span><br /><br />
+          Idaho’s Craters of the Moon National Monument is designated as one of
+          39 “International Dark Sky Parks” and the best place to stargaze in
+          Central/Eastern Idaho. Not only is the Craters of the Moon National
+          Monument strikingly beautiful in the daytime, but the camping at night
+          is incredible. With the night sky visible from all points of the
+          horizon, it really is like being immersed in space.
+          <br /><br />
+
+          In the middle of the Sawtooth National Forest, far from any light
+          pollutants, this campground boasts a beautiful lake that reflects the
+          heavens above. At night, the view is breathtaking as the Milky Way and
+          planets from our solar system ignite the sky. Just remember to bring
+          your scentless deodorant and bear spray, and enjoy the nights you will
+          remember forever.
+          <br /><br />
+          Find Something in the Stars for You Whether you prefer to find the
+          zodiacs or the Andromeda galaxy, there is something in the stars for
+          everyone. Before you leave for the night, dive into some literature
+          and learn about what you’ll be seeing in the sky. Be sure to check out
+          other planet’s moons, the Chinese zodiacs, Mayan astrology,
+          neighboring galaxies, and more. At this point, not even the sky is the
+          limit.
+        </p>
+        <a
+          href="https://explorerexburg.com/stargazing-idaho/#:~:text=Idaho's%20Craters%20of%20the%20Moon,camping%20at%20night%20is%20incredible."
+          target="_blank"
+          class="articlebutton active"
+          rel="noopener"
+          >To continue reading⇢</a
+        >
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box box1">
+          <a
+            href="https://www.google.com/maps/place/Preston,+ID+83263/@42.0997416,-111.9153443,13z/data=!3m1!4b1!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173"
+            target="_blank"
+            rel="noopener"
+            ><img
+              class="mapimg"
+              src="images/preston-map.png"
+              alt="map of preston idaho"
+          /></a>
+        </div>
+        <div class="contactdiv footer-box box2">
+          <ul class="contact">
+            <li>Find us in-person or online!</li>
+            <li><span class="contacticon">✉︎</span> info@thedrizzlybear.com</li>
+            <li><span class="contacticon">✆</span> (208)-867-5309</li>
+          </ul>
+        </div>
+        <div class="socialnav box3">
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonfbyellow.png"
+              alt="social link fb"
+          /></a>
+          <a href="#"
+            ><img
+              class="socialicon"
+              src="images/socialbuttonigsocialyellow.png"
+              alt="social link ig"
+          /></a>
+          <a href="#">
+            <img
+              class="socialicon"
+              src="images/socialbuttonyoutubeyellow.png"
+              alt="social link youtube"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span id="currentdate"></span><br />&copy;<span id="currentyear"></span>
+        Ashley Zufelt
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Heebo", "Work Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
