@@ -6,8 +6,6 @@ function adjustRating(stormRange) {
 }
 
 
-
-
 function stormReport() {
   var thanks = window.open("https://azufelt.github.io/lesson8/thanks.html", "_self");
 }

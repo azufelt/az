@@ -70,6 +70,7 @@ a.active {
   background-color: var(--yellow);
   color: var(--blue);
 }
+
 .ham:hover {
   cursor: pointer;
 }
@@ -137,7 +138,6 @@ main > h3 {
   display: flex;
   flex-flow: row;
   padding: 0.5rem;
-
   margin: 0 auto;
 }
 .forecast-box {
@@ -336,12 +336,17 @@ form :nth-child(10) textarea {
 .submitbutton {
   text-align: center;
 }
-.button {
+.button,
+a.button {
   background-color: var(--yellow);
   border: none;
   padding: 1rem;
   border-radius: 0.3rem;
   font-size: 125%;
+  text-decoration: none;
+}
+a.button:visited {
+  color: black;
 }
 input:required {
   border-left: var(--red) solid 6px;
@@ -408,4 +413,18 @@ q {
   padding: 1rem;
   background-color: var(--lightgray);
   text-align: center;
+}
+.notfoundgrid section {
+  margin: 1rem;
+}
+.notfoundgrid > h2 {
+  text-align: center;
+  font-size: 8rem;
+}
+.notfoundgrid h4 {
+  text-align: center;
+}
+.notfoundgrid p {
+  text-align: center;
+  margin-bottom: 2rem;
 }
