@@ -72,7 +72,4 @@
     color: var(--white);
     background-color: hsla(192, 6%, 67%, 0);
   }
-  div#eventcard.eventcard.summary {
-    border: 5px soldi red;
-  }
 }
