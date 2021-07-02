@@ -7,9 +7,10 @@
 //display answer in DOM
 
 const logVisit = date;
-localStorage.setItem("visitDateLog", logVisit);
+
 
 const firstVisit = new Date(localStorage.getItem("visitDateLog"));//convert from string to integer
+localStorage.setItem("visitDateLog", logVisit);
 const visitLength = date - firstVisit; 
 const daySince = visitLength/1000/60/60/24;//divide by 1000/60/60/24, then round
 let visitMessage = 0;
