@@ -299,7 +299,9 @@ legend {
   margin: 0 1rem;
   color: var(--teal);
 }
-.inputfield {
+input,
+select,
+textarea {
   padding: 0.8rem;
   margin: 0.5rem;
   width: 80%;
@@ -427,4 +429,8 @@ q {
 .notfoundgrid p {
   text-align: center;
   margin-bottom: 2rem;
+}
+.notfoundgrid section div form {
+  background-color: transparent;
+  text-align: center;
 }
