@@ -6,32 +6,28 @@ function preloadImage(img) {
     return;
   } else {
     img.src = src;
+   
   }
 }
-//this is where we create the options of what we want it to do
+
 const imgOptions = {
-    //root: null, would be whatever the viewport is
-  threshold: .05, //This is how much of the image is within the page-view range. if at 1, then 100% of image has to be on page
+   
+  threshold: .1,
   rootMargin: "0px 0px -500px 0px" 
 
 };
-// this creates the new intersection observer, so we can feed it some options
-//new IntersectionObserver((callback, options) --"callback" is where we write a function, either traditional function() or an arrow =>, arrow function says 'do all this stuff' 
-//function is going to call to entries, and the observer itself.
-//
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
-entries.forEach(entry => {//for every entry do this thing: 
-  if (!entry.isIntersecting) { //if nothing is intersecting, do nothing
+entries.forEach(entry => {
+  if (!entry.isIntersecting) {
     return;
   } else { //
     preloadImage(entry.target);
     imgObserver.unobserve(entry.target);
-      entry.target.classList.toggle("loaded")//adds a class name when it sees it, which adds CSS style
+      entry.target.classList.toggle("loaded")
   }
 
 });
 }, imgOptions);
-//this says look at the variable images which is data-src in the DOM, and for each image observe our observe fucntion
 images.forEach(src => {
   imgObserver.observe(src);
 });

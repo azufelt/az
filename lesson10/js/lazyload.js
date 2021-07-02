@@ -6,6 +6,8 @@ function preloadImage(img) {
     return;
   } else {
     img.src = src;
+    //Could remove src attribute instead of adding class to take of image blur
+     // img.removeAttribute(src); 
   }
 }
 //this is where we create the options of what we want it to do
