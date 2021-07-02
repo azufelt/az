@@ -1,6 +1,5 @@
-
 //------display banner if day is Wednesday--------//
-if (new Date().getDay() == 2) {
+if (new Date().getDay() == 3) {
   document.querySelector(".banner").style.display= "block";
 } else {
   document.querySelector(".banner").style.display= "none";

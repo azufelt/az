@@ -1,4 +1,3 @@
-//----- Date ------//
 const date = new Date();
 const options = {
       weekday: "long",
@@ -10,7 +9,7 @@ const options = {
       "#currentdate"
     ).innerHTML = new Date().toLocaleDateString("en-us", options);
 document.querySelector("#currentyear").innerHTML = date.getFullYear();
-//---- Hamburger Nav Button ------//
+
 const button = document.querySelector(".ham");
 const navlist = document.querySelector(".navmenu");
 

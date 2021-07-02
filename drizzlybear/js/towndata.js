@@ -20,14 +20,12 @@ fetch(requestURL)
       let events = document.createElement('p');
       let datainfo = document.createElement('div');
       
-
       title.innerHTML = towns.name;
       motto.innerHTML = towns.motto;
       yearFounded.innerHTML = "Founded: " + towns.yearFounded;
       currentPopulation.innerHTML = "Population: " + towns.currentPopulation;
       rainfall.innerHTML = "Average Annual Rainfall: " + towns.averageRainfall;
       events.innerHTML = "Upcoming Events: <br>" + towns.events[0];
-
 
       card.append(title);
       card.append(motto);
@@ -37,9 +35,6 @@ fetch(requestURL)
       datainfo.append(rainfall);
       datainfo.append(events);
       card.append(photo);
-     
-
-
 
       photo.setAttribute('src', "images/" + towns.photo);
       photo.setAttribute('alt', towns.name);
@@ -47,7 +42,6 @@ fetch(requestURL)
       events.setAttribute('class', 'datadiv');
       datainfo.setAttribute('class', "datainfo");
       document.querySelector('div.cards').append(card);
-    
     })
     
 });

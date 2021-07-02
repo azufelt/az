@@ -2,7 +2,6 @@ const cityid = "5604473";
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
-
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -30,7 +29,6 @@ fetch(apiURL)
     document.querySelector("#windchill").innerHTML = message;
 
   });
-
 
   const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
