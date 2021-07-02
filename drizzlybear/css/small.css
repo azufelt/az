@@ -273,8 +273,8 @@ img[data-src].loaded {
   transition-duration: 0.5s;
 }
 .visitbanner {
-  background-color: var(--lightblue);
-  color: var(--white);
+  background-color: var(--yellow);
+  color: var(--blue);
   text-align: center;
   padding: 1rem;
   font-family: "Work Sans", arial, sans-serif;
