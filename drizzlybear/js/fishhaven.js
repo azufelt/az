@@ -1,5 +1,5 @@
 //------display banner if day is Monday--------//
-if (new Date().getDay() == 1) {
+if (new Date().getDay() == 4) {
   document.querySelector(".banner").style.display= "block";
 } else {
   document.querySelector(".banner").style.display= "none";
@@ -131,10 +131,8 @@ fetch(requestURL)
       let title = document.createElement('h3');
       let events = document.createElement('p');
       
-
-      title.innerHTML = towns.name;
-      events.innerHTML = "Upcoming Events: <br>" + towns.events[0];
-
+      title.innerHTML = "Upcoming Events:";
+      events.innerHTML = "<br>" + towns.events[0] + "<br>" + towns.events[1] + "<br>" + towns.events[2];
 
       card.append(title);
       card.append(events);

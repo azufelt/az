@@ -12,9 +12,12 @@ fetch(requestURL)
       let image = document.createElement('img');
       let birthdate = document.createElement('div');
       let birthplace = document.createElement('div');
+
+
       title.innerHTML = prophet.name + " " + prophet.lastname;
       birthdate.innerHTML = "Date of birth: " + prophet.birthdate;
       birthplace.innerHTML = "Place of birth: " + prophet.birthplace;
+      
       card.append(title);
       card.append(birthdate);
       card.append(birthplace);

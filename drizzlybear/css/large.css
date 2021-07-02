@@ -72,4 +72,6 @@
     color: var(--white);
     background-color: hsla(192, 6%, 67%, 0);
   }
+  div.summary {
+  }
 }
