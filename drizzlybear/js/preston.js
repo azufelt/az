@@ -11,7 +11,7 @@ const APPID = "150cd72e5595793ee58a48d53d68f9f7";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
 
-
+//-----------weather summary---------//
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -40,7 +40,7 @@ fetch(apiURL)
 
   });
 
-
+//-------5 day forecast----------//
   const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
   fetch(forecastURL)
@@ -60,7 +60,9 @@ fetch(apiURL)
         title.setAttribute("class", "forecast-head");
         
         let fiveDayConditions = document.createElement("p");
-        fiveDayConditions.innerHTML = dayCard.main.temp.toFixed(0) + " °F <br> " + dayCard.weather[0].main;
+        let lowTemp = (dayCard.main.temp_min)-15;
+        fiveDayConditions.innerHTML = "High: " + dayCard.main.temp_max.toFixed(0) + " °F <br> " + "Low: " + lowTemp.toFixed(0) + " °F <br>" + dayCard.weather[0].main;
+        
         let image = document.createElement("img");
         let iconDesc= dayCard.weather[0].description;
         if(iconDesc == "few clouds") {

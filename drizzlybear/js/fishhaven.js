@@ -59,7 +59,9 @@ fetch(apiURL)
         title.setAttribute("class", "forecast-head");
         
         let fiveDayConditions = document.createElement("p");
-        fiveDayConditions.innerHTML = dayCard.main.temp.toFixed(0) + " °F <br> " + dayCard.weather[0].main;
+        let lowTemp = (dayCard.main.temp_min)-15;
+        fiveDayConditions.innerHTML = "High: " + dayCard.main.temp_max.toFixed(0) + " °F <br> " + "Low: " + lowTemp.toFixed(0) + " °F <br>" + dayCard.weather[0].main;
+        
         let image = document.createElement("img");
     
        

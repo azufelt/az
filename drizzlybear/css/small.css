@@ -66,11 +66,14 @@ nav {
 a.active {
   background-color: var(--yellow);
 }
-.navmenu a:hover {
+.navmenu li:hover {
   background-color: var(--yellow);
+
+  transition-duration: 1s;
+}
+.navmenu a:hover {
   color: var(--blue);
 }
-
 .ham:hover {
   cursor: pointer;
 }
@@ -433,4 +436,7 @@ q {
 .notfoundgrid section div form {
   background-color: transparent;
   text-align: center;
+}
+footer a {
+  color: var(--white);
 }
