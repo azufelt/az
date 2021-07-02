@@ -21,7 +21,6 @@ html {
   font-family: "Heebo", arial, sans-serif;
   background-color: var(--white);
 }
-
 header {
   display: flex;
   align-items: center;
@@ -68,7 +67,6 @@ a.active {
 }
 .navmenu li:hover {
   background-color: var(--yellow);
-
   transition-duration: 1s;
 }
 .navmenu a:hover {
@@ -77,7 +75,6 @@ a.active {
 .ham:hover {
   cursor: pointer;
 }
-
 .responsive li {
   display: block;
 }
@@ -240,7 +237,6 @@ footer {
   font-size: 110%;
   text-align: center;
 }
-/*--- CSS for Gallery lesson 7 ---------*/
 .gallery {
   display: grid;
   margin: 5% auto;
@@ -259,7 +255,6 @@ figure:nth-child(even) {
   color: var(--white);
   background-color: var(--blue);
 }
-
 figcaption {
   padding: 1rem;
   margin: 0.5rem;
@@ -268,7 +263,6 @@ figcaption {
   min-width: 300px;
   min-height: 400px;
 }
-
 img[data-src] {
   opacity: 50%;
   filter: blur(3em);
@@ -276,7 +270,7 @@ img[data-src] {
 img[data-src].loaded {
   opacity: 100%;
   filter: blur(0em);
-  transition-duration: 0.05s;
+  transition-duration: 0.5s;
 }
 .visitbanner {
   background-color: var(--lightblue);
@@ -286,7 +280,6 @@ img[data-src].loaded {
   font-family: "Work Sans", arial, sans-serif;
   font-size: 2rem;
 }
-/*--- Style for Form Page-----*/
 .stormcenter {
   background-color: var(--blue);
 }
@@ -327,14 +320,12 @@ form label {
   padding-bottom: 0;
   font-size: 0.7rem;
 }
-/* region */
 form :nth-child(8) select {
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.3rem;
   border: 1px solid var(--yellow);
 }
-/*additional comments*/
 form :nth-child(10) textarea {
   width: 90%;
   margin: 0.5rem;
