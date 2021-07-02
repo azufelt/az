@@ -17,7 +17,7 @@ let visitMessage = 0;
 if (daySince <= 1){ //Check to make sure that it was at least one day ago.
   visitMessage = "Your most recent visit was today.";
 } else {
-  visitMessage = "Your last visit was" + daySince.toFixed + " days ago.";
+  visitMessage = "Your last visit was" + daySince.toFixed(0)+ " days ago.";
 }
 document.querySelector("#dateLog").innerHTML = visitMessage;
 
