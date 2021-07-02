@@ -1,17 +1,16 @@
-//------display banner if day is friday--------//
-if (new Date().getDay() == 5) {
+//------display banner if day is Monday--------//
+if (new Date().getDay() == 4) {
   document.querySelector(".banner").style.display= "block";
 } else {
   document.querySelector(".banner").style.display= "none";
 }
 
 
-const cityid = "5604473";
+const cityid = "5585010";
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
 
-//-----------weather summary---------//
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -40,7 +39,7 @@ fetch(apiURL)
 
   });
 
-//-------5 day forecast----------//
+
   const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=" + cityid + "&appid=" + APPID + "&units=imperial";
 
   fetch(forecastURL)
@@ -64,6 +63,8 @@ fetch(apiURL)
         fiveDayConditions.innerHTML = "High: " + dayCard.main.temp_max.toFixed(0) + " °F <br> " + "Low: " + lowTemp.toFixed(0) + " °F <br>" + dayCard.weather[0].main;
         
         let image = document.createElement("img");
+    
+       
         let iconDesc= dayCard.weather[0].description;
         if(iconDesc == "few clouds") {
           let imagesrc = "images/wfewclouds.png";
@@ -86,19 +87,8 @@ fetch(apiURL)
           } else if (iconDesc == "shower rain") {
             let imagesrc = "images/wrain.png";
             image.setAttribute("src", imagesrc);
-          } else if (
-          iconDesc == "thunderstorm" || 
-          iconDesc == "thunderstorm with light rain" || 
-          iconDesc == "	thunderstorm with rain" ||
-          iconDesc == "thunderstorm with heavy rain" ||
-          iconDesc == "light thunderstorm	" ||
-          iconDesc == "thunderstorm" ||
-          iconDesc == "heavy thunderstorm" ||
-          iconDesc == "ragged thunderstorm"	  ||
-          iconDesc == "thunderstorm with light drizzle"	 ||
-          iconDesc == "thunderstorm with drizzle"	 || 
-          iconDesc ==	"thunderstorm with heavy drizzle") {
-          let imagesrc = "images/wthunderstorm.png";
+          } else if (iconDesc == "thunderstorm") {
+            let imagesrc = "images/wthunderstorm.png";
             image.setAttribute("src", imagesrc);
           } else if (iconDesc == "snow") {
             let imagesrc = "images/wsnow.png";
@@ -111,7 +101,7 @@ fetch(apiURL)
             image.setAttribute("src", imagesrc);
           }
         
-        
+     
         image.setAttribute("alt", dayCard.weather[0].description);
         image.setAttribute("class", "icon");
 
@@ -124,29 +114,29 @@ fetch(apiURL)
 
     })
     });
+  
 
-   //----Town Events------//
-   const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-   fetch(requestURL)
-     .then(function (response) {
-       return response.json();
-     })
-     .then(function (jsonObject) {
-       const towns = jsonObject['towns'];
-       const weathertown = towns.filter(towns =>  towns.name == "Preston");
-         let events = weathertown[0].events;
-         let card = document.createElement('section');
-         let title = document.createElement('h3');
-         title.innerHTML = weathertown[0].name + " Events:";
-         card.append(title);
-         // events.length;
-         events.forEach((event) => {
-           let townEvent =  document.createElement('p');
-           townEvent.innerHTML = (event);
-          card.append(townEvent);
-          document.querySelector('div.eventcard').append(card);
-      });
-         document.querySelector('div.eventcard').append(card);  
+    //----Town Events------//
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject['towns'];
+    const weathertown = towns.filter(towns =>  towns.name == "Fish Haven");
+      let events = weathertown[0].events;
+      let card = document.createElement('section');
+      let title = document.createElement('h3');
+      title.innerHTML = weathertown[0].name + " Events:";
+      card.append(title);
+      // events.length;
+      events.forEach((event) => {
+        let townEvent =  document.createElement('p');
+        townEvent.innerHTML = (event);
+       card.append(townEvent);
+       document.querySelector('div.eventcard').append(card);
    });
-  
-  
+      document.querySelector('div.eventcard').append(card);  
+});
+

@@ -206,4 +206,7 @@
     margin: auto 0;
     padding: 2rem;
   }
+  .eventcard {
+    max-width: 50%;
+  }
 }

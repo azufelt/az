@@ -124,24 +124,18 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-
     const weathertown = towns.filter(towns =>  towns.name == "Fish Haven");
-    
-    weathertown.map(towns => {
-
+      let events = weathertown[0].events;
       let card = document.createElement('section');
       let title = document.createElement('h3');
-      let events = document.createElement('p');
-      
-      title.innerHTML = "Upcoming Events:";
-      events.innerHTML = "<br>" + towns.events[0] + "<br>" + towns.events[1] + "<br>" + towns.events[2];
-
+      title.innerHTML = weathertown[0].name + " Events:";
       card.append(title);
-      card.append(events);
-
-      events.setAttribute('class', 'datadiv');
-      document.querySelector('div.eventcard').append(card);
-    
-    })
-    
+      // events.length;
+      events.forEach((event) => {
+        let townEvent =  document.createElement('p');
+        townEvent.innerHTML = (event);
+       card.append(townEvent);
+       document.querySelector('div.eventcard').append(card);
+   });
+      document.querySelector('div.eventcard').append(card);  
 });
