@@ -22,9 +22,6 @@
   .summary {
     top: 6rem;
   }
-  figure {
-    padding: 2rem;
-  }
   .galleryimg {
     box-shadow: 1rem 1rem 1rem 0 var(--gray);
   }

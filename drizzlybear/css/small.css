@@ -245,7 +245,8 @@ footer {
 }
 figure {
   text-align: center;
-  padding: 1.5rem;
+  /* width: 100%;
+  padding-top: 5%; */
 }
 figure:nth-child(odd) {
   color: var(--black);
@@ -259,28 +260,18 @@ figcaption {
   padding: 1rem;
   margin: 0.5rem;
 }
-.galleryimg {
-  min-width: 300px;
-  min-height: 400px;
+figure {
+  padding: 5%;
 }
 img[data-src] {
   opacity: 50%;
   filter: blur(3em);
-  width: 400px;
-  aspect-ratio: auto 400 / 440;
-  height: 400px;
 }
 img[data-src].loaded {
   opacity: 100%;
   filter: blur(0em);
   transition-duration: 0.5s;
 }
-figure img[attributes style] {
-  width: 25rem;
-  aspect-ratio: auto 25rem / 25rem;
-  height: 25rem;
-}
-
 .visitbanner {
   background-color: var(--yellow);
   color: var(--blue);
