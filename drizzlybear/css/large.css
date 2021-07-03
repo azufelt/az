@@ -21,6 +21,7 @@
   }
   .summary {
     top: 6rem;
+    margin-left: 6rem;
   }
   .galleryimg {
     box-shadow: 1rem 1rem 1rem 0 var(--gray);
@@ -67,5 +68,8 @@
     font-size: 150%;
     color: var(--white);
     background-color: hsla(192, 6%, 67%, 0);
+  }
+  .townbanner {
+    padding-left: 5rem;
   }
 }
