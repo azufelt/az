@@ -30,9 +30,9 @@ html {
 }
 p {
   color: var(--white);
-  background-color: var(--black);
-  margin-top: 0.5rem;
-  margin-bottom: 0.3rem;
+  /* background-color: var(--black); */
+  /* margin-top: 0.5rem;
+  margin-bottom: 0.3rem; */
   line-height: 1.5rem;
 }
 .indent {
@@ -45,10 +45,10 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans Condensed", Arial, sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: var(--white);
-  margin-bottom: 0.3rem;
-  background-color: var(--black);
+  /* margin-bottom: 0.3rem;
+  background-color: var(--black); */
 }
 img {
   max-width: 100%;
@@ -177,41 +177,40 @@ header img {
 
 /* ---------- main---------- */
 main section h2,
-main section h3,
-main section p {
+main section h3 {
   background-color: var(--gray);
 }
 
 .ad {
-  max-width: 17rem;
+  /* max-width: 17rem; */
   text-align: center;
   padding: 2rem;
-  background-color: var(--gray);
-  margin: 2rem auto 4rem auto;
+  /* background-color: var(--gray);
+  margin: 2rem auto 4rem auto; */
 }
 .special {
-  margin: 3rem;
+  margin: 5%;
   padding: 5%;
-  white-space: nowrap;
-  line-height: 1.5rem;
+  /* white-space: nowrap; */
   background-color: var(--gray);
-  border: 15px solid var(--darkgrey);
+  border: 5px solid var(--darkgrey);
 }
-.special > h2 {
+.special > h3 {
   border-bottom: 5px solid var(--blue);
 }
 .forecastcard {
   padding: 1rem;
   margin: 2rem;
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  border: 3px double var(--gray);
 }
 .forecastcard h2 {
-  color: var(--blue);
-  background-color: var(--white);
+  /* color: var(--blue); */
+  /* background-color: var(--white); */
 }
 .forecastcard p {
-  color: var(--black);
-  background-color: var(--white);
+  /* color: var(--black); */
+  /* background-color: var(--white); */
   text-align: left;
 }
 .highlight {
@@ -221,7 +220,7 @@ main section p {
   line-height: 1.5rem;
   border: 3px solid var(--silver);
   background-color: var(--greige);
-  white-space: unset;
+  /* white-space: unset; */
 }
 
 .highlight h2 {
@@ -251,9 +250,9 @@ div > p + a:hover {
   cursor: pointer;
 }
 article {
-  color: var(--white);
+  /* color: var(--white); */
   text-align: center;
-  margin: 1rem auto 4rem auto;
+  margin-top: 2rem;
   background-color: var(--blue);
   padding: 2rem 0;
 }

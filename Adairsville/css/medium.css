@@ -92,23 +92,23 @@
     grid-template-columns: repeat(6, 1fr);
     grid-auto-rows: auto;
     grid-template-areas:
-      "special special special special special special "
-      "story1 story1 story1 story1 story1 story1 "
-      "highlight highlight highlight highlight forecastcard forecastcard "
+      "special special story1 story1 story1 story1 "
+      "ad1 ad1 story1 story1 story1 story1 "
+      " forecastcard forecastcard highlight highlight highlight highlight "
       "story2 story2 story2 story2 story2 story2"
-      "ad1 ad1 ad2 ad2 ad3 ad3"
+      "ad2 ad2 ad2 ad3 ad3 ad3"
       "feature feature feature feature feature feature ";
-    max-width: 48rem;
+    max-width: 55rem;
     margin: 0 auto;
     justify-items: center;
     padding-bottom: 0;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
   }
   .special {
     grid-area: special;
-    margin: 3rem 25%;
+    /* margin: 3rem 25%; */
     align-self: center;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .story1 {
     grid-area: story1;
@@ -118,7 +118,6 @@
     text-align: left;
     margin-left: 20%;
   }
-  .storyimg1,
   .storyimg2 {
     float: left;
     margin: 1rem;
@@ -134,7 +133,7 @@
   }
   .ad {
     /* margin: 0.5rem 0.5rem 3rem 0.5rem; */
-    padding: 1rem;
+    /* padding: 1rem; */
   }
   .highlight {
     grid-area: highlight;
@@ -149,7 +148,7 @@
     /* display: none; */
     margin: 0;
     grid-area: forecastcard;
-    max-width: 90%;
+    /* max-width: 90%; */
     white-space: break-spaces;
   }
   .forecastcard h2 {
@@ -162,7 +161,7 @@
   .feature {
     grid-area: feature;
     background-color: var(--white);
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
   }
   .feature h2 {
     text-align: left;
@@ -173,14 +172,24 @@
   .feature img {
     margin: 0 auto;
   }
-  article.feature p,
+
   .feature h3 {
     background-color: var(--white);
     color: var(--blue);
   }
+  article.feature p {
+    background-color: var(--white);
+    color: var(--blue);
+    column-count: 2;
+    column-gap: 2rem;
+    margin: 1rem;
+  }
 
   /* ----------footer--------- */
-
+  footer {
+    background-color: var(--gray);
+    margin-top: 3rem;
+  }
   .footerbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
