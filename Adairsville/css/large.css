@@ -39,8 +39,6 @@
     margin-bottom: 1rem;
   }
   .special {
-    /* margin: 2rem; */
-    /* padding: 2rem; */
     white-space: nowrap;
   }
   .special h2 {
@@ -97,7 +95,5 @@
   }
   .feature p {
     margin: 3rem;
-    /* column-count: 2;
-    column-gap: 2rem; */
   }
 }

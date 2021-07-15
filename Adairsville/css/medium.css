@@ -106,9 +106,7 @@
   }
   .special {
     grid-area: special;
-    /* margin: 3rem 25%; */
     align-self: center;
-    /* justify-content: center; */
   }
   .story1 {
     grid-area: story1;
@@ -131,24 +129,15 @@
   .ad3 {
     grid-area: ad3;
   }
-  .ad {
-    /* margin: 0.5rem 0.5rem 3rem 0.5rem; */
-    /* padding: 1rem; */
-  }
   .highlight {
     grid-area: highlight;
     margin: 0;
   }
-  .highlight h3 {
-    /* color: var(--red); */
-    /* font-size: 1.5rem; */
-  }
 
   .forecastcard {
-    /* display: none; */
     margin: 0;
     grid-area: forecastcard;
-    /* max-width: 90%; */
+
     white-space: break-spaces;
   }
   .forecastcard h2 {
@@ -161,7 +150,6 @@
   .feature {
     grid-area: feature;
     background-color: var(--white);
-    /* padding-bottom: 5rem; */
   }
   .feature h2 {
     text-align: left;
@@ -226,8 +214,6 @@
   }
   .form {
     grid-area: form;
-    /* margin: 0 auto; */
-    /* width: min-max(12rem, 20rem); */
   }
   .form h4 {
     background-color: var(--gray);
@@ -235,7 +221,6 @@
   .contact {
     grid-area: contact;
     background-color: var(--gray);
-    /* padding: 0 auto; */
   }
   .social {
     grid-area: social;

@@ -10,15 +10,8 @@
   --darkgrey: hsla(20, 2%, 36%, 1);
   --middlegrey: hsla(30, 2%, 52%, 1);
   --greige: hsla(30, 2%, 56%, 1);
-  /* CSS HSL */
-  /* --red: hsla(0, 100%, 28%, 1); */
-  /* --blue: #063a81; */
-  --cultured: hsla(0, 0%, 96%, 1);
   --jet: hsla(0, 0%, 20%, 1);
-  --timberwolf: hsla(35, 15%, 84%, 1);
-  --oxford-blue: hsla(210, 81%, 15%, 1);
   --prussian-blue: hsla(209, 51%, 17%, 1);
-  --blood-red: hsla(0, 100%, 20%, 1);
 }
 * {
   padding: 0;
@@ -30,9 +23,6 @@ html {
 }
 p {
   color: var(--white);
-  /* background-color: var(--black); */
-  /* margin-top: 0.5rem;
-  margin-bottom: 0.3rem; */
   line-height: 1.5rem;
 }
 .indent {
@@ -45,10 +35,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans Condensed", Arial, sans-serif;
-  /* font-weight: bold; */
   color: var(--white);
-  /* margin-bottom: 0.3rem;
-  background-color: var(--black); */
 }
 img {
   max-width: 100%;
@@ -135,7 +122,6 @@ header img {
   padding: 0.8rem 0;
   text-align: center;
   list-style: none;
-  /* background-color: var(--blue); */
   color: var(--white);
   transition: 0.5s;
 }
@@ -160,12 +146,12 @@ header img {
   background-color: var(--black);
 }
 
-.navmenu:link {
-  color: var(--white); /*Don't know what this does??? */
+/* .navmenu:link {
+  color: var(--white); /*Don't know what this does??? 
 }
 .navmenu:visited {
-  color: white; /*Possible change this color???*/
-}
+  color: white; /*Possible change this color???
+} */
 .navmenu li:hover:not(:first-child) {
   background-color: var(--red);
 }
@@ -182,16 +168,13 @@ main section h3 {
 }
 
 .ad {
-  /* max-width: 17rem; */
   text-align: center;
   padding: 2rem;
-  /* background-color: var(--gray);
-  margin: 2rem auto 4rem auto; */
 }
 .special {
   margin: 5%;
   padding: 5%;
-  /* white-space: nowrap; */
+
   background-color: var(--gray);
   border: 5px solid var(--darkgrey);
 }
@@ -201,26 +184,21 @@ main section h3 {
 .forecastcard {
   padding: 1rem;
   margin: 2rem;
-  /* background-color: var(--white); */
+
   border: 3px double var(--gray);
 }
 .forecastcard h2 {
-  /* color: var(--blue); */
-  /* background-color: var(--white); */
 }
 .forecastcard p {
-  /* color: var(--black); */
-  /* background-color: var(--white); */
   text-align: left;
 }
 .highlight {
   padding: 1rem;
   margin: 2%;
-  /* white-space: nowrap; */
+
   line-height: 1.5rem;
   border: 3px solid var(--silver);
   background-color: var(--greige);
-  /* white-space: unset; */
 }
 
 .highlight h2 {
@@ -250,7 +228,6 @@ div > p + a:hover {
   cursor: pointer;
 }
 article {
-  /* color: var(--white); */
   text-align: center;
   margin-top: 2rem;
   background-color: var(--blue);
@@ -282,7 +259,6 @@ article p:nth-child(3) {
   font-style: italic;
   text-align: left;
   background-color: var(--blue);
-  /* border: 3px solid orange; */
 }
 
 /* --------footer------- */
@@ -326,7 +302,6 @@ footer div {
   background-color: unset;
 }
 .social img {
-  /* filter: drop-shadow(2px 2px 2px var(--blue)); */
   max-height: 3rem;
   padding: 0.5rem;
 }
