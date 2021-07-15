@@ -1,0 +1,45 @@
+{
+  "events":[
+  {
+    "name": "Adairsville Farmers Market",
+    "date": "Saturday's June 5 - Sept 25",
+    "time": "8:00 a.m.-12:00 p.m.",
+    "where": "Historic Downtown Adairsville",
+    "town": "Adairsville",
+    "img": "farmersmarket.png",
+    "description": "Free Admission for Everyone!",
+    "website": "https://www.adairsvillega.net/farmersmarket"
+  },
+  {
+    "name": "Great Locomotive Chase Festival",
+    "date": "Friday, October 1, 2021",
+    "time": "9:00 a.m.-11:00 p.m.",
+    "where": "Historic Downtown Adairsville",
+    "town": "Adairsville",
+    "img": "locomotivechasefest.jpg",
+    "description": "$3 tickets - Good for all weekend!!",
+    "website": "https://www.adairsvillega.net/festival"
+  },
+  
+  {
+    "name": "Halloween On The Square",
+    "date": "Sunday, October 31, 2021",
+    "time": "4:00 p.m.-6:30 p.m.",
+    "where": "Historic Downtown Adairsville",
+    "town": "Adairsville",
+    "img": "halloween.jpg",
+    "description": "Free Admission for Everyone!",
+    "website": "https://www.adairsvillega.net/halloween"
+  },
+  {
+    "name": "Christmas On the Square",
+    "date": "Monday, December 6, 2021",
+    "time": "4:00 p.m.-8:00 p.m.",
+    "where": "Historic Downtown Adairsville",
+    "town": "Adairsville",
+    "img": "christmas.jpg",
+    "description": "Free Admission for Everyone!",
+    "website": "https://www.adairsvillega.net/christmas"
+  }
+  
+]}

@@ -6,7 +6,7 @@ const options = {
       year: "numeric",
     };
     document.querySelector(
-      "#currentdate"
+      "#currentdate" 
     ).innerHTML = new Date().toLocaleDateString("en-us", options);
 document.querySelector("#currentyear").innerHTML = date.getFullYear();
 

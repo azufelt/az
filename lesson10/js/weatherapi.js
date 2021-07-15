@@ -37,7 +37,7 @@ fetch(apiURL)
   fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
-     
+     console.log(jsObject);
       const dayofWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
       const fiveDay = jsObject.list.filter((forecast)=>forecast.dt_txt.includes('18:00:00'));

@@ -1,0 +1,224 @@
+{"businesses": [
+  {
+    "name": "Papa John's",
+    "address": [
+      {
+        "numbers":"1234",
+        "street": "HWY 41",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "470-123-4567",
+    "logo": "papajohns.png",
+    "description": [
+      "Buy Two Large, two Toppings, Get a Free 2-Liter!",
+      "Lunch Special: Calzone & 20 oz. Pepsi $7.99"
+    ]
+  },
+  {
+    "name": "Tops Galore",
+    "address": [
+      {
+        "numbers":"5929",
+        "street": "Joe Frank Harris Pkwy",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-877-9867",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Vergil's Home and Garden Decor",
+    "address": [
+      {
+        "numbers":"5481",
+        "street": "Joe Frank Harris Pkwy" ,
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-773-7298",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Dalton Wholesale Floors",
+    "address": [
+      {
+        "numbers":"411",
+        "street": "Soho Dr.",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-773-2681",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Adairsville Signs & Engravin",
+    "address": [
+      {
+        "numbers":"133",
+        "street": "Bailer Rd NW",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-608-6605",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Camille's Corner Mart",
+    "address": [
+      {
+        "numbers":"5136",
+        "street": "Joe Frank harris Pkwy",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-877-5941",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Maggie Mae's Tea Room",
+    "address": [
+      {
+        "numbers":"124",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-773-1902",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "1902 Stock Exchange",
+    "address": [
+      {
+        "numbers":"124",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-773-1902",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Bradley Farms Bakery",
+    "address": [
+      {
+        "numbers":"112",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "678-800-7100",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Elit Jewlery & Fashions",
+    "address": [
+      {
+        "numbers":"120",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-773-9927",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "General Store & Mercantile",
+    "address": [
+      {
+        "numbers":"120",
+        "street": "",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-769-4058",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Heavenly Hand Me Downs",
+    "address": [
+      {
+        "numbers":"307",
+        "street": "North Main Street",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "678-767-1069",
+    "logo": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Linda B's Antiques",
+    "address": [
+      {
+        "numbers":"5858",
+        "street": "joe Frank Harris Pkwy",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "phone": "770-548-0095",
+    "logo": "",
+    "description": [
+    
+    ]
+  }
+]}

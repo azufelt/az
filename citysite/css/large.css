@@ -1,0 +1,17 @@
+@media only screen and (min-width: 68.75em) {
+  main {
+    grid-template-areas:
+      "special special story1 story1 story1 story1"
+      "special special story1 story1 story1 story1"
+      "ad1 ad1 story1 story1 story1 story1"
+      "ad1 ad1 highlight highlight highlight highlight"
+      "ad2 ad2 highlight highlight highlight highlight"
+      "ad2 ad2 story2 story2 story2 story2"
+      "ad3 ad3 story2 story2 story2 story2"
+      "ad3 ad3 story2 story2 story2 story2"
+      "feature feature feature feature feature feature"
+      "feature feature feature feature feature feature"
+      "feature feature feature feature feature feature";
+    max-width: 1200px;
+  }
+}

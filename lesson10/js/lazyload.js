@@ -1,12 +1,13 @@
 const images = document.querySelectorAll("img[data-src]"); //This is the selector that we are going to affect
 
+
 function preloadImage(img) {
   const src= img.getAttribute("data-src");
   if(!src) {
     return;
   } else {
     img.src = src;
-    //Could remove src attribute instead of adding class to take of image blur
+    //Could remove src attribute instead of adding class to take off image blur
      // img.removeAttribute(src); 
   }
 }

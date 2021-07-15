@@ -1,0 +1,336 @@
+/* CSS HSL */
+:root {
+  --white: hsla(0, 0%, 96%, 1);
+  --black: hsla(0, 0%, 12%, 1);
+  --gray: hsla(0, 0%, 20%, 1);
+  --silver: hsla(35, 15%, 84%, 1);
+  --blue: hsla(209, 51%, 17%, 1);
+  --red: hsla(0, 100%, 20%, 1);
+  --jet: hsla(0, 0%, 20%, 1);
+  --darkgrey: hsla(20, 2%, 36%, 1);
+  --middlegrey: hsla(30, 2%, 52%, 1);
+  --greige: hsla(30, 2%, 56%, 1);
+  /* CSS HSL */
+  /* --red: hsla(0, 100%, 28%, 1); */
+  /* --blue: #063a81; */
+  --cultured: hsla(0, 0%, 96%, 1);
+  --jet: hsla(0, 0%, 20%, 1);
+  --timberwolf: hsla(35, 15%, 84%, 1);
+  --oxford-blue: hsla(210, 81%, 15%, 1);
+  --prussian-blue: hsla(209, 51%, 17%, 1);
+  --blood-red: hsla(0, 100%, 20%, 1);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: var(--black);
+  font-family: "Open Sans", Arial, sans-serif;
+}
+p {
+  color: var(--white);
+  background-color: var(--black);
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5rem;
+}
+.indent {
+  text-indent: 2rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-weight: bold;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+  background-color: var(--black);
+}
+img {
+  max-width: 100%;
+  margin-bottom: 0.3rem;
+}
+/* ---------top banners--------- */
+#conditions {
+  text-transform: capitalize;
+}
+.alert,
+.alert p {
+  background-color: var(--red);
+  max-width: 100%;
+  padding: 0.3rem;
+}
+alert h3,
+alert h4,
+p.closebutton {
+  text-align: center;
+}
+.hidebanner {
+  display: none;
+}
+.closebutton:hover {
+  cursor: pointer;
+}
+.banner {
+  background-color: var(--greige);
+  padding: 1.5rem 1rem 1rem 1rem;
+  color: var(--black);
+  text-align: center;
+}
+.banner span {
+  display: block;
+  margin: 1rem 0 0 0;
+}
+
+.button {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  border: none;
+}
+a.button,
+input.button {
+  border: 2px solid var(--silver);
+}
+.button:hover {
+  background-color: var(--red);
+}
+/* ---------header---------- */
+header img {
+  display: block;
+  max-width: 30%;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  color: var(--white);
+}
+.title p {
+  line-height: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.bannerfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  border-bottom: 0.2rem solid var(--blue);
+  padding-bottom: 1%;
+  width: 100%;
+}
+/* ---------- nav menu--------- */
+/* :link :visited :hover :focus :active */
+.navmenu li:first-child {
+  display: block;
+}
+.navmenu li {
+  display: none;
+  padding: 0.8rem 0;
+  text-align: center;
+  list-style: none;
+  /* background-color: var(--blue); */
+  color: var(--white);
+  transition: 0.5s;
+}
+.navmenu a {
+  display: block;
+  color: var(--white);
+  letter-spacing: 0.2rem;
+  font-family: "Open Sans Condensed", Arial, sans-serif;
+  text-decoration: none;
+}
+.navmenu a.ham {
+  font-size: 2rem;
+  background-color: var(--black);
+}
+.responsive li {
+  display: block;
+}
+.responsive ul li:not(:first-child) {
+  background-color: var(--blue);
+}
+.responsive .navmenu a.ham {
+  background-color: var(--black);
+}
+
+.navmenu:link {
+  color: var(--white); /*Don't know what this does??? */
+}
+.navmenu:visited {
+  color: white; /*Possible change this color???*/
+}
+.navmenu li:hover:not(:first-child) {
+  background-color: var(--red);
+}
+.active {
+  border-bottom: 0.2rem solid var(--red);
+  max-width: 25%;
+  margin: 0 auto;
+}
+
+/* ---------- main---------- */
+main section h2,
+main section h3,
+main section p {
+  background-color: var(--gray);
+}
+
+.ad {
+  max-width: 17rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--gray);
+  margin: 2rem auto 4rem auto;
+}
+.special {
+  margin: 3rem;
+  padding: 5%;
+  white-space: nowrap;
+  line-height: 1.5rem;
+  background-color: var(--gray);
+  border: 15px solid var(--darkgrey);
+}
+.special > h2 {
+  border-bottom: 5px solid var(--blue);
+}
+.forecastcard {
+  padding: 1rem;
+  margin: 2rem;
+  background-color: var(--white);
+}
+.forecastcard h2 {
+  color: var(--blue);
+  background-color: var(--white);
+}
+.forecastcard p {
+  color: var(--black);
+  background-color: var(--white);
+  text-align: left;
+}
+.highlight {
+  padding: 1rem;
+  margin: 2%;
+  /* white-space: nowrap; */
+  line-height: 1.5rem;
+  border: 3px solid var(--silver);
+  background-color: var(--greige);
+  white-space: unset;
+}
+
+.highlight h2 {
+  color: var(--blue);
+  background-color: var(--greige);
+}
+.highlight h3 {
+  padding: 0.5rem;
+}
+.highlight p {
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  color: var(--black);
+  background-color: var(--white);
+}
+.highlight > div {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: var(--black);
+  background-color: var(--white);
+  border: 3px double silver;
+}
+div > p + a {
+  color: var(--black);
+  padding: 0rem 0.5rem 1rem 0.5rem;
+}
+div > p + a:hover {
+  cursor: pointer;
+}
+article {
+  color: var(--white);
+  text-align: center;
+  margin: 1rem auto 4rem auto;
+  background-color: var(--blue);
+  padding: 2rem 0;
+}
+article h2 {
+  border-bottom: 5px solid var(--darkgrey);
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--blue);
+}
+
+article > img {
+  display: block;
+  margin: 0 auto;
+}
+article h3 {
+  padding: 1rem;
+  background-color: var(--blue);
+}
+article p:nth-child(4) {
+  padding: 1rem;
+  text-align: left;
+  background-color: var(--blue);
+}
+article p:nth-child(3) {
+  padding: 0.3rem 1rem 0 1rem;
+  margin: 0.5rem auto 0 auto;
+  font-style: italic;
+  text-align: left;
+  background-color: var(--blue);
+  /* border: 3px solid orange; */
+}
+
+/* --------footer------- */
+footer form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3% auto 3% auto;
+  max-width: 50%;
+  padding: 3rem;
+  border: 3px solid var(--greige);
+  line-height: 1.5rem;
+  white-space: nowrap;
+}
+input {
+  padding: 0.3rem;
+}
+#email {
+  margin-bottom: 1rem;
+}
+footer div {
+  text-align: center;
+}
+.footimage {
+  position: absolute;
+  margin: 5% 25%;
+}
+.footimage img {
+  opacity: 10%;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.contact {
+  padding-top: 3rem;
+}
+.contact,
+.copyright p {
+  background-color: unset;
+}
+.social img {
+  /* filter: drop-shadow(2px 2px 2px var(--blue)); */
+  max-height: 3rem;
+  padding: 0.5rem;
+}
+.footimage p {
+  display: none;
+}

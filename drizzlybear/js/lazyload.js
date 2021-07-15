@@ -30,3 +30,4 @@ images.forEach(src => {
   imgObserver.observe(src);
 });
 
+document.getElementsByTagName
