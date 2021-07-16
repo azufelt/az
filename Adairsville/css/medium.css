@@ -316,13 +316,22 @@
     grid-area: submit;
     margin: 0 auto;
   }
+  .levels > div:nth-child(even) {
+    background-color: var(--middlegrey);
+    padding: 0.5rem;
+  }
   .newgrid p {
     padding: 1rem;
-    border-bottom: 2px double var(--blue);
     text-align: left;
   }
   .checkmark {
     top: 1rem;
-    /* left: 30%; */ */
+  }
+  /* ----------image gallery-------- */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5% auto;
+    gap: 2rem;
   }
 }

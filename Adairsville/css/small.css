@@ -397,3 +397,32 @@ textarea {
   border-radius: 50%;
   background: var(--greige);
 }
+
+figure {
+  text-align: center;
+}
+figure:nth-child(odd) {
+  color: var(--white);
+  background-color: var(--jet);
+}
+figure:nth-child(even) {
+  color: var(--white);
+  background-color: var(--blue);
+}
+figcaption {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+figure {
+  padding: 5%;
+}
+img[data-src] {
+  opacity: 50%;
+  filter: blur(3em);
+  object-fit: contain;
+}
+img[data-src].loaded {
+  opacity: 100%;
+  filter: blur(0em);
+  transition-duration: 0.5s;
+}

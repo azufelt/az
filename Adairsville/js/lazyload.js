@@ -11,7 +11,7 @@ function preloadImage(img) {
 }
 
 const imgOptions = {
-  threshold: .05,
+  threshold: .02,
   rootMargin: "0px 0px -500px 0px" 
 };
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -29,5 +29,3 @@ entries.forEach(entry => {
 images.forEach(src => {
   imgObserver.observe(src);
 });
-
-// document.getElementsByTagName
