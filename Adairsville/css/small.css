@@ -29,12 +29,13 @@ p {
   text-indent: 2rem;
 }
 h1,
-h2,
 h3,
+h2,
 h4,
 h5,
-h6 {
+h6:not(.title h2) {
   font-family: "Open Sans Condensed", Arial, sans-serif;
+  font-weight: 700;
   color: var(--white);
 }
 img {
@@ -99,12 +100,13 @@ header img {
   text-align: center;
   color: var(--white);
 }
-.title p {
+.title h2 {
   /* line-height: 0.2rem; */
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   margin-top: 0;
   margin-bottom: 1rem;
   font-style: italic;
+  background-color: var(--black);
 }
 .bannerfix::after {
   content: "";
@@ -174,6 +176,9 @@ main section h3 {
   text-align: center;
   padding: 2rem;
 }
+.ad p {
+  filter: drop-shadow(2px 2px var(--black));
+}
 .special {
   margin: 5%;
   padding: 5%;
@@ -192,6 +197,7 @@ main section h3 {
     "day day"
     "temp icon";
   border: 2px solid var(--blue);
+  filter: drop-shadow(2px 2px var(--black));
 }
 .forecastgrid h2 {
   /* grid-area: title; */

@@ -44,13 +44,13 @@
       <div class="title">
         <h1>Historic Adairsville</h1>
         <br />
-        <p>"History in our name —Recreation is our game."</p>
+        <h2>"History in our name —Recreation is our game."</h2>
       </div>
       <div class="bannerfix"></div>
       <nav>
         <ul class="navmenu">
           <li><a class="ham">&#9776;</a></li>
-          <li><a href="./" class="active">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="city.html">City</a></li>
           <li><a href="join.html">Join </a></li>
           <li><a href="gallery.html">Gallery</a></li>
@@ -60,7 +60,7 @@
       </nav>
     </header>
     <aside class="background">
-      <img class="backgroundimage" src="images/trainbackground-optimized.jpg" />
+      <img class="backgroundimage" src="images/trainbackground-optimized.jpg" alt="black and white locomotive"/>
     </aside>
     <main>
       <div id="maingrid">
@@ -70,7 +70,6 @@
         </aside>
         <section class="special">
           <h3>Current Weather</h3>
-          <img class="weathericon">
           <p>
             Currently: <span id="conditions"></span><br />
             Current Temp: <span id="currentTemp"></span>°F<br />
@@ -204,7 +203,7 @@
       <div class="footerbox">
         <form class="form">
           <h4>Sign up for our Newsletter!</h4>
-          <label for="name"></label><br />
+          <label for="name">Name:</label><br />
           <input
             class="inputfield"
             type="text"
@@ -215,12 +214,12 @@
             title="Enter five or more characters"
             required
           /><br />
-          <label for="homeemail"></label><br />
+          <label for="footeremail">Email:</label><br />
           <input
             class="inputfield"
             type="email"
-            id="homeemail"
-            name="homeemail"
+            id="footeremail"
+            name="footeremail"
             placeholder="name@email.com"
             required
           /><br />
@@ -241,9 +240,12 @@
           (123)-456-7890
         </p>
         <div class="social">
-          <img src="images/social-icon-twitter.png" alt="" />
-          <img src="images/social-icon-insta.png" alt="" />
-          <img src="images/social-icon-fb.png" alt="" />
+          <a href="www.twitter.com" rel="noopener" target="_blank">
+          <img src="images/social-icon-twitter.png" alt="twitter icon" /> </a>
+          <a href="www.instagram.com" rel="noopener" target="_blank">
+          <img src="images/social-icon-insta.png" alt="instagram image icon" /></a>
+          <a href="www.facebook.com" rel="noopener" target="_blank">
+          <img src="images/social-icon-fb.png" alt="facebook logo" /></a>
         </div>
       </div>
       <div class="copyright">
@@ -252,8 +254,6 @@
             id="currentyear"
           ></span>
           Ashley Zufelt
-      <br>
-      <a href="attributions.html" >Attributions</a>
         </p>
       </div>
     </footer>

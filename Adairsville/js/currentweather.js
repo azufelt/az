@@ -104,6 +104,7 @@ forecast.forEach((daycard) => {
       let imageicon = daycard.weather[0].icon;
       let imagesrc =  "http://openweathermap.org/img/wn/" + imageicon + "@2x.png";
       icon.setAttribute('src', imagesrc);
+      icon.setAttribute('alt', daytitle + " " + daycard.weather[0].description);
 
       card.append(title);
       card.append(temp);
