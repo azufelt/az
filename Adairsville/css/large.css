@@ -55,6 +55,13 @@
   .highlight {
     margin-top: 2rem;
   }
+  .highlight h2 {
+    line-height: 2.5rem;
+  }
+  .eventicon {
+    margin: 2rem auto 1rem;
+    text-align: center;
+  }
   .ad {
     margin: 1rem;
   }
@@ -108,6 +115,9 @@
     display: flex;
     flex-direction: row;
   }
+  .levels > div {
+    max-width: 25%;
+  }
   .newgrid p {
     border-bottom: none;
   }
@@ -117,6 +127,28 @@
   label.radiolevel {
     text-align: center;
     padding-top: 3rem;
+  }
+  .forecastcard {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title title"
+      "day day day"
+      "icon icon icon";
+  }
+  .forecastgrid {
+    display: grid;
+    grid-template-columns: reapeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title title title"
+      "day day day";
+  }
+  .forecastcard h2 {
+    grid-area: title;
+  }
+  .forecastgrid h3 {
+    text-align: center;
   }
 
   /* -----------City Page--------- */

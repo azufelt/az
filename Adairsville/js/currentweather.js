@@ -10,11 +10,19 @@ const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=$
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
     String.prototype.toProperCase = function() {
       return this.replace(/\w\S*/g,function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     };
+
+    // const icon = document.querySelector('weathericon');
+   
+    // let imageicon = jsObject.weather[0].icon;
+    // let imagesrc =  "http://openweathermap.org/img/wn/" + imageicon + "@2x.png";
+    // icon.setAttribute('src', imagesrc);
+    // icon.setAttribute('alt', 'weather icon');
+
+
     const currentConditions = document.querySelector("#conditions");
     currentConditions.textContent = jsObject.current.weather[0].description;
  
@@ -34,38 +42,37 @@ fetch(apiURL)
       message = chill.toFixed() + "°F";
     } else {
       message = "N/A"
-    }
+    };
     document.querySelector("#windchill").innerHTML = message;
     
+    if (jsObject.alert === alert) {
+      let i = 0;
+      let banner = document.createElement('section');
+      let event = document.createElement('h3');
+      let title = document.createElement('h4');
+      let warning = document.createElement('p');
+      event.textContent = alerts[i].event;
+      title.textContent = alerts[i].sender_name;
+      warning.textContent = alerts[i].description;
 
-    const alerts = jsObject['alerts'];
-    let i = 0;
-    let banner = document.createElement('section');
-    let event = document.createElement('h3');
-    let title = document.createElement('h4');
-    let warning = document.createElement('p');
-    event.textContent = alerts[i].event;
-    title.textContent = alerts[i].sender_name;
-    warning.textContent = alerts[i].description;
-    banner.append(event);
-    banner.append(title);
-    banner.append(warning);
-    banner.setAttribute('class', "alert hidebanner");
-    document.querySelector('aside.banner').append(banner);
-    const b = document.querySelector(".closebutton");
-    const closebutton = document.querySelector("closebutton");
-    const bannerchange = document.querySelector(".alert");
-    b.addEventListener("click", () => {bannerchange.classList.toggle("hidebanner")}, false);
+      banner.append(event);
+      banner.append(title);
+      banner.append(warning);
+      banner.setAttribute('class', "alert hidebanner");
 
-    var length= alerts.length;
-    if (length >= 1) {
-      document.querySelector(".banner").style.display= "block";
+      document.querySelector('aside.banner').append(banner);
+
+      const b = document.querySelector(".closebutton");
+      const bannerchange = document.querySelector(".alert");
+      b.addEventListener("click", () => {bannerchange.classList.toggle("hidebanner")}, false);
   
+      document.querySelector(".alert").style.display= "block";
     } else {
-      document.querySelector(".banner").style.display= "none";
-    };
-
-  });
+          document.querySelector(".alert").style.display= "none";
+          return;
+        };      
+    }
+  );
 
 
 const forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=current,minutely,hourly,alerts&appid=${APPID}&units=${units}`
@@ -73,24 +80,39 @@ const forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&
 fetch(forecastURL)
 .then((response) => response.json())
 .then((jsObject) => {
- console.log(jsObject);
 
- let d = new Date();
- const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"];
- let weekDay = days[d.getDay()];
- console.log(weekDay);
+const dayofWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday", "Saturday"];
 
- const threeDay = jsObject['daily'];
-//  let i = 0;
-threeDay.forEach((day) => {
+const forecast = [jsObject.daily[1], jsObject.daily[2], jsObject.daily[3]];
+  
+forecast.forEach((daycard) => {
+     
+      let d = new Date(daycard.dt*1000);
+      let daytitle = dayofWeek[d.getDay()];
+      
+      let card = document.createElement('div');
+      card.setAttribute('class', "daygrid");
+      let title = document.createElement('h3');
+      title.textContent = daytitle;
 
-   let card = document.createElement("div");
+      let temp = document.createElement('p');
+      let high = daycard.temp.max;
+      let low = daycard.temp.min;
+      temp.innerHTML= daycard.weather[0].description + "<br> High: " + (high).toFixed(0) + " °F<br> Low: " + (low).toFixed(0) + " °F";
 
-   let title = document.createElement('h4');
-   title.innerHTML = jsObject.daily[i]
-   
-   card.append(title);
-   document.querySelector(".forecastcard").append(card);
- })
+      let icon = document.createElement('img')
+      let imageicon = daycard.weather[0].icon;
+      let imagesrc =  "http://openweathermap.org/img/wn/" + imageicon + "@2x.png";
+      icon.setAttribute('src', imagesrc);
 
+      card.append(title);
+      card.append(temp);
+      card.append(icon);
+      document.querySelector('div.forecastgrid').append(card);
+
+    });
 });
+
+
+
+

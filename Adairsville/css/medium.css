@@ -334,4 +334,23 @@
     margin: 5% auto;
     gap: 2rem;
   }
+  /* -------Directory------- */
+
+  div.shopgrid {
+    display: grid;
+    grid-template-columns: 1f auto 1fr;
+    grid-template-rows: auto;
+    grid-area: "pic pic" "pic pic" "pic pic";
+    margin: 5% auto;
+    gap: 0.5rem;
+  }
+  .shopgrid > section.highlight {
+    grid-area: pic;
+  }
+  .viewbuttongrid {
+    max-width: 40rem;
+  }
+  .viewbuttongrid figure {
+    padding: 0.5rem;
+  }
 }

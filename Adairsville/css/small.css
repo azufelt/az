@@ -42,7 +42,8 @@ img {
   margin-bottom: 0.3rem;
 }
 /* ---------top banners--------- */
-#conditions {
+#conditions,
+.forecastcard p {
   text-transform: capitalize;
 }
 .alert,
@@ -126,7 +127,8 @@ header img {
   color: var(--white);
   transition: 0.5s;
 }
-.navmenu a {
+.navmenu a,
+.copyright a {
   display: block;
   color: var(--white);
   letter-spacing: 0.2rem;
@@ -182,21 +184,37 @@ main section h3 {
 .special > h3 {
   border-bottom: 5px solid var(--blue);
 }
-.forecastcard {
-  padding: 1rem;
-  margin: 2rem;
-
-  border: 3px double var(--gray);
+.daygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "day day"
+    "temp icon";
+  border: 2px solid var(--blue);
 }
-.forecastcard h2 {
+.forecastgrid h2 {
+  /* grid-area: title; */
+  text-align: center;
+  padding: 5%;
+  border: 3px double var(--darkgrey);
 }
-.forecastcard p {
-  text-align: left;
+.daygrid h3 {
+  grid-area: day;
+  padding: 5%;
+  background-color: var(--blue);
+}
+.daygrid p {
+  grid-area: temp;
+  white-space: nowrap;
+  padding: 5%;
+}
+.daygrid img {
+  grid-area: icon;
 }
 .highlight {
   padding: 1rem;
   margin: 2%;
-
   line-height: 1.5rem;
   border: 3px solid var(--silver);
   background-color: var(--greige);
@@ -220,6 +238,11 @@ main section h3 {
   color: var(--black);
   background-color: var(--white);
   border: 3px double silver;
+}
+.eventicon {
+  position: relative;
+  float: right;
+  font-size: 4rem;
 }
 div > p + a {
   color: var(--black);
@@ -263,6 +286,9 @@ article p:nth-child(3) {
 }
 
 /* --------footer------- */
+footer label {
+  display: none;
+}
 footer form {
   display: flex;
   flex-direction: column;
@@ -412,6 +438,8 @@ figure:nth-child(even) {
 figcaption {
   padding: 1rem;
   margin: 0.5rem;
+  line-height: 2rem;
+  text-align: left;
 }
 figure {
   padding: 5%;
@@ -425,4 +453,21 @@ img[data-src].loaded {
   opacity: 100%;
   filter: blur(0em);
   transition-duration: 0.5s;
+}
+/* -------------Directory------------ */
+
+.shopgrid > figure {
+  margin: 0.5rem;
+}
+.shopgrid figure > p {
+  margin-bottom: 1rem;
+}
+.viewbuttongrid img,
+.viewbuttongrid figcaption {
+  display: none;
+}
+.viewbuttongrid figure > p {
+  margin-bottom: 0rem;
+}
+.viewbutton {
 }

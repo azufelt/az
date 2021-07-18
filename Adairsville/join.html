@@ -181,12 +181,33 @@
 
             <div>
               <label class="radiolevel" for="individual"
-                >Individual
-                <h3>$175</h3>
+                >Gold
+                <h3>$1000</h3>
                 <input
                   type="radio"
                   id="individual"
                   value="individual"
+                  checked="checked"
+                  name="membership"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <p>
+                Any registered business interested in the objectives of the
+                Adairsville Chamber of Commerce may become an active member upon
+                payment of dues and shall continue as long as annual dues are
+                paid. There shall be one designated Active Primary
+                Representative with one vote per each Corporate Membership.
+              </p>
+            </div>
+            <div>
+              <label class="radiolevel" for="corporate"
+                >Silver
+                <h3>$400</h3>
+                <input
+                  type="radio"
+                  id="corporate"
+                  value="corporate"
                   checked="checked"
                   name="membership"
                 />
@@ -202,31 +223,31 @@
                 Membership.
               </p>
             </div>
+
             <div>
-              <label class="radiolevel" for="corporate"
-                >Corporate
-                <h3>$225</h3>
+              <label class="radiolevel" for="branch"
+                >Bronze
+                <h3>$200</h3>
                 <input
                   type="radio"
-                  id="corporate"
-                  value="corporate"
+                  id="branch"
+                  value="branch"
                   checked="checked"
                   name="membership"
                 />
                 <span class="checkmark"></span>
               </label>
               <p>
-                Any registered business interested in the objectives of the
-                Adairsville Chamber of Commerce may become an active member upon
-                payment of dues and shall continue as long as annual dues are
-                paid. There shall be one designated Active Primary
-                Representative with one vote per each Corporate Membership.
+                THIS STILL NEEDS A DESCRIPTION... Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Illo fugiat tempore obcaecati,
+                ipsum nostrum earum doloremque repellat numquam commodi
+                reiciendis.
               </p>
             </div>
             <div>
               <label class="radiolevel" for="nonprofit"
                 >Non-Profit
-                <h3>$150</h3>
+                <h3>$100</h3>
                 <input
                   type="radio"
                   id="nonprofit"
@@ -245,27 +266,6 @@
                 Membership.
               </p>
             </div>
-            <div>
-              <label class="radiolevel" for="branch"
-                >Branch
-                <h3>$25</h3>
-                <input
-                  type="radio"
-                  id="branch"
-                  value="branch"
-                  checked="checked"
-                  name="membership"
-                />
-                <span class="checkmark"></span>
-              </label>
-              <p>
-                A Corporate Member may designate an additional registered
-                business with the same ownership and receive all of the
-                privileges as the originating Corporate Member without the
-                ability to vote. The Active Primary Branch Representative has no
-                vote.
-              </p>
-            </div>
           </fieldset>
         </div>
         <input type="submit" value="Submit Application" class="button" />
@@ -276,7 +276,7 @@
       <div class="footerbox">
         <form class="form">
           <h4>Sign up for our Newsletter!</h4>
-          <label for="name"></label><br />
+          <label for="name">Name:</label><br />
           <input
             class="inputfield"
             type="text"
@@ -287,12 +287,12 @@
             title="Enter five or more characters"
             required
           /><br />
-          <label for="email"></label><br />
+          <label for="footeremail">Email:</label><br />
           <input
             class="inputfield"
             type="email"
-            id="email"
-            name="email"
+            id="footeremail"
+            name="footeremail"
             placeholder="name@email.com"
             required
           /><br />
