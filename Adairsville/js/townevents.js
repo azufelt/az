@@ -41,6 +41,7 @@ fetch(requestJSON)
     let website = event.website;
     link.setAttribute("href", website);
     link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener");
     link.innerHTML = event.name;
 
     card.append(eventName);

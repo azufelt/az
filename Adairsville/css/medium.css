@@ -41,14 +41,14 @@
   h1 {
     font-size: 3rem;
   }
-  h2:not(.title h2) {
+  main h2 {
     font-size: 2rem;
   }
-  h3,
+  /* h3,
   h4,
   h5. h6 {
     font-size: ;
-  }
+  } */
   .navmenu li:first-child {
     display: none;
   }
@@ -104,6 +104,7 @@
   }
   .title {
     grid-area: title;
+    align-self: center;
   }
   .logo {
     grid-area: logo;
@@ -116,20 +117,20 @@
     max-width: 50%;
     justify-self: end;
   }
-  .title {
-    align-self: center;
-  }
   .title h1,
   .title p {
     text-align: left;
     flex-wrap: nowrap;
+  }
+  .title h2 {
+    line-height: 0.2rem;
   }
 
   /*--------main----------- */
   #maingrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 100px auto, 1fr;
+    grid-auto-rows: 100px auto 1fr;
     grid-template-areas:
       "welcome welcome welcome welcome welcome welcome"
       "welcome welcome welcome welcome welcome welcome "

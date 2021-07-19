@@ -1,7 +1,9 @@
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
-const long = "-108.489304"; //BILLINGS, MONTANTA//
+const long = "-84.9341";
+// "-108.489304"; //BILLINGS, MONTANTA//
 // "-84.9341";
-const lat = "45.787636";
+const lat =  "34.3687";
+// "45.787636";
 //  "34.3687";
 const units = "imperial"
 const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=hourly,daily&appid=${APPID}&units=${units}`

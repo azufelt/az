@@ -34,7 +34,7 @@ h3,
 h2,
 h4,
 h5,
-h6:not(.title h2) {
+h6 {
   font-family: "Open Sans Condensed", Arial, sans-serif;
   font-weight: 700;
   color: var(--white);
@@ -125,7 +125,6 @@ header img {
   font-style: italic;
   background-color: var(--black);
   text-align: left;
-  line-height: 0.2rem;
 }
 .bannerfix::after {
   content: "";
@@ -354,6 +353,12 @@ footer div {
 .copyright p {
   background-color: unset;
 }
+
+element.style {
+}
+.social {
+  margin: 1rem;
+}
 .social img {
   max-height: 3rem;
   padding: 0.5rem;
@@ -379,10 +384,6 @@ form fieldset {
 }
 .newgrid > section > fieldset {
   text-align: center;
-}
-fieldset label:not(fieldset label:nth-child(3)) {
-  line-height: 2rem;
-  margin-top: 2rem;
 }
 legend {
   color: var(--black);
