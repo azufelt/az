@@ -66,7 +66,6 @@ img {
 .alert p {
   background-color: var(--red);
   font-size: 1rem;
-  /* padding: 0.3rem; */
 }
 .alert h3,
 .alert h4,
@@ -76,7 +75,6 @@ p.closebutton {
 p.closebutton {
   color: var(--red);
   background-color: var(--white);
-  /* padding: 1rem; */
 }
 .hidebanner {
   display: none;
@@ -149,14 +147,18 @@ header img {
   color: var(--white);
   transition: 0.5s;
 }
-.navmenu a,
-.copyright a {
-  display: block;
-  color: var(--white);
+.navmenu a {
   letter-spacing: 0.2rem;
+  display: block;
+}
+.navmenu a,
+.copyright a,
+article a {
+  color: var(--white);
   font-family: "Open Sans Condensed", Arial, sans-serif;
   text-decoration: none;
 }
+
 .navmenu a.ham {
   font-size: 2rem;
   background-color: var(--black);
@@ -195,8 +197,6 @@ main section h3 {
 .ad {
   text-align: center;
   padding: 2rem;
-  /* border: 3px solid white; */
-  /* background-color: var(--darkgrey); */
 }
 .ad p {
   color: white;
@@ -221,7 +221,6 @@ main section h3 {
   border: 2px solid var(--blue);
 }
 .forecastgrid h2 {
-  /* grid-area: title; */
   text-align: center;
   padding: 5%;
   border: 3px double var(--darkgrey);
@@ -233,7 +232,6 @@ main section h3 {
 .daygrid p {
   grid-area: temp;
   white-space: nowrap;
-  /* padding: 5%; */
 }
 .daygrid img {
   grid-area: icon;
@@ -251,7 +249,6 @@ main section h3 {
   background-color: var(--greige);
 }
 .highlight p {
-  /* padding: 0.5rem 0.5rem 0rem 0.5rem; */
   color: var(--black);
   background-color: var(--white);
 }
@@ -268,7 +265,6 @@ main section h3 {
 }
 div > p + a {
   color: var(--black);
-  /* padding: 0rem 0.5rem 1rem 0.5rem; */
 }
 div > p + a:hover {
   cursor: pointer;
@@ -282,7 +278,6 @@ article {
 article h2 {
   border-bottom: 5px solid var(--darkgrey);
   margin-bottom: 1rem;
-  /* padding: 1rem; */
   background-color: var(--blue);
 }
 
@@ -295,12 +290,10 @@ article h3 {
   margin: 1rem;
 }
 article p:nth-child(4) {
-  /* padding: 1rem; */
   text-align: left;
   background-color: var(--blue);
 }
 article p:nth-child(3) {
-  /* padding: 0.3rem 1rem 0 1rem; */
   margin: 0.5rem auto 0 auto;
   font-style: italic;
   text-align: left;
