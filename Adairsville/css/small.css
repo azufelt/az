@@ -12,6 +12,7 @@
   --greige: hsla(30, 2%, 56%, 1);
   --jet: hsla(0, 0%, 20%, 1);
   --prussian-blue: hsla(209, 51%, 17%, 1);
+  --green: hsla(89%, 100%, 32%, 1%);
 }
 * {
   padding: 0;
@@ -25,6 +26,7 @@ p {
   color: var(--white);
   line-height: 1.5rem;
   filter: drop-shadow(0px 0px black);
+  padding: 0.8rem;
 }
 .indent {
   text-indent: 2rem;
@@ -39,6 +41,7 @@ h6 {
   font-weight: 700;
   color: var(--white);
   filter: drop-shadow(0px 0px black);
+  padding: 0.5rem;
 }
 h1 {
   margin-bottom: 0.5rem;
@@ -51,7 +54,6 @@ img {
 #conditions,
 .forecastcard p {
   text-transform: capitalize;
-  /* background-color: var(--black); */
 }
 .alert {
   position: absolute;
@@ -64,7 +66,7 @@ img {
 .alert p {
   background-color: var(--red);
   font-size: 1rem;
-  padding: 0.3rem;
+  /* padding: 0.3rem; */
 }
 .alert h3,
 .alert h4,
@@ -74,7 +76,7 @@ p.closebutton {
 p.closebutton {
   color: var(--red);
   background-color: var(--white);
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 .hidebanner {
   display: none;
@@ -226,13 +228,12 @@ main section h3 {
 }
 .daygrid h3 {
   grid-area: day;
-  padding: 5%;
   background-color: var(--blue);
 }
 .daygrid p {
   grid-area: temp;
   white-space: nowrap;
-  padding: 5%;
+  /* padding: 5%; */
 }
 .daygrid img {
   grid-area: icon;
@@ -249,11 +250,8 @@ main section h3 {
   color: var(--blue);
   background-color: var(--greige);
 }
-.highlight h3 {
-  padding: 0.5rem;
-}
 .highlight p {
-  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  /* padding: 0.5rem 0.5rem 0rem 0.5rem; */
   color: var(--black);
   background-color: var(--white);
 }
@@ -270,7 +268,7 @@ main section h3 {
 }
 div > p + a {
   color: var(--black);
-  padding: 0rem 0.5rem 1rem 0.5rem;
+  /* padding: 0rem 0.5rem 1rem 0.5rem; */
 }
 div > p + a:hover {
   cursor: pointer;
@@ -284,7 +282,7 @@ article {
 article h2 {
   border-bottom: 5px solid var(--darkgrey);
   margin-bottom: 1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: var(--blue);
 }
 
@@ -293,17 +291,16 @@ article > img {
   margin: 0 auto;
 }
 article h3 {
-  padding: 1rem;
   background-color: var(--blue);
   margin: 1rem;
 }
 article p:nth-child(4) {
-  padding: 1rem;
+  /* padding: 1rem; */
   text-align: left;
   background-color: var(--blue);
 }
 article p:nth-child(3) {
-  padding: 0.3rem 1rem 0 1rem;
+  /* padding: 0.3rem 1rem 0 1rem; */
   margin: 0.5rem auto 0 auto;
   font-style: italic;
   text-align: left;
@@ -329,7 +326,9 @@ footer form {
   white-space: nowrap;
 }
 input {
-  padding: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--blue);
 }
 #homeemail {
   margin-bottom: 1rem;
@@ -450,7 +449,11 @@ textarea {
   border-radius: 50%;
   background: var(--greige);
 }
-
+.contactgrid input:required,
+.newgrid input:required {
+  border-left: var(--red) solid 6px;
+}
+/* ---------Gallery-------------- */
 figure {
   text-align: center;
   padding: 3%;
@@ -506,11 +509,6 @@ img[data-src].loaded {
   text-align: center;
   padding: 1rem;
 }
-.contactaddress > p,
-.contactaddress h4 {
-  padding: 0.5rem 2rem;
-}
-
 .contactform {
   background-color: var(--greige);
   text-align: center;
