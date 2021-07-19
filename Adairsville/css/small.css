@@ -24,6 +24,7 @@ html {
 p {
   color: var(--white);
   line-height: 1.5rem;
+  filter: drop-shadow(0px 0px black);
 }
 .indent {
   text-indent: 2rem;
@@ -37,6 +38,10 @@ h6:not(.title h2) {
   font-family: "Open Sans Condensed", Arial, sans-serif;
   font-weight: 700;
   color: var(--white);
+  filter: drop-shadow(0px 0px black);
+}
+h1 {
+  margin-bottom: 0.5rem;
 }
 img {
   max-width: 100%;
@@ -46,17 +51,30 @@ img {
 #conditions,
 .forecastcard p {
   text-transform: capitalize;
+  /* background-color: var(--black); */
+}
+.alert {
+  position: absolute;
+  left: 30%;
+  top: 6rem;
+  max-width: 40%;
+  z-index: 2;
 }
 .alert,
 .alert p {
   background-color: var(--red);
-  max-width: 100%;
+  font-size: 1rem;
   padding: 0.3rem;
 }
-alert h3,
-alert h4,
+.alert h3,
+.alert h4,
 p.closebutton {
   text-align: center;
+}
+p.closebutton {
+  color: var(--red);
+  background-color: var(--white);
+  padding: 1rem;
 }
 .hidebanner {
   display: none;
@@ -101,12 +119,13 @@ header img {
   color: var(--white);
 }
 .title h2 {
-  /* line-height: 0.2rem; */
-  /* padding: 0.5rem; */
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: italic;
   background-color: var(--black);
+  text-align: left;
+  line-height: 0.2rem;
 }
 .bannerfix::after {
   content: "";
@@ -175,9 +194,11 @@ main section h3 {
 .ad {
   text-align: center;
   padding: 2rem;
+  /* border: 3px solid white; */
+  /* background-color: var(--darkgrey); */
 }
 .ad p {
-  filter: drop-shadow(2px 2px var(--black));
+  color: white;
 }
 .special {
   margin: 5%;
@@ -197,7 +218,6 @@ main section h3 {
     "day day"
     "temp icon";
   border: 2px solid var(--blue);
-  filter: drop-shadow(2px 2px var(--black));
 }
 .forecastgrid h2 {
   /* grid-area: title; */
@@ -246,7 +266,6 @@ main section h3 {
   border: 3px double silver;
 }
 .eventicon {
-  position: relative;
   float: right;
   font-size: 4rem;
 }
@@ -277,6 +296,7 @@ article > img {
 article h3 {
   padding: 1rem;
   background-color: var(--blue);
+  margin: 1rem;
 }
 article p:nth-child(4) {
   padding: 1rem;
@@ -432,6 +452,7 @@ textarea {
 
 figure {
   text-align: center;
+  padding: 3%;
 }
 figure:nth-child(odd) {
   color: var(--white);
@@ -447,9 +468,6 @@ figcaption {
   line-height: 2rem;
   text-align: left;
 }
-figure {
-  padding: 5%;
-}
 img[data-src] {
   opacity: 50%;
   filter: blur(3em);
@@ -458,22 +476,46 @@ img[data-src] {
 img[data-src].loaded {
   opacity: 100%;
   filter: blur(0em);
-  transition-duration: 0.5s;
+  transition-duration: 0.1s;
 }
 /* -------------Directory------------ */
 
-.shopgrid > figure {
-  margin: 0.5rem;
-}
-.shopgrid figure > p {
-  margin-bottom: 1rem;
-}
-.viewbuttongrid img,
-.viewbuttongrid figcaption {
+.linedisplay img,
+.linedisplay figcaption {
   display: none;
 }
-.viewbuttongrid figure > p {
-  margin-bottom: 0rem;
+
+#linebutton,
+#gridbutton {
+  cursor: pointer;
 }
-.viewbutton {
+/* --------Contact Page--------------- */
+
+.council img {
+  display: none;
+}
+.council figure {
+  text-align: left;
+}
+.council figcaption {
+  padding: 0;
+  margin: 0;
+}
+.contactinfo {
+  text-align: center;
+  padding: 1rem;
+}
+.contactaddress > p,
+.contactaddress h4 {
+  padding: 0.5rem 2rem;
+}
+
+.contactform {
+  background-color: var(--greige);
+  text-align: center;
+  padding: 1rem;
+}
+
+.mapgrid {
+  display: block;
 }

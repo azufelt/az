@@ -12,8 +12,6 @@
   }
   header h1 {
     color: var(--middlegrey);
-    /* filter: dropshadow(2px 2px 2px var(--white)); */
-    /* filter: drop-shadow(2px 2px 3px white); */
   }
   .arrow {
     animation-name: bounce;
@@ -156,9 +154,7 @@
     padding: 3rem;
     text-align: center;
   }
-  .welcome h2 {
-    filter: drop-shadow(2px 2px var(--black));
-  }
+
   .special {
     grid-area: special;
     align-self: center;
@@ -339,22 +335,67 @@
     gap: 2rem;
   }
   /* -------Directory------- */
-
-  div.shopgrid {
+  .linedisplay {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  /* ---------Contact Page---------- */
+  .contactgrid h3 {
+    font-size: 150%;
+  }
+  .contactform,
+  .mapbox {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  .mapbox {
+    padding: 0;
+  }
+  .mapgrid {
     display: grid;
-    grid-template-columns: 1f auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-area: "pic pic" "pic pic" "pic pic";
-    margin: 5% auto;
-    gap: 0.5rem;
+    grid-template-areas:
+      "contactinfo contactinfo contactinfo"
+      "h4 map map"
+      "p map map";
+    padding: 1rem;
+    border: 5px solid var(--blue);
+    align-items: center;
   }
-  .shopgrid > section.highlight {
-    grid-area: pic;
+  .contactinfo {
+    grid-area: contactinfo;
   }
-  .viewbuttongrid {
-    max-width: 40rem;
+  .mapgrid h4 {
+    grid-area: h4;
   }
-  .viewbuttongrid figure {
-    padding: 0.5rem;
+  .mapgrid p {
+    grid-area: p;
+  }
+  .map {
+    grid-area: map;
+  }
+  .councilbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  .councilbox img {
+    display: block;
+    max-width: 8rem;
+    margin: 0 auto;
+  }
+  .council figcaption,
+  .council h4 {
+    padding: 0rem 5%;
+    font-size: 0.8rem;
+  }
+  .council h4 {
+    padding-top: 1rem;
+  }
+  .council figure {
+    background-color: var(--blue);
   }
 }

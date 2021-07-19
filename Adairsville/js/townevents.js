@@ -10,7 +10,7 @@ fetch(requestJSON)
 .then(function (eventObj) {
 
   const eventlist = eventObj['events'];
-let i = 0;
+// let i = 0;
   eventlist.forEach((event) => {
 
     let card = document.createElement('div');

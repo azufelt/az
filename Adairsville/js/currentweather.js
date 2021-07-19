@@ -1,7 +1,7 @@
 const APPID = "150cd72e5595793ee58a48d53d68f9f7";
-const long = "-84.9341";
+const long = "-108.489304"; //BILLINGS, MONTANTA//
 // "-84.9341";
-const lat = "34.3687";
+const lat = "45.787636";
 //  "34.3687";
 const units = "imperial"
 const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=hourly,daily&appid=${APPID}&units=${units}`
@@ -10,7 +10,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=$
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-
+  
     String.prototype.toProperCase = function() {
       return this.replace(/\w\S*/g,function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     };
@@ -44,75 +44,8 @@ fetch(apiURL)
       message = "N/A"
     };
     document.querySelector("#windchill").innerHTML = message;
-    
-    if (jsObject.alert === alert) {
-      let i = 0;
-      let banner = document.createElement('section');
-      let event = document.createElement('h3');
-      let title = document.createElement('h4');
-      let warning = document.createElement('p');
-      event.textContent = alerts[i].event;
-      title.textContent = alerts[i].sender_name;
-      warning.textContent = alerts[i].description;
-
-      banner.append(event);
-      banner.append(title);
-      banner.append(warning);
-      banner.setAttribute('class', "alert hidebanner");
-
-      document.querySelector('aside.banner').append(banner);
-
-      const b = document.querySelector(".closebutton");
-      const bannerchange = document.querySelector(".alert");
-      b.addEventListener("click", () => {bannerchange.classList.toggle("hidebanner")}, false);
-  
-      document.querySelector(".alert").style.display= "block";
-    } else {
-          document.querySelector(".alert").style.display= "none";
-          return;
-        };      
     }
   );
-
-
-const forecastURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=current,minutely,hourly,alerts&appid=${APPID}&units=${units}`
-
-fetch(forecastURL)
-.then((response) => response.json())
-.then((jsObject) => {
-
-const dayofWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday", "Saturday"];
-
-const forecast = [jsObject.daily[1], jsObject.daily[2], jsObject.daily[3]];
-  
-forecast.forEach((daycard) => {
-     
-      let d = new Date(daycard.dt*1000);
-      let daytitle = dayofWeek[d.getDay()];
-      
-      let card = document.createElement('div');
-      card.setAttribute('class', "daygrid");
-      let title = document.createElement('h3');
-      title.textContent = daytitle;
-
-      let temp = document.createElement('p');
-      let high = daycard.temp.max;
-      let low = daycard.temp.min;
-      temp.innerHTML= daycard.weather[0].description + "<br> High: " + (high).toFixed(0) + " °F<br> Low: " + (low).toFixed(0) + " °F";
-
-      let icon = document.createElement('img')
-      let imageicon = daycard.weather[0].icon;
-      let imagesrc =  "http://openweathermap.org/img/wn/" + imageicon + "@2x.png";
-      icon.setAttribute('src', imagesrc);
-      icon.setAttribute('alt', daytitle + " " + daycard.weather[0].description);
-
-      card.append(title);
-      card.append(temp);
-      card.append(icon);
-      document.querySelector('div.forecastgrid').append(card);
-
-    });
-});
 
 
 

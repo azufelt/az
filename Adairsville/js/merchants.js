@@ -21,7 +21,7 @@ fetch(requestMerch)
     bizName.innerHTML = business.name;
     address.innerHTML = `${business.address[0].numbers} ${business.address[0].street} <br> ${business.address[0].city}, ${business.address[0].state} ${business.address[0].zipcode} <br> ${business.phone}`;
     description.innerHTML = `${business.hours} <br>${business.description[0]}`;
-    let website = "images/" + business.image;
+    let imgsrc = "images/" + business.image;
    
     card.append(bizName);
     card.append(address);
@@ -29,11 +29,40 @@ fetch(requestMerch)
     card.append(description);
     
 
-    image.setAttribute('src', website);
+    image.setAttribute('src', imgsrc);
     image.setAttribute('alt', business.name);
-    // card.setAttribute('class', 'highlight');
-    document.querySelector('.shopgrid').append(card);
+    document.querySelector('.merchantgrid').append(card);
 
 
   });
 });
+
+// ---------------using onclick button Method ----------------
+function gridView() {
+  const gridchange = document.querySelector("#merchantgrid");
+gridchange.classList.add("gallery");
+gridchange.classList.remove("linedisplay");
+}
+function lineView() {
+  const gridchange = document.querySelector("#merchantgrid");
+  gridchange.classList.add("linedisplay");
+  gridchange.classList.remove("gallery");
+}
+
+// -------------Using addEventListener Method--------------
+// const gridbutton = document.querySelector("gridbutton");
+// const gridchange = document.querySelector("#merchantgrid");
+// gridbutton.addEventListener("click", () => {
+//   gridchange.classList.add("griddisplay");
+//   })
+// gridbutton.addEventListener("click", () => {
+//   gridchange.classList.remove("linedisplay");
+//   })
+//   const listbutton = document.querySelector("listbutton");
+// // const gridchange = document.querySelector("#merchantgrid");
+// listbutton.addEventListener("click", () => {
+//   gridchange.classList.add("linedisplay");
+//   })
+// listbutton.addEventListener("click", () => {
+//   gridchange.classList.remove("griddisplay");
+//   })

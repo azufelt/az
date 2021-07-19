@@ -21,23 +21,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="./favicon.ico" />
     <script defer src="js/script.js"></script>
-    <script defer src="js/currentweather.js"></script>
+    <!-- <script defer src="js/currentweather.js"></script>
     <script defer src="js/merchants.js"></script>
-    <script defer src="js/townevents.js"></script>
+    <script defer src="js/townevents.js"></script> -->
 
     <title>Historic Adairsville</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="./">
+       
           <img src="images/train-logo.png" alt="steam train engine outline" />
-        </a>
+        
       </div>
       <div class="title">
         <h1>Historic Adairsville</h1>
         <br />
-        <p>"History in our name —Recreation is our game."</p>
+        <h2>"History in our name —Recreation is our game."</h2>
       </div>
       <div class="bannerfix"></div>
       <nav>
@@ -54,22 +54,111 @@
     </header>
 
     <main>
-      <article class="story1">
-        <h2>Contact Us!</h2>
-      </article>
-      <section class="highlight"></section>
-    </main>
-
-    <footer>
-      <div class="footerbox">
-        <form class="form">
-          <h4>Sign up for our Newsletter!</h4>
+      <div class="contactgrid">
+        <section class="contactform highlight">
+          <h3>Send us a Message!</h3>
           <label for="name">Name:</label><br />
           <input
             class="inputfield"
             type="text"
             id="name"
             name="name"
+            placeholder="First & Last Name"
+            pattern="[a-zA-Z ]{5,}"
+            title="Enter five or more characters"
+            required
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            class="inputfield"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@email.com"
+            required
+          /><br />
+          <label for="comments">Message</label><br />
+              <textarea id="comments" name="comments" rows="10"> </textarea>
+          <input type="submit" class="button buttonbox" value="Sign Up" />
+        </form>
+        </section>
+        <article class="mapbox">
+          <div class="mapgrid">
+          <h3 class="contactinfo">Adairsville Chamber of Commerce</h3>
+        
+            <h4>Contact Info:</h4>
+            <p>
+              116 Public Square<br />
+              Adairsville, GA 30103<br />
+              770-773-3451 <br />
+              Hours 8am-5pm
+            </p>
+      
+          <div class="map">
+            <img
+              src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+          &markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+          &markers=color:red%7Clabel:C%7C40.718217,-73.998284
+          &key=AIzaSyBZHyMTk6UaF9MT0r1boRUMoVTas4YBlsk"
+              alt="google map"
+            />
+          </div>
+        </div>
+        </article>
+        <article class="council">
+          <h3>Meet the City Council!</h3>
+          <div class="councilbox">
+          <figure>
+            <img
+              src="images/mayor-kenneth-carson.png"
+              alt="headshot mayor kenneth carson"
+            />
+            <h4>Mayor Kenneth Carson</h4>
+            <figcaption>kcarson@adairsvillega.net</figcaption>
+          </figure>
+          <figure>
+            <img src="images/pam-madison.png" alt="headshot pam madison" />
+            <h4>Pam Madison</h4>
+            <figcaption>pmadison@adairsvillega.net</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="images/jerry-alan-towe.png"
+              alt="headshot jerry alan towe"
+            />
+            <h4>Jerry Alan</h4>
+            <figcaption>atowe@adairsvillega.net</figcaption>
+          </figure>
+          <figure>
+            <img src="images/erwin-holcomb.png" alt="headshot erwin holcomb" />
+            <h4>Erwin Holcomb</h4>
+            <figcaption>eholcomb@adairsvillega.net</figcaption>
+          </figure>
+          <figure>
+            <img src="images/lee-castro.png" alt="headshot lee castro" />
+            <h4>Lee Castro</h4>
+            <figcaption>kcarson@adairsvillega.net</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ahmad-hall.png" alt="headshot ahmad hall" />
+            <h4>Ahmad Hall</h4>
+            <figcaption>ahall@adairsvillega.net</figcaption>
+          </figure>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerbox">
+        <form class="form">
+          <h4>Sign up for our Newsletter!</h4>
+          <label for="footername">Name:</label><br />
+          <input
+            class="inputfield"
+            type="text"
+            id="footername"
+            name="footername"
             placeholder="First & Last Name"
             pattern="[a-zA-Z ]{5,}"
             title="Enter five or more characters"

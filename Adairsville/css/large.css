@@ -159,4 +159,36 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  /* ---------Directory-------- */
+
+  .councilbox img {
+    max-width: 12rem;
+  }
+  .contactgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "mapbox contactform "
+      "mapbox contactform   "
+      "council council ";
+    grid-gap: 2rem;
+    margin: 3rem auto;
+    width: 90%;
+    align-items: baseline;
+    justify-items: center;
+  }
+  .contactform {
+    grid-area: contactform;
+    width: 90%;
+  }
+  .mapbox {
+    grid-area: mapbox;
+  }
+  .council {
+    grid-area: council;
+  }
+  .mapgrid {
+    display: block;
+  }
 }

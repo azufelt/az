@@ -21,23 +21,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="./favicon.ico" />
     <script defer src="js/script.js"></script>
-    <!-- <script defer src="js/currentweather.js"></script> -->
     <script defer src="js/merchants.js"></script>
-    <!-- <script defer src="js/townevents.js"></script> -->
 
     <title>Historic Adairsville</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <a href="./">
-          <img src="images/train-logo.png" alt="steam train engine outline" />
-        </a>
+        <img src="images/train-logo.png" alt="steam train engine outline" />
       </div>
       <div class="title">
         <h1>Historic Adairsville</h1>
         <br />
-        <p>"History in our name —Recreation is our game."</p>
+        <h2>"History in our name —Recreation is our game."</h2>
       </div>
       <div class="bannerfix"></div>
       <nav>
@@ -57,11 +53,13 @@
       <article class="story1">
         <h2>Support Local!</h2>
         <div>
-          <span class="viewbutton" id="griddisplay">⬜️</span
-          ><span class="viewbutton" id="linedisplay">⎻</span>
+          <!-- <span id="gridbutton">😡</span>
+          <span id="linebutton">🥶</span> -->
+          <button onclick="gridView()">GRID view</button>
+          <button onclick="lineView()">LIST view</button>
         </div>
       </article>
-      <div class="shopgrid viewbuttongrid"></div>
+      <div class="merchantgrid gallery" id="merchantgrid"></div>
       <!--use class="gallery" to set in card view-->
     </main>
 

@@ -55,14 +55,15 @@
         "zipcode": "30103"
       }
     ],
-    "website": "",
+    "website": "www.generalstore.com",
     "phone": "770-769-4058",
     "image": "generalstore.jpg",
-    "logo": "",
+    "logo": "generalstore.png",
     "hours": "Tuesday-Friday 10 AM-6 PM and Saturday 10 AM-4 PM",
     "description": [
     " Stop in for a delicious menu of soup and sandwiches. This general store offers vintage and upcycled antiques, dry goods, toys, gifts and more, much of which is Made in USA. Home chefs love our selection of bulk herbs and spices. Responsibly sourced coffees and teas are brewed daily and paired with homemade scones, biscotti, and other pastries. Our unique handcrafted items benefit global villages and charities."
-    ]
+    ],
+    "ad": "yes"
   },
   {
     "name": "Papa John's",
@@ -157,6 +158,7 @@
         "zipcode": "30103"
       }
     ],
+    "website": "",
     "phone": "770-773-1902",
     "image": "maggietearoom.jpg",
     "logo": "",
@@ -196,15 +198,17 @@
         "zipcode": "30103"
       }
     ],
+    "website": "www.peacockjunction.com",
     "phone": "678-800-7000",
     "image": "peacockjunction.jpg",
-    "logo": "",
+    "logo": "peacockjunction.png",
     "hours": "Open Monday-Saturday 10 AM-5 PM and Sunday Noon-5 PM",
     "description": [
       "Antiques, primitives, vintage items, home furnishings, decor, collectibles, costume jewelry and accessories"
       
     
-    ]
+    ],
+    "ad": "yes"
   },
   {
     "name": "Wholly Beauty",
@@ -217,13 +221,15 @@
         "zipcode": "30103"
       }
     ],
+    "website": "www.whollybeauty.com",
     "phone": "770-773-9050",
     "image": "whollybeauty.jpg",
-    "logo": "",
+    "logo": "whollybeauty.png",
     "hours": "Open Monday-Friday 10:30 AM-8 PM, Saturday 11 AM-7 PM, Sunday Noon-5 PM.",
     "description": [
       "Shop for beauty and personal care products and CBD products. Enjoy tanning and red light therapy services."
-    ]
+    ],
+    "ad": "yes"
   },
   {
     "name": "Linda B's Antiques",
@@ -236,6 +242,7 @@
         "zipcode": "30103"
       }
     ],
+    "website": "",
     "phone": "770-548-0095",
     "image": "lindabantiques.jpg",
     "logo": "",
