@@ -48,7 +48,3 @@ fetch(apiURL)
     document.querySelector("#windchill").innerHTML = message;
     }
   );
-
-
-
-

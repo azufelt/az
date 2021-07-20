@@ -1,0 +1,256 @@
+{"businesses": [
+  
+  {
+    "name": "1902 Stock Exchange",
+    "address": [
+      {
+        "numbers":"124",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "https://www.1902StockExchange.com",
+    "phone": "770-773-1902",
+    "image": "stockexchange.jpg",
+    "logo": "",
+    "hours": "Temporarily closed due to Covid-19: Get updates on Facebook",
+    "description": [ 
+      "Built in 1902, this cornerstone building in Historic Adairsville offers antiques, fine reproductions, used and rare books, plus an assortment of specialty gifts, in addition to Maggie Mae’s Tea Room and the Public Square Opera House."
+    
+    ]
+  },
+  {
+    "name": "Bradley Farms Bakery",
+    "address": [
+      {
+        "numbers":"112",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "https://bradleyfarms.square.site",
+    "phone": "678-800-7100",
+    "image": "bradleybakery.jpg",
+    "logo": "",
+    "hours": "Open Daily",
+    "description": [
+
+    "Bradley Farms is a local bakery in downtown Adairsville, that is home of the “Can’t Stop Cinnamon Roll”. They specialize in fresh baked breads, cookies, cakes and pies. Ask about gift baskets and catering  to make the family dinner table more memorable."
+
+    
+    ]
+  },
+  {
+    "name": "General Store & Mercantile",
+    "address": [
+      {
+        "numbers":"109-C",
+        "street": "Gilmer Street",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "www.generalstore.com",
+    "phone": "770-769-4058",
+    "image": "generalstore.jpg",
+    "logo": "generalstore.png",
+    "hours": "Tuesday-Friday 10 AM-6 PM and Saturday 10 AM-4 PM",
+    "description": [
+    " Stop in for a delicious menu of soup and sandwiches. This general store offers vintage and upcycled antiques, dry goods, toys, gifts and more, much of which is Made in USA. Home chefs love our selection of bulk herbs and spices. Responsibly sourced coffees and teas are brewed daily and paired with homemade scones, biscotti, and other pastries. Our unique handcrafted items benefit global villages and charities."
+    ],
+    "ad": "yes"
+  },
+  {
+    "name": "Papa John's",
+    "address": [
+      {
+        "numbers":"1234",
+        "street": "HWY 41",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "",
+    "phone": "470-123-4567",
+    "image": "papajohns.jpg",
+    "logo": "papajohns.png",
+    "hours":"Open Daily",
+    "description": [
+      "Good Pizza. Better Ingredients. Papa John's."
+    ]
+  },
+  {
+    "name": "Tops Galore",
+    "address": [
+      {
+        "numbers":"5929",
+        "street": "Joe Frank Harris Pkwy",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "",
+    "phone": "770-877-9867",
+    "image": "topsgalore.jpg",
+    "logo": "",
+    "hours":"",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Vergil's Home and Garden Decor",
+    "address": [
+      {
+        "numbers":"5481",
+        "street": "Joe Frank Harris Pkwy" ,
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website":"",
+    "phone": "770-773-7298",
+    "image": "virgilhomegarden.jpg",
+    "logo": "",
+    "hours": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Dalton Wholesale Floors",
+    "address": [
+      {
+        "numbers":"411",
+        "street": "Soho Dr.",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "https://daltonwholesalefloors.com",
+    "phone": "770-773-2681",
+    "image": "daltonwholesalefloors.jpg",
+    "logo": "",
+    "hours": "Monday-Friday 8 AM-5 PM and Saturday 8 AM-3 PM",
+    "description": [
+      " We provide our customers with the best service, products, and installation of flooring. Come see us for all your flooring needs at low prices!"
+
+    
+    ]
+  },
+  {
+    "name": "Maggie Mae's Tea Room",
+    "address": [
+      {
+        "numbers":"124",
+        "street": "Public Square",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "",
+    "phone": "770-773-1902",
+    "image": "maggietearoom.jpg",
+    "logo": "",
+    "hours": "",
+    "description": [
+    
+    ]
+  },
+  {
+    "name": "Heavenly Hand Me Downs",
+    "address": [
+      {
+        "numbers":"307",
+        "street": "North Main Street",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "https://www.handsandfeet.com",
+    "phone": "678-767-1069",
+    "image": "heavenlyhandmedowns.jpg",
+    "logo": "",
+    "hours": "Tuesday-Friday 11 AM-5 PM and Saturday 11 AM-2 PM",
+    "description": [
+      "This non-profit thrift store funds programs of Hand and Feet Ministries. Shop for clothing, furniture, antiques, home decor, electronics, books and more, all at very low prices."
+    ]
+  },
+  {
+    "name": "Peacock Junction",
+    "address": [
+      {
+        "numbers":"107",
+        "street": "Railroad Street",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "www.peacockjunction.com",
+    "phone": "678-800-7000",
+    "image": "peacockjunction.jpg",
+    "logo": "peacockjunction.png",
+    "hours": "Open Monday-Saturday 10 AM-5 PM and Sunday Noon-5 PM",
+    "description": [
+      "Antiques, primitives, vintage items, home furnishings, decor, collectibles, costume jewelry and accessories"
+      
+    
+    ],
+    "ad": "yes"
+  },
+  {
+    "name": "Wholly Beauty",
+    "address": [
+      {
+        "street": "c Hwy 140 NW Ste A",
+        "numbers":"",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "www.whollybeauty.com",
+    "phone": "770-773-9050",
+    "image": "whollybeauty.jpg",
+    "logo": "whollybeauty.png",
+    "hours": "Open Monday-Friday 10:30 AM-8 PM, Saturday 11 AM-7 PM, Sunday Noon-5 PM.",
+    "description": [
+      "Shop for beauty and personal care products and CBD products. Enjoy tanning and red light therapy services."
+    ],
+    "ad": "yes"
+  },
+  {
+    "name": "Linda B's Antiques",
+    "address": [
+      {
+        "numbers":"5858",
+        "street": "Joe Frank Harris Pkwy",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "",
+    "phone": "770-548-0095",
+    "image": "lindabantiques.jpg",
+    "logo": "",
+    "hours": "Monday-Saturday 10 AM-5 PM",
+    "description": [
+      "Shop 45 booths filled with home decor, antiques, oddities, new & used furniture and more."
+      
+    
+    ]
+  }
+]}
