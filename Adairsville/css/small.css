@@ -12,7 +12,6 @@
   --greige: hsla(30, 2%, 56%, 1);
   --jet: hsla(0, 0%, 20%, 1);
   --prussian-blue: hsla(209, 51%, 17%, 1);
-  --green: hsla(89%, 100%, 32%, 1%);
 }
 * {
   padding: 0;
@@ -22,15 +21,14 @@ html {
   background-color: var(--black);
   font-family: "Open Sans", Arial, sans-serif;
 }
-main p, main li {
+main p,
+main li {
   color: var(--white);
   line-height: 1.5rem;
   /* filter: drop-shadow(0px 0px black); */
   padding: 0.8rem;
   text-align: left;
 }
-
-
 .indent {
   text-indent: 2rem;
 }
@@ -72,7 +70,7 @@ img {
 }
 .alert p {
   color: white;
-  padding: .2rem;
+  padding: 0.2rem;
 }
 .alert h3,
 .alert h4,
@@ -107,12 +105,10 @@ p.closebutton {
   border-radius: 50px;
   text-decoration: none;
   border: none;
-
 }
 a.button,
 input.button {
   border: 2px solid var(--silver);
-
 }
 .button:hover {
   background-color: var(--red);
@@ -143,12 +139,13 @@ header img {
   padding-bottom: 1%;
   width: 100%;
 }
-li, .filterfix{
+li,
+.filterfix {
   list-style: none;
   filter: drop-shadow(0px 0px black);
 }
 /* ---------- nav menu--------- */
-/* :link :visited :hover :focus :active */
+
 .navmenu li:first-child {
   display: block;
 }
@@ -156,7 +153,6 @@ li, .filterfix{
   display: none;
   padding: 0.8rem 0;
   text-align: center;
-  /* list-style: none; */
   color: var(--white);
   transition: 0.5s;
 }
@@ -184,12 +180,6 @@ a {
   background-color: var(--black);
 }
 
-/* .navmenu:link {
-  color: var(--white); /*Don't know what this does??? 
-}
-.navmenu:visited {
-  color: white; /*Possible change this color???
-} */
 .navmenu li:hover:not(:first-child) {
   background-color: var(--red);
 }
@@ -212,7 +202,6 @@ div > div {
 .ad {
   margin: 1rem auto;
   max-width: 80%;
-  }
 }
 
 .ad p {
@@ -253,7 +242,8 @@ div > div {
 .daygrid img {
   grid-area: icon;
 }
-.highlight, .stats {
+.highlight,
+.stats {
   padding: 1rem;
   margin: 2%;
   line-height: 1.5rem;
@@ -261,15 +251,18 @@ div > div {
   background-color: var(--greige);
 }
 
-.highlight h2, .demographics h2 {
+.highlight h2,
+.demographics h2 {
   color: var(--blue);
   background-color: var(--greige);
 }
-.highlight p, .demographics p {
+.highlight p,
+.demographics p {
   color: var(--black);
   background-color: var(--white);
 }
-.highlight > div, .demographics>div {
+.highlight > div,
+.demographics > div {
   padding: 0.5rem;
   margin-top: 1rem;
   color: var(--black);
@@ -286,7 +279,8 @@ div > p + a {
 div > p + a:hover {
   cursor: pointer;
 }
-article, .demographics {
+article,
+.demographics {
   text-align: center;
   margin-top: 2rem;
   background-color: var(--blue);
@@ -297,7 +291,6 @@ article h2 {
   border-bottom: 5px solid var(--darkgrey);
   margin-bottom: 1rem;
   background-color: var(--blue);
-  /* white-space: nowrap; */
 }
 
 article > img {
@@ -381,6 +374,16 @@ element.style {
 .background {
   display: none;
 }
+/* -----------directory--------  */
+.viewicon {
+  border: 3px solid white;
+  background-color: var(--blue);
+  margin: 1rem;
+  cursor: pointer;
+}
+.viewicon img {
+  margin: auto 0;
+}
 /* ------------- join page------------- */
 .newgrid {
   padding: 2rem;
@@ -401,7 +404,8 @@ legend {
   font-size: 1.5rem;
   font-weight: bold;
 }
-legend, footer {
+legend,
+footer {
   padding-bottom: 2rem;
 }
 fieldset > div {
@@ -469,8 +473,8 @@ textarea {
   border-left: 6px solid var(--red);
 }
 .contactgrid input:required:valid,
-.newgrid input:required:valid  {
-  border-left: 6px solid green;
+.newgrid input:required:valid {
+  border-left: 6px solid darkgreen;
 }
 
 /* ---------Gallery-------------- */
@@ -514,15 +518,12 @@ img[data-src].loaded {
   cursor: pointer;
 }
 .merchantgrid figure {
-  padding:  0;
-  margin:  0;
+  padding: 0;
+  margin: 0;
 }
-
 .merchantgrid h3 {
-  text-align:  left;
+  text-align: left;
 }
-
-
 /* --------Contact Page--------------- */
 
 .council img {
@@ -544,11 +545,11 @@ img[data-src].loaded {
   text-align: center;
   padding: 1rem;
 }
-input:not(footer input), textarea {
+input,
+textarea {
   display: block;
-  margin: .8rem auto 1.5rem auto;
+  margin: 0.8rem auto 1.5rem auto;
 }
-
 .mapgrid {
   display: block;
 }
@@ -557,13 +558,16 @@ iframe {
   max-width: 100%;
 }
 /* -------City page ------- */
-.whatsnew, .whatsnew ul, .whatsnewli, .whatsnew h2{
+.whatsnew,
+.whatsnew ul,
+.whatsnewli,
+.whatsnew h2 {
   background-color: var(--greige);
 }
-.whatsnew ul, .whatsnew li {
+.whatsnew ul,
+.whatsnew li {
   padding: 0rem;
 }
-
 .newnowinfo h3 {
   background-color: var(--blue);
 }
