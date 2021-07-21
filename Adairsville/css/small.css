@@ -21,6 +21,7 @@
 html {
   background-color: var(--black);
   font-family: "Open Sans", Arial, sans-serif;
+  padding-bottom: 2%;
 }
 main p, main li {
   color: var(--white);

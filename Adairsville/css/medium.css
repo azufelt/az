@@ -37,6 +37,22 @@
     }
   }
 
+  @keyframes titleslide {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 20%;
+    }
+  }
+  .story1 h2,
+  .story2 h2,
+  .feature h2,
+  .story h2 {
+    animation-name: titleslide;
+    animation-duration: 3s;
+    white-space: nowrap;
+  }
   /* ----------------- */
   h1 {
     font-size: 3rem;
