@@ -543,4 +543,9 @@
     float: right;
     padding: 1rem;
   }
+  /* --------Attributtions------- */
+  .limitwidth {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }

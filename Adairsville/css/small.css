@@ -70,6 +70,10 @@ img {
   background-color: var(--red);
   font-size: 1rem;
 }
+.alert p {
+  color: white;
+  padding: .2rem;
+}
 .alert h3,
 .alert h4,
 p.closebutton {
@@ -139,9 +143,9 @@ header img {
   padding-bottom: 1%;
   width: 100%;
 }
-li {
+li, .filterfix{
   list-style: none;
-
+  filter: drop-shadow(0px 0px black);
 }
 /* ---------- nav menu--------- */
 /* :link :visited :hover :focus :active */
@@ -231,6 +235,7 @@ div > div {
     "day day"
     "temp icon";
   border: 2px solid var(--blue);
+  background-color: var(--black);
 }
 .forecastgrid h2 {
   text-align: center;

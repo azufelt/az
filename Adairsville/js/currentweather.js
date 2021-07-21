@@ -8,7 +8,6 @@ const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=$
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-  console.log(jsObject);
     String.prototype.toProperCase = function() {
       return this.replace(/\w\S*/g,function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
     };
