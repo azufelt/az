@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+
+    <meta
+      name="keywords"
+      content="Adairsville Georgia City Chamber of Commerce information on local businesses events weather"
+    />
+    <meta
+      name="description"
+      content="Adairsville Georgia City Chamber of Commerce information on local businesses"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script defer src="js/script.js"></script>
+    <script defer src="js/currentweather.js"></script>
+    <script defer src="js/forecast.js"></script>
+    <script defer src="js/alert.js"></script>
+    <script defer src="js/townevents.js"></script>
+    <script defer src="js/advertisers.js"></script>
+
+    <title>Historic Adairsville</title>
+  </head>
+  <body>
+    <header>
+      <aside id="alert" class="alert">
+        <p class="closebutton">Special Weather Alert &#10006;</p>
+      </aside>
+      <div class="banner">
+        <a href="join.html" class="button">Join Now</a>
+        <span>Chamber of Commerce needs you!</span>
+      </div>
+      <div class="logo">
+        <img src="images/train-logo.png" alt="steam train engine outline" />
+      </div>
+      <div class="title">
+        <h1>Historic Adairsville</h1>
+        <br />
+        <h2>"History in our name —Recreation is our game."</h2>
+      </div>
+      <div class="bannerfix"></div>
+      <nav>
+        <ul class="navmenu">
+          <li><a class="ham">&#9776;</a></li>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="cityinfo.html">Adairsville</a></li>
+          <li><a href="join.html">Join </a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="directory.html">Directory </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="background">
+      <img
+        class="backgroundimage"
+        src="images/trainbackground-optimized.jpg"
+        alt="black and white locomotive"
+      />
+    </aside>
+    <main>
+      <div id="maingrid">
+        <aside class="welcome">
+          <h2>Welcome</h2>
+          <span class="arrow">↓</span>
+        </aside>
+        <section class="special">
+          <h3>Current Weather</h3>
+          <p>
+            Currently: <span id="conditions"></span><br />
+            Current Temp: <span id="currentTemp"></span>°F<br />
+            Wind Chill: <span id="windchill"></span><br />
+            Humidity: <span id="humidity"></span><br />
+            Wind Speed: <span id="wind"></span>mph<br />
+          </p>
+        </section>
+        <article class="story1 clearfix">
+          <div>
+            <h2>Bartow Remembers. . .</h2>
+
+            <img
+              class="storyimg1"
+              src="images/historicmemorial.jpg"
+              alt="flags placed in front of historic headstones"
+            />
+            <p>Jim Massara</p>
+            <p class="indent">
+              CARTERSVILLE, GA — Memorial Day is a holiday people in
+              Cartersville, Bartow County and across America look forward to
+              every year as the start of summer. It also gives people a chance
+              to look back, as the final Monday in May is a day to remember all
+              American lives lost during military service. Here are five things
+              to know about the history of Memorial Day:
+              <br /><br />
+              1. It Was Originally Called Decoration Day: Remembering veterans
+              who died while in military service in late May dates back to 1868,
+              when Gen. John A. Logan called for a day of remembrance to honor
+              the Northern lives lost amid battle during the Civil War that had
+              ended just a few years earlier, according to History.com. Logan
+              called it "Decoration Day," which it was known as for several
+              years. As time passed, more and more people called it Memorial
+              Day, History.com reported, and it became a federal holiday in
+              1971.
+              <br /><br />
+              2. Local Events: The Noble Hill-Wheeler Memorial Center is hosting
+              a Grab and Go Fish Fry to benefit the Land Project. Plates of fish
+              and chicken, baked beans, coleslaw, potato salad, homemade cake
+              and homemade fried pies go for a donation of $10. Call ahead to
+              place orders at 770-382-3392.
+              <br /><br />
+              3. Birthplace Of Memorial Day: The Memorial Day holiday tradition
+              in Waterloo, New York, dates back even longer than Logan's call
+              for a day of remembrance. Waterloo first celebrated on May 5,
+              1866, as local businesses closed and residents decorated the
+              graves of fallen soldiers with flowers and flags, according to
+              History.com.
+              <br /><br />
+              <a href="attributions.html" class="button">Continue Story →</a>
+            </p>
+          </div>
+        </article>
+        <section class="forecastcard">
+          <div class="forecastgrid">
+            <h2>3-Day Forecast</h2>
+          </div>
+        </section>
+        <div class="ad1 ad"></div>
+        <section id="eventcard" class="highlight">
+          <h2>Upcoming Events:</h2>
+        </section>
+        <div class="ad2 ad"></div>
+        <article class="story2">
+          <h2>Welcome to Bartow County</h2>
+
+          <img
+            class="storyimg2"
+            src="images/historicdistrict.jpg"
+            alt="historic brick building"
+          />
+          <p><!--reserved for author byline--></p>
+          <p class="indent">
+            Bartow County is a vibrant, business-friendly community with
+            excellent educational opportunities and unmatched quality of life.
+            In addition to being an up and coming sports and entertainment
+            mecca, our state of the art Smithsonian affiliated museums, library
+            facilities, top-flight resorts and recreational areas, and welcoming
+            people make this "one of the most likeable places to live among the
+            metro counties" according to a poll conducted by the Atlanta
+            Journal-Constitution.
+            <br /><br />
+            Nestled in the foothills of the Appalachian Mountains, Bartow County
+            offers a unique blend of country charm and international
+            sophistication. Part of the metropolitan Atlanta area, Bartow County
+            is just 30 miles northwest of Greater Atlanta, along the I-75
+            corridor.
+            <br /><br />
+            Check out the 2021 Community Guide & Business Directory for
+            information on the wonderful attractions and amazing treasures in
+            the Bartow County community along with the Chamber Member directory,
+            an easy way to find a business for all of your needs.
+
+            <br /><br />
+            The Chamber often serves as a collective voice for the betterment of
+            the business community.
+            <br /><br />
+            Meetings are open to anyone in the community and will be held in
+            April of each year at 8:00 AM at the Chamber.
+          </p>
+
+          <h3>Join our City Chamber of Commerce!</h3>
+          <a href="join.html" class="button">Join Now!</a>
+        </article>
+        <div class="ad3 ad"></div>
+        <article class="feature">
+          <h2>Adairsville Photo Tour</h2>
+          <img
+            src="images/aroundadairsville.jpg"
+            alt="canola fields blue skies"
+          />
+
+          <h3>There's more to see in our gallery!</h3>
+          <p class="indent">
+            Adairsville and surrounding Bartow County have much to offer to the
+            visual sense. If you can catch the sunsetting over the vast crops,
+            or sneak a peek between historic building, you won't be
+            disappointed.
+            <br /><br />
+            North Georgia does scenery and recreation right! From hiking trails,
+            fishing holes, boating at the lake, or barbeque and blues we've got
+            some for everyone.
+            <br /><br />
+            If you're looking for some great places to visit, make sure to check
+            out the rest of our gallery so you can head out and explore! And
+            don't forget to send us YOUR images to be included in teh Around
+            Adairsville Photo Gallery!
+          </p>
+          <br />
+          <a href="gallery.html" class="button">View Gallery</a>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerbox">
+        <form class="form" method="get" action="newsletterthanks.html">
+          <h3>Sign up for our Newsletter!</h3>
+          <label for="newslettername">Name:</label><br />
+          <input
+            class="inputfield"
+            type="text"
+            id="newslettername"
+            name="newslettername"
+            placeholder="First & Last Name"
+            pattern="[a-zA-Z ]{5,}"
+            title="Enter five or more characters"
+            required
+          /><br />
+          <label for="newsletteremail">Email:</label><br />
+          <input
+            class="inputfield"
+            type="email"
+            id="newsletteremail"
+            name="newsletteremail"
+            placeholder="name@email.com"
+            required
+          /><br />
+          <input type="submit" class="button buttonbox" value="Sign Up" />
+        </form>
+        <div class="footimage">
+          <a href="./">
+            <img
+              src="images/train-logo-white-400px.png"
+              alt="black and white train logo"
+            />
+          </a>
+          <p>Come shop, visit, dine and play in Historic Adairsville, GA!</p>
+        </div>
+        <p class="contact">
+          Contact Us!<br />
+          email@citycouncil.com<br />
+          <a href="tel:770-773-3451">770-773-3451</a>
+        </p>
+        <div class="social">
+          <a href="https://www.twitter.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://www.instagram.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-insta.png" alt="instagram image icon"
+          /></a>
+          <a href="https://www.facebook.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-fb.png" alt="facebook logo"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <span id="currentdate"></span><br />&copy;<span
+            id="currentyear"
+          ></span>
+          Ashley Zufelt<br />
+          <a href="attributions.html">Attributions</a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      crossorigin
+    ></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans Condensed", "Open Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>

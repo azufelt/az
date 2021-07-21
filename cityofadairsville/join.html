@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+
+    <meta
+      name="keywords"
+      content="Adairsville Georgia City Chamber of Commerce information on local businesses events weather"
+    />
+    <meta
+      name="description"
+      content="Adairsville Georgia City Chamber of Commerce information on local businesses"
+    />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/medium.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <script defer src="js/script.js"></script>
+
+    <title>Historic Adairsville</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/train-logo.png" alt="steam train engine outline" />
+      </div>
+      <div class="title">
+        <h1>Historic Adairsville</h1>
+        <br />
+        <h2>"History in our name —Recreation is our game."</h2>
+      </div>
+      <div class="bannerfix"></div>
+      <nav>
+        <ul class="navmenu">
+          <li><a class="ham">&#9776;</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="cityinfo.html">Adairsville</a></li>
+          <li><a href="join.html" class="active">Join </a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="directory.html">Directory </a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="">
+      <form class="newgrid" method="get" action="joinsubmit.html">
+        <article class="story1">
+          <h2>Join the Chamber of Commerce</h2>
+          <p>
+            The Adairsville Chamber of Commerce is actively seeking locally
+            owned businesses to become members. Businesses receive many
+            incentives when they join.
+          </p>
+        </article>
+        <section class="infolegend">
+          <fieldset>
+            <legend><h2>Contact Information</h2></legend>
+            <div>
+              <label for="firstname">*First Name:</label><br />
+              <input
+                class="inputfield"
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="First Name"
+                pattern="[a-zA-Z ]{5,}"
+                required
+              />
+            </div>
+            <div>
+              <label for="lastname">*Last Name:</label><br />
+              <input
+                class="inputfield"
+                type="text"
+                id="lastname"
+                name="name"
+                placeholder="Last Name"
+                pattern="[a-zA-Z ]{5,}"
+                required
+              />
+            </div>
+            <div>
+              <label for="title">Title</label><br />
+              <input
+                class="inputfield"
+                type="text"
+                id="title"
+                name="title"
+                placeholder="ex. Owner, Founder, etc."
+              />
+            </div>
+            <div>
+              <label for="email">*Email Address:</label><br />
+              <input
+                class="inputfield"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@email.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">*Cell Phone:</label><br />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                title="10 digit phone number, no () or -"
+                placeholder="10-digit phone number"
+                required
+              />
+            </div>
+          </fieldset>
+        </section>
+        <section class="bizlegend">
+          <fieldset>
+            <legend><h2>Business Information</h2></legend>
+            <div>
+              <label for="bizname">*Business Name:</label><br />
+              <input
+                class="inputfield"
+                type="text"
+                id="bizname"
+                name="bizname"
+                placeholder="Business Name"
+                pattern="[a-zA-Z ]{5,}"
+                title="Enter five or more characters"
+                required
+              />
+            </div>
+            <div>
+              <label for="address">Business Address:</label><br />
+              <input
+                class="text"
+                type="text"
+                id="address"
+                name="address"
+                placeholder="1234 Main St."
+              />
+            </div>
+            <div>
+              <label for="zip">Zip Code</label><br />
+              <input
+                id="zip"
+                name="zip"
+                minlength="5"
+                title="Use 5-digit zip code"
+                placeholder="12345"
+              />
+            </div>
+            <div>
+              <label for="website">Website</label><br />
+              <input
+                class="inputfield"
+                type="text"
+                id="website"
+                name="website"
+                placeholder="www.mywebsite.com"
+              />
+            </div>
+            <div>
+              <label for="comments">Description of Business:</label><br />
+              <textarea id="comments" name="comments" rows="10"> </textarea>
+            </div>
+          </fieldset>
+        </section>
+        <div class="levelslegend">
+          <fieldset class="levels">
+            <legend>Membership Levels</legend>
+
+            <div>
+              <label class="radiolevel" for="corporate"
+                >Gold <br /><span>$1000</span> Corporate
+                <input
+                  type="radio"
+                  id="corporate"
+                  value="corporate"
+                  checked="checked"
+                  name="membership"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <p class="filterfix">
+                Any registered incorporated business interested in the
+                objectives of the Adairsville Chamber of Commerce may become an
+                active member upon payment of dues and shall continue as long as
+                annual dues are paid.
+                <br /><br />There shall be one designated Active Primary
+                Representative with one vote per each Corporate Membership.
+              </p>
+            </div>
+            <div>
+              <label class="radiolevel" for="branch"
+                >Silver <br /><span>$400</span> Individual Plus
+                <input
+                  type="radio"
+                  id="branch"
+                  value="branch"
+                  checked="checked"
+                  name="membership"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <p class="filterfix">
+                Any individual, sole proprietorship, independent contractor, or
+                one-person operation with a registered business interested in
+                the objectives of the Adairsville Chamber of Commerce may become
+                an active member upon payment of dues and shall continue as long
+                as annual dues are paid.
+                <br /><br />There shall be one designated Active Primary
+                Representative with one vote per each Individual Membership.
+                Offers additional Representative, does not get additional vote.
+              </p>
+            </div>
+
+            <div>
+              <label class="radiolevel" for="individual"
+                >Bronze <br /><span>$200</span> Individual
+                <input
+                  type="radio"
+                  id="individual"
+                  value="individual"
+                  checked="checked"
+                  name="membership"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <p class="filterfix">
+                Any individual, sole proprietorship, independent contractor, or
+                one-person operation with a registered business interested in
+                the objectives of the Adairsville Chamber of Commerce may become
+                an active member upon payment of dues and shall continue as long
+                as annual dues are paid.
+                <br /><br />There shall be one designated Active Primary
+                Representative with one vote per each Individual Membership.
+              </p>
+            </div>
+            <div>
+              <label class="radiolevel" for="nonprofit"
+                >Non-Profit <br /><span>$100</span> Non-Profit
+                <input
+                  type="radio"
+                  id="nonprofit"
+                  value="nonprofit"
+                  checked="checked"
+                  name="membership"
+                />
+                <span class="checkmark"></span>
+              </label>
+              <p class="filterfix">
+                Any registered 501 c3 Non-Profit organization interested in the
+                objectives of the Adairsville Chamber of Commerce may become an
+                active member upon payment of dues and shall continue as long as
+                annual dues are paid.
+                <br /><br />There shall be one designated Active Primary
+                Representative with one vote per each Non-Profit Membership.
+              </p>
+            </div>
+          </fieldset>
+        </div>
+        <input type="submit" value="Submit Application" class="button" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="footerbox">
+        <form class="form" method="get" action="newsletterthanks.html">
+          <h3>Sign up for our Newsletter!</h3>
+          <label for="newslettername">Name:</label><br />
+          <input
+            class="inputfield"
+            type="text"
+            id="newslettername"
+            name="newslettername"
+            placeholder="First & Last Name"
+            pattern="[a-zA-Z ]{5,}"
+            title="Enter five or more characters"
+            required
+          /><br />
+          <label for="newsletteremail">Email:</label><br />
+          <input
+            class="inputfield"
+            type="email"
+            id="newsletteremail"
+            name="newsletteremail"
+            placeholder="name@email.com"
+            required
+          /><br />
+          <input type="submit" class="button buttonbox" value="Sign Up" />
+        </form>
+        <div class="footimage">
+          <a href="./">
+            <img
+              src="images/train-logo-white-400px.png"
+              alt="black and white train logo"
+            />
+          </a>
+          <p>Come shop, visit, dine and play in Historic Adairsville, GA!</p>
+        </div>
+        <p class="contact">
+          Contact Us!<br />
+          email@citycouncil.com<br />
+          <a href="tel:770-773-3451">770-773-3451</a>
+        </p>
+        <div class="social">
+          <a href="https://www.twitter.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://www.instagram.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-insta.png" alt="instagram image icon"
+          /></a>
+          <a href="https://www.facebook.com" rel="noopener" target="_blank">
+            <img src="images/social-icon-fb.png" alt="facebook logo"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <span id="currentdate"></span><br />&copy;<span
+            id="currentyear"
+          ></span>
+          Ashley Zufelt<br />
+          <a href="attributions.html">Attributions</a>
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans Condensed", "Open Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
