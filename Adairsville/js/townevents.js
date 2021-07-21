@@ -1,6 +1,6 @@
 
 
-const requestJSON = "js/events.json";
+const requestJSON = "js/townevents.json";
 
 
 fetch(requestJSON)

@@ -21,10 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="shortcut icon" href="./favicon.ico" />
     <script defer src="js/script.js"></script>
-    <script defer src="js/currentweather.js"></script>
-    <!-- <script defer src="js/merchants.js"></script> -->
-    <!-- <script defer src="js/townevents.js"></script> -->
-    <script defer src="js/demographics.js"></script>
+    <!-- <script defer src="js/currentweather.js"></script> -->
+    <script defer src="js/newnow.js"></script>
+    <script defer src="js/townevents.js"></script>
+    <!-- <script defer src="js/historicdata.js"></script> -->
 
     <title>Historic Adairsville</title>
   </head>
@@ -63,66 +63,95 @@
       />
     </aside>
     <main>
-      <div id="maingrid">
-        <section class="special">
-          <h3>Average Weather</h3>
-          <p>
-            Annual Rainfall: <span id="conditions"></span><br />
-            Average High Temp: <span id="currentTemp"></span>°F<br />
-            Record High: <span id="humidity"></span><br />
-            Average Low Temp: <span id="windchill"></span><br />
-            Record Low Temp: <span id="#"></span><br />
-            Annual Snowfall: <span id="wind"></span>mph<br />
-          </p>
+      <div id="citygrid">
+        <section class="special weather">
+          <!-- <section id="averageweather" class="special"></section> -->
+          <h3>Average Weather:</h3>
+          <ul>
+            <li>Avg. High Temp: 71.9°F</li>
+            <li>Avg. Low Temp: 49.1°F</li>
+            <li>Avg. Annual Rainfall: 50.94"</li>
+            <li>Avg. Rain Days: 106.6 days</li>
+            <li>
+              Adairsville's climate is characterized by relativeyly high
+              temperatures and evenly distributed precipitation throughout the
+              year. It has a humid subtropical climate.
+            </li>
+          </ul>
         </section>
-        <article class="story1 clearfix">
+        <article class="story1">
+          <!-- <article class="story1 clearfix"></article> -->
           <div>
-            <h2>Historical Story</h2>
+            <h2>Locomotive Chase festival steams into Adairsville</h2>
 
             <img class="storyimg1" src="images/locomotivechasefest" alt="" />
             <p>author byline</p>
             <p class="indent">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              reiciendis nulla facilis, assumenda odio atque voluptatibus autem.
-              Culpa iure nobis voluptas aperiam corrupti deserunt rerum sunt
-              minus non! Iure hic veritatis magnam, saepe omnis recusandae
-              aliquam officia non corrupti ullam molestias, facere porro,
-              laboriosam minima et?<br /><br />
-              Accusamus quidem in nihil facere harum dolore facilis dicta
-              voluptate laudantium, ullam adipisci minima fugiat obcaecati
-              labore ipsa provident modi soluta aliquam illum rem ea omnis
-              nostrum magnam cupiditate! Animi, enim quibusdam modi quasi
-              aliquam quis molestias cumque corrupti incidunt perspiciatis sint
-              nihil culpa facilis, sed unde soluta amet maiores consectetur
-              rerum nesciunt numquam impedit provident quia! <br /><br />Earum,
-              culpa recusandae? Quia doloremque sunt quo exercitationem odit
-              necessitatibus aut non unde harum obcaecati perspiciatis
-              voluptate, id atque, facilis excepturi corrupti quisquam,
-              recusandae illo beatae dolor blanditiis vero. Incidunt ducimus
-              voluptate quam, laudantium aliquam saepe enim? Tempore aperiam
-              dolore, numquam earum neque asperiores fugiat exercitationem
-              fugit.
+              The 48th Great Loco­motive Chase Festival will sprawl across
+              downtown Adairsville from Friday through Sunday. The festival
+              celebrates Adairsville’s role in the railroad drama of 1862 when
+              Yankee spies, led by James Andrews, stole a Confederate locomotive
+              before they abandoned the train near Tunnel Hill. The festival was
+              started in 1968 when Marion Lacey, then principal at Adairsville
+              High School, sought something to replace the school’s Hal­low­een
+              festival. The festival features carnival rides, arts and crafts
+              booths, food vendors, entertainment on two stages, a Saturday
+              morning parade and Saturday night fireworks. Mayor Kenneth Carson
+              described the event as sort of a citywide homecoming celebration
+              that doubles as a “unification mechanism.” Musical entertainment
+              will be staged at the gazebo on the city square throughout the
+              festival. Festival hours are Friday from 10 a.m. to 11 p.m.,
+              Saturday from 9 a.m. to 11 p.m. and Sunday from noon to 5 p.m.
+              Tickets are $3 and one admission fee allows visitors access to
+              events all three days. There is no admission for the Sunday
+              afternoon part of the festival.
             </p>
           </div>
         </article>
-        <section class="forecastcard">
-          <h2>In History. . .</h2>
-          <p>
-            "A people without memories of heroic suffering and sacrifices are a
-            people without a history."
-          </p>
-          <p>John B. Gordon</p>
+        <section class="stats">
+          <!-- <div class="ad1 ad highlight"> -->
+          <h2>Historic Data</h2>
+          <ul>
+            <li>Country: United States</li>
+            <li>State: Georgia</li>
+            <li>County: Bartow</li>
+            <li>Time Zone: EST</li>
+            <li>Zipcode: 30103</li>
+            <li>Elev.: 719 ft.</li>
+            <li>Area: 719 sq miles</li>
+            <li>Population: 4, 792</li>
+            <li>
+              Adairsville used to be a small Cherokke village named after Chief
+              Walter(John) S. Adair, a Scottich settle who married a Cherokee
+              Indian woman before the removal of the Cherokee in 1838. It was
+              part of the Cherokee territory along with Calhoun and New Echota.
+            </li>
+          </ul>
         </section>
-        <div class="ad1 ad">
-          <section>Put something cool here....</section>
-        </div>
-        <section id="demographics" class="highlight">
+        <section class="quote">
+          <!-- <section class="forecastcard quotecard"></section> -->
+          <img
+            class="quoteback"
+            src="images/quotecard.png"
+            alt="apostophe punctuations"
+          />
+        </section>
+
+        <div class="demographics ad">
           <h2>Demographics</h2>
-        </section>
-        <div class="ad2 ad">
-          <section>Something else cool will go here...</section>
+          <ul>
+            <li>Median Income:$48,109 </li>
+            <li>Median Property Value: $132,800</li>
+            <li>Median Age: 33.8 years</li>
+            <li>Poverty Rate: 14.3%</li>
+            <li>Number of Employees: 2,285</li>
+            <li>Average Commute: 33.2 minutes</l>
+          </ul>
         </div>
-        <article class="story2">
+        <section id="eventcard" class="highlight">
+          <h2>Upcoming Events</h2>
+        </section>
+        <article class="story2 clearfix">
           <h2>The Great Locomotive Chase</h2>
 
           <img class="storyimg2" src="images/historic-train.jpg" alt="" />
@@ -133,23 +162,24 @@
             himself to Union General Ormsby Mitchel. They met to discuss what
             would eventually become one of the most well-known events of the
             Civil War, the Great Locomotive Chase. This daring plan was
-            originally called “Andrews’ Raid”. Andrews, a long time Union
-            sympathizer who was a spy in search of personal profit, proposed
-            that he and his “raiders” should be authorized to wreck the Western
-            & Atlantic Railroad in exchange for a large amount of money. This
-            plan helped Mitchel immensely, since his division was planning on
-            capturing the important rail hub in Chattanooga. Disabling the W&A
-            Railroad, would make his job much simpler. If the railroad was taken
-            out of commission, Chattanooga would be cut off from the south and
-            the city would be an easy target. To surprise the enemy, Mitchel and
-            Andrews agreed to synchronize their actions for April 11. Andrews
-            selected volunteers from 3 regiments under Mitchel’s command. He
-            asked specifically for a few soldiers who could handle a locomotive.
-            Three men were picked specifically as a result: Private William
-            Knight, Corporal Martin Jones Hawkins, and Private Wilson Brown all
-            had experience on railroads. They were given civilian clothing and
-            told to travel in small groups. They were to reassemble in Marietta,
-            GA., on April 10 and hijack a train for Chattanooga the following
+            originally called “Andrews’ Raid”.
+            <br /><br />Andrews, a long time Union sympathizer who was a spy in
+            search of personal profit, proposed that he and his “raiders” should
+            be authorized to wreck the Western & Atlantic Railroad in exchange
+            for a large amount of money. This plan helped Mitchel immensely,
+            since his division was planning on capturing the important rail hub
+            in Chattanooga. <br /><br />Disabling the W&A Railroad, would make
+            his job much simpler. If the railroad was taken out of commission,
+            Chattanooga would be cut off from the south and the city would be an
+            easy target. To surprise the enemy, Mitchel and Andrews agreed to
+            synchronize their actions for April 11. Andrews selected volunteers
+            from 3 regiments under Mitchel’s command. He asked specifically for
+            a few soldiers who could handle a locomotive. <br /><br />Three men
+            were picked specifically as a result: Private William Knight,
+            Corporal Martin Jones Hawkins, and Private Wilson Brown all had
+            experience on railroads. They were given civilian clothing and told
+            to travel in small groups. They were to reassemble in Marietta, GA.,
+            on April 10 and hijack a train for Chattanooga the following
             morning. Their plan was to hijack a train headed north, then along
             the way tear up tracks, cut telegraph lines, and burn bridges.
           </p>
@@ -162,36 +192,35 @@
             >Read Now!</a
           >
         </article>
-        <div class="ad3 ad">
-          <section></section>
+        <div class="special notable">
+          <!-- <div class="ad1"></div> -->
+          <h3>Noteworthy People:</h3>
+          <section>
+            <ul>
+              <li>Godfrey Barnsley, 19th-century cotton magnate after whome Barnsley Gardens is named.</li>
+              <li>Jessica Barton, model and actress.</li>
+              <li>Vic Beasley, 1st-round-pick for the Atlanta Falcons.</li>
+              <li>Bobby Cox, Atlanta Braves manager.</li>
+              <li>Pretty Boy Floyd, a 1930's Midwestern outlaw, was born in Adairsville shortly before his family left Georgia for Oklahoma.</li>
+             <li>Wally Fowler, founder of the Oak Ridge Boys.</li>
+              <li>Bella Jarrett, actress and author.</li>
+            </ul>
+          </section>
         </div>
-        <article class="feature">
-          <h2>Pics from around Town</h2>
-          <img src="images/depot.jpg" alt="" />
-
-          <h3>There's more to see in our gallery!</h3>
-          <p class="indent">
-            This depot was built in 1847 about a mile from the center of
-            Adairsville. The depot was so vital to the town that the entire town
-            relocated to be closer to it. At one time, Adairsville was the home
-            of a major repair facility for Western & Atlantic railroad. During
-            the Civil War, the Greal Locomotive Chase came through Adairsville.
-            <br /><br />
-
-            Service stopped at the depot in the 1960s. In the Mid 90's, most of
-            the historic area of Adairsville went though a restoration project
-            and the entire area is on the National Register of Historic Places.
-            Today the depot is open as the Adairsville Rail Depot Age of Steam
-            Museum and as a welcome center.
-          </p>
-          <a href="gallerylink" class="button">View Gallery</a>
+        <article class="whatsnew">
+          <h2>What's New Now?</h2>
+          <img
+            src="images/citybuilding.jpg"
+            alt="corner of city building with signs"
+          />
+          <div class="newnowinfo"></div>
         </article>
       </div>
     </main>
 
     <footer>
       <div class="footerbox">
-        <form class="form">
+        <form class="form" method="get" action="newsletterthanks.html">
           <h4>Sign up for our Newsletter!</h4>
           <label for="newslettername">Name:</label><br />
           <input

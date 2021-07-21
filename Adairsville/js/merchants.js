@@ -1,4 +1,4 @@
-const requestMerch ="js/biz.json";
+const requestMerch ="js/merchants.json";
 
 fetch(requestMerch)
 .then(function (response) {

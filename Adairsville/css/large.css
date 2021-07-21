@@ -63,7 +63,7 @@
     text-align: center;
   }
   .ad {
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 
   .footerbox {
@@ -128,7 +128,7 @@
     text-align: center;
     padding-top: 3rem;
   }
-  .forecastcard {
+  /* .forecastcard {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
@@ -149,7 +149,7 @@
   }
   .forecastgrid h3 {
     text-align: center;
-  }
+  } */
 
   /* -----------City Page--------- */
 

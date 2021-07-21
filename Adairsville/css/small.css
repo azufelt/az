@@ -22,7 +22,7 @@ html {
   background-color: var(--black);
   font-family: "Open Sans", Arial, sans-serif;
 }
-p {
+p, main li {
   color: var(--white);
   line-height: 1.5rem;
   /* filter: drop-shadow(0px 0px black); */
@@ -100,10 +100,12 @@ p.closebutton {
   border-radius: 50px;
   text-decoration: none;
   border: none;
+
 }
 a.button,
 input.button {
   border: 2px solid var(--silver);
+
 }
 .button:hover {
   background-color: var(--red);
@@ -134,6 +136,10 @@ header img {
   padding-bottom: 1%;
   width: 100%;
 }
+li {
+  list-style: none;
+
+}
 /* ---------- nav menu--------- */
 /* :link :visited :hover :focus :active */
 .navmenu li:first-child {
@@ -143,7 +149,7 @@ header img {
   display: none;
   padding: 0.8rem 0;
   text-align: center;
-  list-style: none;
+  /* list-style: none; */
   color: var(--white);
   transition: 0.5s;
 }
@@ -193,18 +199,23 @@ main section h2,
 main section h3 {
   background-color: var(--gray);
 }
-
-.ad {
-  text-align: center;
-  padding: 2rem;
+div > section,
+div > article,
+div > div {
+  margin-top: 3rem;
 }
+.ad {
+  margin: 1rem auto;
+  max-width: 80%;
+  }
+}
+
 .ad p {
   color: white;
 }
 .special {
   margin: 5%;
   padding: 5%;
-
   background-color: var(--gray);
   border: 5px solid var(--darkgrey);
 }
@@ -222,7 +233,7 @@ main section h3 {
 }
 .forecastgrid h2 {
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   border: 3px double var(--darkgrey);
 }
 .daygrid h3 {
@@ -236,7 +247,7 @@ main section h3 {
 .daygrid img {
   grid-area: icon;
 }
-.highlight {
+.highlight, .stats {
   padding: 1rem;
   margin: 2%;
   line-height: 1.5rem;
@@ -244,15 +255,15 @@ main section h3 {
   background-color: var(--greige);
 }
 
-.highlight h2 {
+.highlight h2, .demographics h2 {
   color: var(--blue);
   background-color: var(--greige);
 }
-.highlight p {
+.highlight p, .demographics p {
   color: var(--black);
   background-color: var(--white);
 }
-.highlight > div {
+.highlight > div, .demographics>div {
   padding: 0.5rem;
   margin-top: 1rem;
   color: var(--black);
@@ -269,16 +280,18 @@ div > p + a {
 div > p + a:hover {
   cursor: pointer;
 }
-article {
-  text-align: center;
+article, .demographics {
+  /* text-align: center; */
   margin-top: 2rem;
   background-color: var(--blue);
   padding: 2rem 0;
 }
+
 article h2 {
   border-bottom: 5px solid var(--darkgrey);
   margin-bottom: 1rem;
   background-color: var(--blue);
+  /* white-space: nowrap; */
 }
 
 article > img {
@@ -289,10 +302,10 @@ article h3 {
   background-color: var(--blue);
   margin: 1rem;
 }
-article p:nth-child(4) {
+/* article p:nth-child(4) {
   text-align: left;
   background-color: var(--blue);
-}
+} */
 article p:nth-child(3) {
   margin: 0.5rem auto 0 auto;
   font-style: italic;
@@ -510,4 +523,12 @@ img[data-src].loaded {
 
 .mapgrid {
   display: block;
+}
+/* -------City page ------- */
+.whatsnew, .whatsnew ul, .whatsnewli, .whatsnew h2{
+  background-color: var(--greige);
+}
+
+.newnowinfo h3 {
+  background-color: var(--blue);
 }

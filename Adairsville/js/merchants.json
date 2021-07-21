@@ -55,7 +55,7 @@
         "zipcode": "30103"
       }
     ],
-    "website": "www.generalstore.com",
+    "website": "www.facebook.com/heacgeneralstore/about?tab=overview",
     "phone": "770-769-4058",
     "image": "generalstore.jpg",
     "logo": "generalstore.png",
@@ -63,7 +63,8 @@
     "description": [
     " Stop in for a delicious menu of soup and sandwiches. This general store offers vintage and upcycled antiques, dry goods, toys, gifts and more, much of which is Made in USA. Home chefs love our selection of bulk herbs and spices. Responsibly sourced coffees and teas are brewed daily and paired with homemade scones, biscotti, and other pastries. Our unique handcrafted items benefit global villages and charities."
     ],
-    "ad": "yes"
+    "ad": "yes",
+    "adimg": "generalstoread.jpg"
   },
   {
     "name": "Papa John's",
@@ -168,6 +169,28 @@
     ]
   },
   {
+    "name": "Adairsville Coffee co.",
+    "address": [
+      {
+        "street": "Joe Frank Harris Pkwy NW",
+        "numbers":"6365",
+        "city": "Adairsville",
+        "state": "GA",
+        "zipcode": "30103"
+      }
+    ],
+    "website": "www.facebook.com/adairsvillecoffeeco",
+    "phone": "(770) 769-4755",
+    "image": "adairsvillecoffee.jpg",
+    "logo": "",
+    "hours": "Open Daily 7 AM-8 PM, Closed Sunday",
+    "description": [
+      "Dine-in · Takeout · No delivery"
+    ],
+    "ad": "yes",
+    "adimg": "adairsvillecoffeead.jpg"
+  },
+  {
     "name": "Heavenly Hand Me Downs",
     "address": [
       {
@@ -198,7 +221,7 @@
         "zipcode": "30103"
       }
     ],
-    "website": "www.peacockjunction.com",
+    "website": "www.facebook.com/peacockjunction",
     "phone": "678-800-7000",
     "image": "peacockjunction.jpg",
     "logo": "peacockjunction.png",
@@ -208,7 +231,8 @@
       
     
     ],
-    "ad": "yes"
+    "ad": "yes",
+    "adimg": "peacockjunctionad.jpg"
   },
   {
     "name": "Wholly Beauty",
@@ -228,8 +252,7 @@
     "hours": "Open Monday-Friday 10:30 AM-8 PM, Saturday 11 AM-7 PM, Sunday Noon-5 PM.",
     "description": [
       "Shop for beauty and personal care products and CBD products. Enjoy tanning and red light therapy services."
-    ],
-    "ad": "yes"
+    ]
   },
   {
     "name": "Linda B's Antiques",
