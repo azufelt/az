@@ -21,7 +21,6 @@
 html {
   background-color: var(--black);
   font-family: "Open Sans", Arial, sans-serif;
-  padding-bottom: 2%;
 }
 main p, main li {
   color: var(--white);
@@ -161,9 +160,7 @@ li {
   letter-spacing: 0.2rem;
   display: block;
 }
-.navmenu a,
-.copyright a,
-article a {
+a {
   color: var(--white);
   font-family: "Open Sans Condensed", Arial, sans-serif;
   text-decoration: none;
@@ -319,6 +316,7 @@ footer label {
 }
 footer p {
   color: var(--white);
+  line-height: normal;
 }
 footer form {
   display: flex;
@@ -396,8 +394,10 @@ form fieldset {
 legend {
   color: var(--black);
   font-size: 1.5rem;
-  padding-bottom: 2rem;
   font-weight: bold;
+}
+legend, footer {
+  padding-bottom: 2rem;
 }
 fieldset > div {
   margin-bottom: 1rem;
@@ -458,10 +458,16 @@ textarea {
   border-radius: 50%;
   background: var(--greige);
 }
+
 .contactgrid input:required,
 .newgrid input:required {
-  border-left: var(--red) solid 6px;
+  border-left: 6px solid var(--red);
 }
+.contactgrid input:required:valid,
+.newgrid input:required:valid  {
+  border-left: 6px solid green;
+}
+
 /* ---------Gallery-------------- */
 figure {
   text-align: center;
@@ -532,6 +538,10 @@ img[data-src].loaded {
   background-color: var(--greige);
   text-align: center;
   padding: 1rem;
+}
+input:not(footer input), textarea {
+  display: block;
+  margin: .8rem auto 1.5rem auto;
 }
 
 .mapgrid {

@@ -369,7 +369,6 @@
   }
   .newgrid :last-child {
     grid-area: submit;
-    margin: 0 auto;
   }
   .levels > div:nth-child(even) {
     background-color: var(--middlegrey);
