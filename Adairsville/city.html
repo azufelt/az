@@ -64,28 +64,13 @@
     </aside>
     <main>
       <div id="citygrid">
-        <section class="special weather">
-          <!-- <section id="averageweather" class="special"></section> -->
-          <h3>Average Weather:</h3>
-          <ul>
-            <li>Avg. High Temp: 71.9°F</li>
-            <li>Avg. Low Temp: 49.1°F</li>
-            <li>Avg. Annual Rainfall: 50.94"</li>
-            <li>Avg. Rain Days: 106.6 days</li>
-            <li>
-              Adairsville's climate is characterized by relativeyly high
-              temperatures and evenly distributed precipitation throughout the
-              year. It has a humid subtropical climate.
-            </li>
-          </ul>
-        </section>
-        <article class="story1">
+        <article class="story clearfix">
           <!-- <article class="story1 clearfix"></article> -->
           <div>
-            <h2>Locomotive Chase festival steams into Adairsville</h2>
+            <h2>Full Steam Ahead, Train Fest</h2>
 
-            <img class="storyimg1" src="images/locomotivechasefest" alt="" />
-            <p>author byline</p>
+            <img src="images/locomotivechasefest" alt="" />
+            <p>author unknown</p>
             <p class="indent">
               The 48th Great Loco­motive Chase Festival will sprawl across
               downtown Adairsville from Friday through Sunday. The festival
@@ -108,9 +93,17 @@
             </p>
           </div>
         </article>
+        <section class="quote">
+          <!-- <section class="forecastcard quotecard"></section> -->
+          <img
+            class="quoteback"
+            src="images/quotecard.png"
+            alt="apostophe punctuations"
+          />
+        </section>
         <section class="stats">
           <!-- <div class="ad1 ad highlight"> -->
-          <h2>Historic Data</h2>
+          <h2>Locale Data:</h2>
           <ul>
             <li>Country: United States</li>
             <li>State: Georgia</li>
@@ -128,16 +121,22 @@
             </li>
           </ul>
         </section>
-        <section class="quote">
-          <!-- <section class="forecastcard quotecard"></section> -->
-          <img
-            class="quoteback"
-            src="images/quotecard.png"
-            alt="apostophe punctuations"
-          />
+        <section class="weather">
+          <!-- <section id="averageweather" class="special"></section> -->
+          <h3>Average Weather:</h3>
+          <ul>
+            <li>Avg. High Temp: 71.9°F</li>
+            <li>Avg. Low Temp: 49.1°F</li>
+            <li>Avg. Annual Rainfall: 50.94"</li>
+            <li>Avg. Rain Days: 106.6 days</li>
+            <li>
+              Adairsville's climate is characterized by relativeyly high
+              temperatures and evenly distributed precipitation throughout the
+              year. It has a humid subtropical climate.
+            </li>
+          </ul>
         </section>
-
-        <div class="demographics ad">
+        <div class="demographics">
           <h2>Demographics</h2>
           <ul>
             <li>Median Income:$48,109 </li>
@@ -148,10 +147,10 @@
             <li>Average Commute: 33.2 minutes</l>
           </ul>
         </div>
-        <section id="eventcard" class="highlight">
+        <section id="eventcard" class="events highlight">
           <h2>Upcoming Events</h2>
         </section>
-        <article class="story2 clearfix">
+        <article class="storytwo ">
           <h2>The Great Locomotive Chase</h2>
 
           <img class="storyimg2" src="images/historic-train.jpg" alt="" />
@@ -192,7 +191,7 @@
             >Read Now!</a
           >
         </article>
-        <div class="special notable">
+        <div class="notable">
           <!-- <div class="ad1"></div> -->
           <h3>Noteworthy People:</h3>
           <section>
@@ -207,8 +206,9 @@
             </ul>
           </section>
         </div>
-        <article class="whatsnew">
+        <article class="whatsnew clearfix">
           <h2>What's New Now?</h2>
+          <p>Helpful links to all of the recent "goings-on"</p>
           <img
             src="images/citybuilding.jpg"
             alt="corner of city building with signs"
@@ -256,7 +256,7 @@
         <p class="contact">
           Contact Us!<br />
           email@citycouncil.com<br />
-          (123)-456-7890
+          <a href="tel:770-773-3451">770-773-3451</a>
         </p>
         <div class="social">
           <a href="https://www.twitter.com" rel="noopener" target="_blank">
@@ -275,7 +275,8 @@
           <span id="currentdate"></span><br />&copy;<span
             id="currentyear"
           ></span>
-          Ashley Zufelt
+          Ashley Zufelt<br>
+          <a href="attributions.html">Attributions</a>
         </p>
       </div>
     </footer>

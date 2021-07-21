@@ -1,4 +1,3 @@
-//----- Date ------//
 const date = new Date();
 const options = {
       weekday: "long",

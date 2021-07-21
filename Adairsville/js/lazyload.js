@@ -6,10 +6,8 @@ function preloadImage(img) {
     return;
   } else {
     img.src = src;
-   
   }
 }
-
 const imgOptions = {
   threshold: .02,
   rootMargin: "0px 0px -100px 0px" 
@@ -23,7 +21,6 @@ entries.forEach(entry => {
     imgObserver.unobserve(entry.target);
       entry.target.classList.toggle("loaded")
   }
-
 });
 }, imgOptions);
 images.forEach(src => {

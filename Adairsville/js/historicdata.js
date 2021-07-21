@@ -7,25 +7,16 @@ fetch(censusAPI)
 
 const georgia = censusJSON.data[10];
 console.log(georgia);
-
-// const stateData = towns.filter(towns => towns.name == "Soda Springs";
   })
 
 const requestData = "js/historicdata.json";
-
 
 fetch(requestData)
 .then(function (response) {
   return response.json();
 })
-.then(function (dataJSON) {
-  console.log(dataJSON);
-
-  // const stats = dataJSON['stats'];
-  
+.then(function (dataJSON) {  
   const weatherlist = [dataJSON.history.weatherdata];
-  
-  console.log(weatherlist);
   
   let i = 0;
   let card = document.createElement('section');
@@ -40,11 +31,7 @@ fetch(requestData)
     li.textContent =item;
     ul.append(li);
     ul.textContent =li;
-   
-   
-    
     })
-   
     card.append(ul);
     document.querySelector('#averageweather').append(card);
   });

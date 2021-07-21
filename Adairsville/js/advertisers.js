@@ -28,7 +28,6 @@ fetch(requestMerch)
     a.append(logo);
 
     document.querySelector('.ad1').append(card);
-
 })
 const ad2 = [adList[1]];
   ad2.forEach(ad => {
@@ -70,7 +69,7 @@ const ad3 = [adList[2]];
 
     card.append(a);
     a.append(logo);
-
+    
     document.querySelector('.ad3').append(card);
 })
 });

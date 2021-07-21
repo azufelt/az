@@ -2,9 +2,6 @@
 fetch(apiURL)
 .then((response) => response.json())
 .then((jsObject) => {
-
-
-
   if(jsObject.alerts == undefined) {
     document.querySelector(".alert").style.display= "none";
         return;

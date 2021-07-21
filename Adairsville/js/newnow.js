@@ -10,12 +10,10 @@ fetch(requestNewNow)
 
   NewNow.forEach((newnow => {
 
-    
     let listItem = document.createElement('li');
     let a = document.createElement('a'); 
     let h3 = document.createElement('h3');
    
-    
     a.setAttribute('href', newnow.weblink);
     a.setAttribute('target', '_blank');
     a.setAttribute('rel', 'noopener');
@@ -25,7 +23,6 @@ fetch(requestNewNow)
     list.append(listItem);
     listItem.append(a);
     a.append(h3);
-   
    
   }));
 

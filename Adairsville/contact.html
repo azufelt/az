@@ -56,7 +56,7 @@
         <form method="get" action="contactthanks.html">
           <section class="contactform">
             <h3>Send us a Message!</h3>
-            <label for="name">*Name:</label><br />
+            <label for="name">*Name:</label>
             <input
               class="inputfield"
               type="text"
@@ -66,8 +66,8 @@
               pattern="[a-zA-Z ]{5,}"
               title="Enter first and last names"
               required
-            /><br />
-            <label for="email">*Email:</label><br />
+            />
+            <label for="email">*Email:</label>
             <input
               class="inputfield"
               type="email"
@@ -75,8 +75,8 @@
               name="email"
               placeholder="name@email.com"
               required
-            /><br />
-            <label for="phone">Cell Phone</label><br />
+            />
+            <label for="phone">Cell Phone</label>
             <input
               type="tel"
               id="phone"
@@ -84,8 +84,8 @@
               pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
               title="10 digit phone number, no () or -"
               placeholder="10-digit phone number"
-            /><br />
-            <label for="comments">*Message:</label><br />
+            />
+            <label for="comments">*Message:</label>
             <textarea
               id="comments"
               name="comments"
@@ -114,15 +114,19 @@
             </p>
 
             <div class="map">
-              <img
-                src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyBZHyMTk6UaF9MT0r1boRUMoVTas4YBlsk"
-                alt="google map"
-              />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52693.57853137006!2d-84.94093899612623!3d34.367051513324085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f55505aa42dbb9%3A0xe26f77ac366c7a1b!2sAdairsville%2C%20GA%2030103!5e0!3m2!1sen!2sus!4v1626851888631!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </article>
         <article class="council">
-          <h3>Meet the City Council!</h3>
+          <h3>Meet Our City Council!</h3>
           <div class="councilbox">
             <figure>
               <img
@@ -205,7 +209,7 @@
         <p class="contact">
           Contact Us!<br />
           email@citycouncil.com<br />
-          (123)-456-7890
+          <a href="tel:770-773-3451">770-773-3451</a>
         </p>
         <div class="social">
           <a href="https://www.twitter.com" rel="noopener" target="_blank">
@@ -224,7 +228,7 @@
           <span id="currentdate"></span><br />&copy;<span
             id="currentyear"
           ></span>
-          Ashley Zufelt
+          Ashley Zufelt<br />
           <a href="attributions.html">Attributions</a>
         </p>
       </div>

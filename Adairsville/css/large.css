@@ -100,7 +100,8 @@
   }
   .story1 h2,
   .story2 h2,
-  .feature h2 {
+  .feature h2,
+  .story h2 {
     animation-name: titleslide;
     animation-duration: 3s;
     white-space: nowrap;
@@ -170,23 +171,23 @@
     grid-template-rows: auto;
     grid-template-areas:
       "mapbox contactform "
-      "mapbox contactform   "
       "council council ";
     grid-gap: 2rem;
     margin: 3rem auto;
-    width: 90%;
-    align-items: baseline;
-    justify-items: center;
+    width: 70%;
+    align-items: stretch;
   }
   .contactform {
     grid-area: contactform;
-    width: 90%;
+    /* width: 100%; */
+    padding: 3rem;
   }
   .mapbox {
     grid-area: mapbox;
   }
   .council {
     grid-area: council;
+    margin: 0 auto;
   }
   .mapgrid {
     display: block;
