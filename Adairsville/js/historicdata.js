@@ -19,21 +19,23 @@ fetch(requestData)
   const weatherlist = [dataJSON.history.weatherdata];
   
   let i = 0;
-  let card = document.createElement('section');
-  let h3 = document.createElement('h3');
-  h3.innerHTML = "Average Weather Data:"
-  let ul = document.createElement('ul');
-  card.append(h3);
+  // let card = document.createElement('section');
+  // let h3 = document.createElement('h3');
+  // h3.innerHTML = "Average Weather Data:"
+  // let ul = document.createElement('ul');
+  // card.append(h3);
  
   weatherlist.forEach((weatheritem) => {
     let li = document.createElement('li');
-    let item = weatheritem[i];
-    li.textContent =item;
-    ul.append(li);
-    ul.textContent =li;
+    let item = (weatheritem[i]);
+    li.innerHTML = item;
+    // li.textContent =item;
+    // ul.append(item);
+    // ul.textContent =item;
+    document.querySelector('#averageweather').appendChild(li);
     })
-    card.append(ul);
-    document.querySelector('#averageweather').append(card);
+    // card.append(ul);
+    // document.querySelector('#averageweather').append(card);
   });
  
   

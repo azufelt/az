@@ -26,7 +26,7 @@ forecast.forEach((daycard) => {
 
       let icon = document.createElement('img')
       let imageicon = daycard.weather[0].icon;
-      let imagesrc =  "http://openweathermap.org/img/wn/" + imageicon + "@2x.png";
+      let imagesrc =  "https://openweathermap.org/img/wn/" + imageicon + "@2x.png";
       icon.setAttribute('src', imagesrc);
       icon.setAttribute('alt', daytitle + " " + daycard.weather[0].description);
 
