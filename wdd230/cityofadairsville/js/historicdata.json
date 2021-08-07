@@ -2,12 +2,12 @@
   "history": {
     
   "weatherdata": [
-    {"hitemp":"71.9°F"},
-    {"lotemp":"49.1°F"},
-    {"rainfall":"50.94in"},
-    {"raindays": "106.6 days"},
-    {"desc": "Adairsville's climate is characterized by relativeyly high temperatures and evenly distributed precipitation throughout the year. It has a humid subtropical climate.}"
-    }],
+    "71.9°F",
+    "49.1°F",
+    "50.94in",
+    "106.6 days",
+    "Adairsville's climate is characterized by relativeyly high temperatures and evenly distributed precipitation throughout the year. It has a humid subtropical climate.}"
+    ],
   "statistics":[
     {
     "country": "United States",

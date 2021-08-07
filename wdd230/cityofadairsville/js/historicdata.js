@@ -27,7 +27,7 @@ fetch(requestData)
  
   weatherlist.forEach((weatheritem) => {
     let li = document.createElement('li');
-    let item = weatheritem[i];
+    let item = weatheritem;
     li.textContent =item;
     ul.append(li);
     ul.textContent =li;
