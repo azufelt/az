@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ashley Zufelt" />
+    <meta
+      name="keywords"
+      content="tanya willis candidate elk ridge city council 2021 utah"
+    />
+    <meta
+      name="description"
+      content="Get to know candidate Tanya Willis as she works alongside her family, community and city council to improve Elk Ridge, Utah "
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/small.css" />
+    <link type="text/css" rel="stylesheet" href="css/med.css" />
+    <link type="text/css" rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script defer>
+      const date = new Date();
+      const options = {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+        year: "numeric",
+      };
+      document.querySelector("#currentyear").innerHTML = date.getFullYear();
+
+      const button = document.querySelector(".ham");
+      const navlist = document.querySelector("nav");
+      button.addEventListener(
+        "click",
+        () => {
+          navlist.classList.toggle("responsive");
+        },
+        false
+      );
+    </script>
+    <!-- ---------mobile-first style-------- -->
+    <style>
+      :root {
+        --blue: hsla(219, 84%, 15%, 1);
+        --teal: hsla(202, 47%, 57%, 1);
+        --silver: hsla(0, 1%, 79%, 1);
+        --gray: hsla(0, 0%, 44%, 1);
+      }
+      html {
+        font-size: 18px;
+      }
+      img {
+        max-width: 100%;
+      }
+      p,
+      li {
+        line-height: 1.8rem;
+      }
+      p,
+      li,
+      .logobox h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .button,
+      input,
+      textarea {
+        font-family: "Open Sans", Arial, sans-serif;
+      }
+
+      h1,
+      h2 {
+        font-family: "Playfair Display", "Times New Roman", serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: var(--blue);
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+      header {
+        display: grid;
+        grid-template-columns: 60% auto;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 6.4rem;
+        margin: 1% 5%;
+        position: relative;
+        border-bottom: 4px double var(--gray);
+      }
+      .logobox {
+        display: grid;
+        grid-template-columns: 70% auto;
+        grid-template-rows: auto auto;
+        margin-bottom: 0;
+      }
+      .logobox h1,
+      .logobox h2 {
+        margin: 0;
+      }
+      .logobox h1 {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 1.4rem;
+      }
+      .logobox h2 {
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 0.7rem;
+        white-space: nowrap;
+        font-style: italic;
+        line-height: 0;
+        margin-top: -0.05rem;
+      }
+      .logobox img {
+        grid-column: 2;
+        grid-row: 1/3;
+      }
+      .navmenu li:first-child {
+        display: block;
+      }
+      .navmenu li {
+        display: none;
+      }
+      .navmenu a {
+        display: block;
+      }
+      a {
+        color: var(--blue);
+        text-decoration: none;
+        font-family: "Open Sans Condensed", Arial, sans-serif;
+      }
+      .ham {
+        font-size: 3rem;
+      }
+      .responsive li:not(:first-child) {
+        display: block;
+        background-color: var(--blue);
+        padding: 0.5rem 2rem;
+      }
+      .responsive li:not(:first-child) a {
+        color: white;
+      }
+      .responsive li:not(:first-child):hover {
+        background-color: var(--teal);
+      }
+      .navmenu {
+        position: absolute;
+        top: 20%;
+        right: 1%;
+        text-align: right;
+      }
+      .button {
+        background-color: var(--teal);
+        color: white;
+        filter: drop-shadow(0 0 0 black);
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+        margin: 1rem;
+        justify-self: center;
+        border: 3px solid var(--teal);
+      }
+      .button:hover {
+        border: 3px solid var(--teal);
+        background-color: var(--blue);
+      }
+      /* --------main body------------ */
+      main,
+      footer {
+        text-align: center;
+      }
+
+      main > section:not(:first-child) {
+        padding: 5%;
+      }
+      .introbox {
+        padding-bottom: 5rem;
+      }
+      .introbox img {
+        max-width: 75%;
+      }
+      .introbox,
+      .introbox h2,
+      .introbox h3,
+      .introbox p,
+      .blue,
+      .blue h2,
+      .blue h3,
+      .blue h4,
+      .blue p {
+        background-color: var(--blue);
+        color: white;
+      }
+      .introbox h2 {
+        margin-top: -1rem;
+        font-size: 2rem;
+        font-weight: lighter;
+        white-space: break-spaces;
+      }
+      .introbox h3::first-letter {
+        font-size: 3rem;
+        font-family: "Playfair Display", "Times New Roman", serif;
+      }
+      .introbox p,
+      .copyright,
+      form {
+        padding: 1rem;
+      }
+
+      /* ---------footer--------- */
+      .copyright {
+        background-color: var(--gray);
+      }
+      .copyright p {
+        color: white;
+      }
+      footer p {
+        margin: 0;
+        color: black;
+      }
+      footer img {
+        margin: 1rem;
+      }
+      .socialbox img {
+        max-width: 3rem;
+        margin: 0;
+      }
+      .contact {
+        margin-top: 5rem;
+        padding-top: 2rem;
+      }
+      label {
+        display: none;
+      }
+      form > input,
+      textarea {
+        margin: 0.5rem;
+        padding: 0.5rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <!-- ---------Media query style--------- -->
+    <style>
+      @media only screen and (min-width: 650px) {
+        main {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(6, auto);
+          max-width: 980px;
+          margin: 0 auto;
+        }
+        main section:first-child,
+        main h2,
+        main a {
+          grid-column: 1/4;
+        }
+        main a {
+          max-width: 5rem;
+          white-space: nowrap;
+          margin: 2rem auto;
+        }
+
+        header {
+          grid-template-columns: 40% auto;
+        }
+        .logobox {
+          max-width: 200px;
+        }
+
+        .introbox {
+          max-width: 980px;
+          margin: 0 auto;
+          display: grid;
+          grid-template-areas:
+            "h2 h2 h2 h2 h2"
+            "h3 h3 img img img"
+            "p p img img img"
+            "a a img img img";
+        }
+        .introbox h2 {
+          grid-area: h2;
+        }
+        .introbox h3 {
+          grid-area: h3;
+        }
+        .introbox img {
+          grid-area: img;
+        }
+        .introbox p {
+          grid-area: p;
+        }
+        .introbox a {
+          grid-area: a;
+        }
+        .contact {
+          max-width: 980px;
+          margin: 0 auto;
+        }
+        .contact section {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, auto);
+        }
+        .contact section > form {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+        .contact section > h3 {
+          grid-column: 2/3;
+          grid-row: 1;
+        }
+        .contact section > div {
+          grid-column: 1/2;
+          grid-row: 1/3;
+        }
+        footer {
+          margin-top: 3rem;
+        }
+      }
+    </style>
+    <title>Vote Tanya Willis</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logobox">
+        <h1>Tanya Willis</h1>
+        <h2>Our Town. Our Future.</h2>
+        <img src="images/elk-head-circle.png" alt="elk head in circle logo"
+      /></a>
+      <nav>
+        <ul class="navmenu">
+          <li><a class="ham">&#9776;</a></li>
+          <li><a href="/" class="close1">Our Town</a></li>
+          <li><a href="elkridge.html" class="close2">Our Future</a></li>
+          <li><a href="aboutme.html" class="close3">Tanya's Story</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Elk Ridge City Council</h1>
+        <div class="introbox">
+          <h2>2021</h2>
+          <h3>
+            We've made it our home,<br />
+            Let's make it our FUTURE!
+          </h3>
+          <img
+            src="images/tanya-family-porch-pic.jpg"
+            alt="fun family 50%picture on porch"
+          />
+          <p>
+            Be part of the family and join me as, together, we strengthen our
+            community & focus on the future of Elk Ridge!
+          </p>
+          <a href="aboutme.html" class="button">My Story</a>
+        </div>
+      </section>
+      <!-- <div class="platform-container"> -->
+      <h2>Town Strong. Future Focused.</h2>
+      <section>
+        <img src="images/development-gears.png" alt="gear cogs turning" />
+        <h3>Development</h3>
+        <p>
+          Planning for responsible growth that supports the vision of our city.
+        </p>
+      </section>
+      <section class="blue">
+        <img src="images/piggy-bank-with-coin.png" alt="piggy bank with coin" />
+        <h3>Budget</h3>
+        <p>
+          Maintain fiscal responsibility, even as costs increase with growth.
+        </p>
+      </section>
+      <section>
+        <img
+          src="images/community-hands-supporting.png"
+          alt="four hands holding wrists"
+        />
+        <h3>Partnership</h3>
+        <p>Open & transparent communication with Elk Ridge residents.</p>
+      </section>
+
+      <a href="elkridge.html" class="button">Our Future</a>
+      <!-- </div> -->
+    </main>
+    <footer>
+      <div class="contact blue">
+        <h2>Community Connect.</h2>
+        <section>
+          <h3>Share your voice!</h3>
+          <form method="get" action="/">
+            <label for="messagename">Name:</label>
+            <input
+              type="text"
+              id="messagename"
+              name="messagename"
+              placeholder="First & Last Name"
+              pattern="[a-zA-Z] {5,}"
+              title="Enter both first and last names"
+              required
+            />
+            <br />
+            <label for="messageemail">Email:</label>
+            <input
+              type="email"
+              id="messageemail"
+              name="messageemail"
+              placeholder="name@email.com"
+              required
+            />
+            <br />
+            <label for="comments">Comment:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <span>
+              <input type="submit" value="Send Message" class="button"
+            /></span>
+            <!-- <a href="" class="button">Send Message</a> -->
+          </form>
+          <div>
+            <img
+              src="images/elk-head-circle-white.png"
+              alt="profile pic tanya willis"
+            />
+            <h4>Follow our Future:</h4>
+            <div class="socialbox">
+              <img
+                src="images/social-icon-fb.png"
+                alt="facebook social icon tanya willis"
+              />
+              <img
+                src="images/social-icon-insta.png"
+                alt="instagram social icon tanya willis"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="copyright">
+        <p>&copy;<span id="currentyear"></span> Tanya Willis<br /></p>
+      </div>
+    </footer>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+      crossorigin
+    ></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Playfair Display", "Open Sans"],
+        },
+      });
+    </script>
+  </body>
+</html>
