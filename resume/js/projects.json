@@ -1,0 +1,77 @@
+{"projects": [
+
+  {
+    "name": "Vote Tanya Willis",
+    "sub": "Created August 2021",
+    "image": "votetanyawillis.jpg",
+    "website": "https://azufelt.github.io/votefortanya/",
+    "description": [
+     "Wireframe Mock-ups in Adobe XD",
+    "Mobile responsive",
+    "Embedded Lead-capture forms",
+    "Custom, coded by hand",
+    "Created and rendered graphics for optimized load speed"
+    ]
+  },
+  {
+    "name": "Chamber of Commerce",
+    "sub": "Created June 2021",
+    "image": "device-size-page-display-city.jpg",
+    "website": "https://azufelt.github.io/wdd230/cityofadairsville/",
+    "description": [
+     "Error free, 8-page site",
+    "Perfect scores across Chrome Dev Lighthouse",
+    "Built JSON to populate HTML from JS",
+    "Streamlined CSS in a mobile-first approach, to maintain low site weight",
+    "Fetched data from multiple API sources"
+    ]
+  },
+  {
+    "name": "Redwood Design Co.",
+    "sub": "A company re-brand site mock-up",
+    "image": "device-size-page-display.jpg",
+    "website": "https://azufelt.github.io/redwooddesignco/",
+    "description": [
+     "Debugged and validated HTML5/CSS semantic errors",
+     "Optimized load speed by 3%",
+     "Increased SEO capabilities by 20%",
+     "Updated desktop and mobile to be 100% WAVE accessible compliant"
+      
+    ]
+  },
+  {
+    "name": "Javascript Playground",
+    "sub": "A collection of fun and useful scripts and functions",
+    "image": "device-size-page-display-playground.jpg",
+    "website": "https://ashleys-playground.glitch.me",
+    "description": [
+     "Built Mablibs to take user input and manipulate a return response to user",
+     "Various JavaScript conversion calculators that accept user data for output",
+     "Stepped through code in Chrome Dev to debug conversion scripts",
+     "Used javaScript to manipulate CSS, light/dark mode"
+      
+    ]
+  },
+  {
+    "name": "The Drizzly Bear",
+    "sub": "A fictional weather site",
+    "image": "device-size-page-display-weather.jpg",
+    "website": "https://azufelt.github.io/wdd230/drizzlybear/",
+    "description": [
+     "Coded CSS according to client provided design",
+     "AddEventListener functions, mobile nav & lazy load, used within Javascript to enhance UX",
+    "Created personas and site-plan for specific target audience"
+    ]
+  },
+  {
+    "name": "Non-Profit",
+    "sub": "A custom WordPress site-build",
+    "image": "device-size-page-display-nonprofit.jpg",
+    "website": "https://www.nonprofit.ashleyzufelt.com/",
+    "description": [
+     "Low & Hi-fidelty mock-ups using Adobe XD",
+     "Hand-coded custom CSS",
+    "Chrome & FireFox Dev tools for live-view build & CSS styling"
+    ]
+  }
+]}
